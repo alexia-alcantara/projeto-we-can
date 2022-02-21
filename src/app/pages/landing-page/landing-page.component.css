@@ -1,0 +1,85 @@
+.logo{
+    width: 23vw;
+}
+.navbar{
+    background: #10312B;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.navbar .container{
+    align-items: flex-end;
+}
+.navbar-brand{
+    margin-right: 4rem;
+    margin-left: -5.5rem;
+}
+.navbar-nav{
+    align-items: center;
+}
+
+.intro-section{
+    background: #10312B;
+    height: 100%;
+    width: 100%;
+    padding: 19rem;
+}
+
+.como-funciona h2{
+    font: normal normal 300 25px/34px LEMON MILK;
+    padding: 3rem;
+}
+.como-funciona .icone-cols{
+    border: 1px solid #10312B;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    padding: 40px 37px 35px 37px;
+    margin: auto;
+}
+.como-funciona .icon-geral{
+    width: 55px;
+}
+
+.como-funciona .caixaIcone{
+    padding-left: 4rem;
+}
+
+.como-funciona .bloco-icones{
+    border: 1px solid #10312B;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    padding: 40px 37px 35px 37px;
+}
+
+.para-entender{
+    background: #E3A716;
+    padding: 3rem;
+}
+
+.para-entender .caixa-btn h2{
+    font: normal normal normal 25px/40px LEMON MILK;
+    color: #fff;
+    text-align: left;
+}
+.para-entender .btn-saiba-mais{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 0rem;
+}
+
+:host ::ng-deep .p-button-saiba {
+    width: 70%;
+    border: 1px solid #284641;
+    border-radius: inherit;
+    padding: 2rem;
+}
+
+:host ::ng-deep .p-button-saiba .p-button-label{
+    color: #284641;
+    font: normal normal normal 16px/20px LEMON MILK;
+}
+
+.para-entender .caixa-video .img-video{
+    width: 520px;
+}
