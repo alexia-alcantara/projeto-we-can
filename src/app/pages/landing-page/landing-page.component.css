@@ -16,6 +16,20 @@
 .navbar-nav{
     align-items: center;
 }
+.navbar-nav .nav-link{
+    font: normal normal bold 15px/24px Roboto;
+    color: #E3A716;
+    padding: 0 0.7rem;
+    text-transform: capitalize;
+}
+.navbar-nav .nav-item{
+    padding: 0 0.7rem;
+}
+.navbar-nav .nav-item .nav-login {
+    color: #fff;
+    text-decoration: none;
+    font: normal normal bold 15px/24px Roboto;
+}
 
 .intro-section{
     background: #10312B;
@@ -27,6 +41,10 @@
 .como-funciona h2{
     font: normal normal 300 25px/34px LEMON MILK;
     padding: 3rem;
+}
+
+.como-funciona .columnFunciona{
+    padding: 2rem;
 }
 .como-funciona .icone-cols{
     border: 1px solid #10312B;
@@ -57,6 +75,10 @@
     padding: 3rem;
 }
 
+.para-entender .caixa-btn{
+    padding: 2rem;
+}
+
 .para-entender .caixa-btn h2{
     font: normal normal normal 25px/40px LEMON MILK;
     color: #fff;
@@ -65,7 +87,7 @@
 .para-entender .btn-saiba-mais{
     display: flex;
     justify-content: center;
-    padding: 3rem 0 0rem;
+    padding: 2rem 0 0rem;
 }
 
 :host ::ng-deep .p-button-saiba {
@@ -82,4 +104,65 @@
 
 .para-entender .caixa-video .img-video{
     width: 520px;
+}
+
+.experimente{
+    background: #284641;
+}
+
+.experimente .title{
+    text-align: center;
+}
+.experimente .title h2{
+    font: normal normal 300 25px/34px LEMON MILK;
+    color: #F6B11A;
+}
+.experimente h3{
+    font: italic normal 300 22px/12px Roboto;
+    color: #fff;
+}
+.experimente h4{
+    font: italic normal 300 16px/28px Roboto;
+    color: #fff;
+}
+
+.experimente .gallery{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 210px;
+}
+.experimente>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experimente .gallery .big {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.experimente .gallery .img-big{
+ transition: transform 0.3s ease-in-out;
+}
+
+.experimente .gallery .img-big:hover {
+	filter: opacity(0.9);
+	transform: scale(1.04);
+}
+
+
+
+.experimente .gallery .gallery-button{
+    position: absolute;
+    left: 71%;
+    top: 362%;
+    width: 20%;
+}
+
+:host ::ng-deep .p-button-gallery-saiba{
+    width: 100%;
+    height: 5.2rem;
 }
