@@ -10,18 +10,27 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 
 /* PRIMENG */
 import { ButtonModule } from 'primeng/button';
+import { LoginComponent } from './pages/access/login/login.component';
+import { ForgotPasswordComponent } from './pages/access/forgot-password/forgot-password.component';
+import { RegisterComponent } from './pages/access/register/register.component';
+import { InputMaskModule } from 'primeng/inputmask';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavRoutingComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+    RegisterComponent,
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
+    InputMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

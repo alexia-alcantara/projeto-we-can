@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg menu shadow">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu shadow">
     <div class="container">
         <a class="navbar-brand" href="">
             <img src="/assets/images/logo_langing.svg" alt="logo-we-can" class="logo">
@@ -6,23 +6,26 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-collapse collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="#services">Como funciona</a></li>
-                <li class="nav-item"><a class="nav-link" href="#testimonials">Experimente</a></li>
-                <li class="nav-item"><a class="nav-link" href="#faq">Fale conosco</a></li>
+                <li class="nav-item"><a (click)="onClick('como-funciona')" class="nav-link">Como funciona</a></li>
+                <li class="nav-item"><a (click)="onClick('experimente')" class="nav-link">Experimente</a></li>
+                <li class="nav-item"><a (click)="onClick('fale-conosco')" class="nav-link">Fale conosco</a></li>
 
             </ul>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-login" href="#!">Login</a></li>
-                <li class="nav-item"><a class="nav-login" href="#!">Seja membro</a></li>
+            <ul class="navbar-nav navbar-right ms-auto">
+                <li class="nav-item">
+                    <a class="nav-login" [routerLink]="['/login']">Login</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-login" [routerLink]="['/register']">Seja membro</a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Section one -->
+<!-- Section video -->
 
 <section id="home" class="intro-section">
     <div class="container">
@@ -58,12 +61,14 @@
             <div class="col-lg-4 col-md-12 ">
                 <div class="icone-cols">
                     <img src="assets/images/ic_landing_avaliacao.svg" alt="icone-avaliacao" class="icon-geral">
+
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-12">
                 <div class="icone-cols">
                     <img src="assets/images/ic_landing_credito.svg" alt="icone-avaliacao" class="icon-geral">
+
                 </div>
             </div>
 
@@ -177,7 +182,7 @@
 </section>
 
 <!-- Section quer entender melhor -->
-<section id="entender-melhor" class="entender-melhor">
+<section id="fale-conosco" class="fale-conosco">
     <div class="container">
         <div class="col-12">
             <div class="row">
@@ -223,8 +228,8 @@
 
 <!-- footer -->
 
-<footer>
-    <div class="bg-footer text-center">
+<footer id="fale-conosco">
+    <div class=" bg-footer text-center">
         <div class="container">
             <div class="row">
                 <div class="col-12">

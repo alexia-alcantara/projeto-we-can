@@ -2,7 +2,7 @@
     width: 23vw;
 }
 .navbar{
-    background: #10312B;
+    background: rgb(0 0 0 / 17%);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -21,21 +21,33 @@
     color: #E3A716;
     padding: 0 0.7rem;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .navbar-nav .nav-item{
     padding: 0 0.7rem;
+}
+.navbar-right .nav-item:nth-child(2){
+    border: 1px solid #fff;
+    padding: 5px 15px;
 }
 .navbar-nav .nav-item .nav-login {
     color: #fff;
     text-decoration: none;
     font: normal normal bold 15px/24px Roboto;
+
 }
 
+
 .intro-section{
-    background: #10312B;
-    height: 100%;
-    width: 100%;
-    padding: 19rem;
+    background-image: url(/assets/images/imagem_site.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-top: calc(31rem + 55px);
+    padding-bottom: 10rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .como-funciona h2{
@@ -47,7 +59,7 @@
 }
 
 .como-funciona .columnFunciona{
-    padding: 2rem;
+    padding: 4rem 0 2rem;
 }
 .como-funciona .icone-cols{
     border: 1px solid #10312B;
@@ -170,27 +182,27 @@
     height: 5.2rem;
 }
 
-.entender-melhor{
+.fale-conosco{
     background: #E3A716;
     padding: 2rem;
 }
-.entender-melhor  h2{
+.fale-conosco  h2{
     font: normal normal 300 24px/50px LEMON MILK;
     color: #fff;
 }
-.entender-melhor .text-form{
+.fale-conosco .text-form{
     font: normal normal bold 15px/30px Roboto;
     display: grid;
     color: #fff;
 }
 
-.entender-melhor .campo-form {
+.fale-conosco .campo-form {
     position: relative;
     display: inline-block;
     margin: 20px 10px 10px;
     width: 100%;
 }
-.entender-melhor .campo-form input {
+.fale-conosco .campo-form input {
     font: normal normal bold 15px/20px Roboto;
     padding: 12px;
     border: 1px solid #fff;
@@ -199,18 +211,18 @@
     transition: 1s ease-in-out;
     background: #E3A716;
 }
-.entender-melhor .campo-form label {
+.fale-conosco .campo-form label {
     position: absolute;
     left: 12rem;
     top: 10px;
     color: #fff;
     transition: 0.5s ease;
 }
-.entender-melhor .campo-form input:focus {
+.fale-conosco .campo-form input:focus {
     border-color: #fff;
     outline: none;
 }
-.entender-melhor .campo-form input:focus + label {
+.fale-conosco .campo-form input:focus + label {
     font: normal normal bold 15px/20px Roboto;
     top: -20px;
     color: #888;
@@ -219,7 +231,7 @@
     border-top-left-radius: 3px;
 }
 
-.entender-melhor .campo-form textarea{
+.fale-conosco .campo-form textarea{
     font: normal normal bold 15px/20px Roboto;
     padding: 12px;
     border: 1px solid #fff;
@@ -230,11 +242,11 @@
     background: #E3A716;
     z-index: 1030;
 }
-.entender-melhor .campo-form textarea:focus {
+.fale-conosco .campo-form textarea:focus {
     border-color: #fff;
     outline: none;
 }
-.entender-melhor .campo-form textarea:focus + label{
+.fale-conosco .campo-form textarea:focus + label{
     font: normal normal bold 15px/20px Roboto;
     top: -20px;
     color: #888;
@@ -243,7 +255,7 @@
     border-top-left-radius: 3px;
 }
 
-.entender-melhor .btn-send{
+.fale-conosco .btn-send{
     margin-top: -35px;
 }
 
@@ -266,4 +278,53 @@
 .bg-footer p{
     font: normal normal normal 15px/30px Roboto;
     color: #fff;
+}
+.line-through:after, .line-through:before{
+    content: '';
+    display: table-cell;
+    width: 50%;
+    background: linear-gradient(transparent 50%, currentColor 50%, currentColor calc(50% + 1px), transparent calc(50% + 1px));
+    background-clip: padding;
+}
+.line-through:after {
+    border-left: 1em solid transparent;
+}
+.line-through:before {
+    border-right: 1em solid transparent;
+}
+
+.line-through{
+    font-size: 1.5rem;
+	 color: #57330f;
+
+}
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px){ 
+    .navbar .navbar-brand{
+        margin-left: 0;
+    }
+    .navbar .navbar-brand .logo{
+        width: 50vw;
+    }
+    .experimente .gallery{
+        display: flex;
+        gap: 1.5rem;
+    }
+    .entender-melhor .campo-form input{
+        width: 100%;
+    }
+    .entender-melhor .campo-form label{
+        left: 20px;
+    }
+    .entender-melhor .campo-form textarea{
+        width: 100%;
+        height: auto;
+    }
+    .entender-melhor .campo-form .btn-send{
+        margin: 15px;
+    }
+    :host ::ng-deep .p-button-send{
+        width: 100%;
+    }
 }

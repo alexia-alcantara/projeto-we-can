@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-dark menu shadow">
+    <div class="container">
+        <a class="navbar-brand" href="">
+            <img src="/assets/images/logo_topo_escura.svg" alt="logo-we-can" class="logo"
+                [routerLink]="['/landing-page']">
+        </a>
+    </div>
+</nav>
+
+<section class="container">
+    <div class="col-12 text-center form-login">
+        <div class="row">
+            <h2>Login</h2>
+            <div class="faixa"></div>
+        </div>
+        <form>
+            <div class="mb-2 campo-form">
+                <input type="text" id="name" autocomplete="off" />
+                <label for="name" class="form-label">Usuário</label>
+            </div>
+
+            <div class="mb-2 campo-form">
+                <input type="password" id="inputPassword">
+                <label for="password" class="form-label"> Senha</label>
+            </div>
+
+            <div class="mb-2 campo-form">
+                <button pButton pRipple type="button" label="Login"
+                    class="p-button-outlined p-button-rounded p-button-login"></button>
+            </div>
+
+            <div class="mb-2 campo-form">
+                <span>Esqueceu sua senha?</span> <span [routerLink]="['/forgot-password']"
+                    routerLinkActive="router-link-active">Clique aqui para recuperá-la.</span>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+<!-- section footer -->
+<footer>
+    <div class=" bg-footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/images/logo_rodape.svg" alt="">
+                </div>
+
+                <div class="col-12">
+                    <p>WeCan Imóveis Experience &copy;2022 Todos os direitos reservados</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>

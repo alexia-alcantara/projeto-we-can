@@ -1,10 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 
 @font-face {
-    font-family: Lemon Milk;
+    font-family: Lemon Milk Regular;
     src: url(assets/fonts/LEMONMILK-Regular.otf);
+}
+
+@font-face {
+    font-family: Lemon Milk Light;
+    src: url(assets/fonts/LEMONMILK-Light.otf);
 }
 body{
     overflow-x: hidden;
