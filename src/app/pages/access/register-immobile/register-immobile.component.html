@@ -46,26 +46,131 @@
                         </div>
                     </div>
                 </form>
-
-                <div class="flex justify-content-center btns-save">
-                    <button pButton pRipple type="button" label="Voltar" icon="pi pi-angle-left"
-                        class="p-button-outlined p-button-warning p-button-save-back"></button>
-
-                    <button pButton pRipple type="button" label="Continuar" icon="pi pi-angle-right" iconPos="right"
-                        class="p-button-warning save-continue" routerLink="/register-immobile"></button>
-
-                </div>
             </p-tabPanel>
 
             <p-tabPanel header="Localização">
-                Content 2
+                <form>
+                    <div class="row">
+                        <h5>Localização</h5>
+                    </div>
+
+                    <div class="formgrid grid dados-pessoais">
+                        <div class="field lg:col-3 md:col-3">
+                            <label for="country">País</label>
+                            <p-dropdown [options]="country" [(ngModel)]="selectedCountry" placeholder="Selecione"
+                                optionLabel="name" [ngModelOptions]="{standalone: true}" [showClear]="true">
+                            </p-dropdown>
+                        </div>
+
+                        <div class="field lg:col-2 md:col-2">
+                            <label for="cep" type="text">CEP</label>
+                            <input id="cep" type="text" pInputText>
+                        </div>
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="address" type="text">Endereço</label>
+                            <input id="address" type="text" pInputText>
+                        </div>
+
+                        <div class="field lg:col-3 md:col-3">
+                            <label for="numberAddress" type="text">Número</label>
+                            <input id="numberAddress" type="text" pInputText>
+                        </div>
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="complement" type="text">Complemento</label>
+                            <input id="complement" type="text" pInputText>
+                        </div>
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="neighbourhood" type="text">Bairro</label>
+                            <input id="neighbourhood" type="text" pInputText>
+                        </div>
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="city" type="text">Cidade</label>
+                            <input id="city" type="text" pInputText>
+                        </div>
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="state" type="text">Estado</label>
+                            <input id="state" type="text" pInputText>
+                        </div>
+
+                    </div>
+                </form>
             </p-tabPanel>
+
             <p-tabPanel header="Comodidades">
-                Content 3
+                <form>
+                    <div class="row">
+                        <h5>Comodidades</h5>
+                    </div>
+
+                    <div class="formgrid grid dados-comodidades">
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="localization" type="text">Localização</label>
+                            <input id="localization" type="text" placeholder="Nome do país" pInputText>
+                        </div>
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="experience" type="text">Experiência</label>
+                            <p-dropdown [options]="experience" [(ngModel)]="selectedExperience"
+                                [ngModelOptions]="{standalone: true}" placeholder="Selecione" optionLabel="name"
+                                [showClear]="true"></p-dropdown>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4>Tamanho</h4>
+                    </div>
+
+                    <div class="formgrid grid">
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="qntQuarto" type="text">Quantos quartos?</label>
+                            <p-dropdown [options]="qntQuarto" [(ngModel)]="selectedQuarto" placeholder="2 quartos"
+                                optionLabel="name" [ngModelOptions]="{standalone: true}" [showClear]="true">
+                            </p-dropdown>
+                        </div>
+
+                        <div class="field lg:col-4 md:col-4">
+                            <label for="qntQuarto" type="text">Banheiro</label>
+                            <p-dropdown [options]="qntQuarto" [(ngModel)]="selectedQuarto" placeholder="2 banheiros"
+                                optionLabel="name" [ngModelOptions]="{standalone: true}" [showClear]="true">
+                            </p-dropdown>
+                        </div>
+                    </div>
+
+                    <!-- Amenidades -->
+
+                    <div class="row">
+                        <h4>Amenidades</h4>
+                    </div>
+
+                    <div class="amenidades">
+                        <div *ngFor="let category of categories" class="field-checkbox">
+                            <p-checkbox name="group2" value="category" [value]="category"
+                                [(ngModel)]="selectedCategories" [inputId]="category.name"></p-checkbox>
+                            <label [for]="category.name">{{category.name}}</label>
+                        </div>
+                    </div>
+
+
+                </form>
             </p-tabPanel>
             <p-tabPanel header="Fotos">
                 Content 4
             </p-tabPanel>
+
+            <div class="flex justify-content-center btns-save">
+                <button pButton pRipple type="button" label="Voltar" icon="pi pi-angle-left"
+                    class="p-button-outlined p-button-warning p-button-save-back"></button>
+
+                <button pButton pRipple type="button" label="Continuar" icon="pi pi-angle-right" iconPos="right"
+                    class="p-button-warning save-continue" routerLink="/register-immobile"></button>
+
+            </div>
         </p-tabView>
     </div>
 </div>

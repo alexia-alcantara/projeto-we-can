@@ -8,6 +8,10 @@ h2{
     font: normal normal 300 30px/60px Lemon Milk Light;
     color: #284641;
 }
+h4{
+    border-bottom: 1px solid #F5A800;
+    padding: 0 0 15px;
+}
 h5{
     font: normal normal 300 27px/28px LEMON MILK;
     color: #284641;
@@ -36,6 +40,16 @@ h5{
 ::placeholder{
     font: normal normal normal 15px/15px Roboto;
 }
+
+.dados-comodidades{
+    font:  normal normal bold 17px/20px Roboto;
+    color: #495057;
+}
+
+.amenidades{
+    display: flex;
+}
+
 .btns-save{
     padding: 3rem 0 3rem;
     gap: 1rem;
