@@ -1,0 +1,66 @@
+.navbar{
+    box-shadow: none !important;
+}
+.navbar .navbar-brand .logo{
+    width: 24vw;
+}
+h2{
+    font: normal normal 300 30px/60px Lemon Milk Light;
+    color: #284641;
+}
+h5{
+    font: normal normal 300 27px/28px LEMON MILK;
+    color: #284641;
+    border-bottom: 1px solid #F5A800;
+    padding: 25px 0px 15px;
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav{
+    justify-content: center;
+}
+:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+    text-transform: uppercase;
+    font: normal normal normal 15px/20px LEMON MILK;
+}
+
+:host ::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    color: #284641;
+}
+
+:host ::ng-deep .p-inputtext, :host ::ng-deep .p-dropdown{
+    width: 100%;
+}
+:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder{
+    font: normal normal normal 15px/25px Roboto;
+}
+::placeholder{
+    font: normal normal normal 15px/15px Roboto;
+}
+.btns-save{
+    padding: 3rem 0 3rem;
+    gap: 1rem;
+}
+:host ::ng-deep .p-button-save-back {
+    font: normal normal bold 15px/15px Source Sans Pro ;
+    color: #E3A716 !important;
+    width: 18%;
+}
+:host ::ng-deep .save-continue{
+    font: normal normal bold 15px/25px Source Sans Pro;
+    color: #fff;
+    background: #F5A800;
+    width: 18%;
+}
+:host ::ng-deep .save-continue:enabled:hover{
+    color: #fff;
+}
+
+.bg-footer{
+    background: #111810;
+    height: auto;
+    padding: 1.5rem 0 0rem;
+}
+.bg-footer p{
+    font: normal normal normal 15px/30px Roboto;
+    color: #fff;
+}

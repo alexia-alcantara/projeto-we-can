@@ -1,0 +1,53 @@
+.navbar{
+    box-shadow: none !important;
+}
+.navbar .navbar-brand .logo{
+    width: 24vw;
+}
+
+h2{
+    font: normal normal 300 30px/60px Lemon Milk Light;
+    color: #284641;
+}
+h5{
+    font: normal normal 300 27px/28px LEMON MILK;
+    color: #284641;
+    border-bottom: 1px solid #F5A800;
+    padding: 0px 0px 15px;
+}
+
+:host ::ng-deep .p-inputtext{
+    width: 100%;
+}
+
+.dados-pessoais{
+    margin-bottom: 2.5rem;
+}
+
+.btns-save{
+    padding-bottom: 3rem;
+    gap: 1rem;
+}
+:host ::ng-deep .p-button-save-back {
+    font: normal normal bold 15px/15px Source Sans Pro ;
+    color: #E3A716 !important;
+}
+:host ::ng-deep .save-continue{
+    font: normal normal bold 15px/25px Source Sans Pro;
+    color: #fff;
+    background: #F5A800;
+}
+:host ::ng-deep .save-continue:enabled:hover{
+    color: #fff;
+}
+
+.bg-footer{
+    background: #111810;
+    height: auto;
+    padding: 1.5rem 0 0rem;
+}
+
+.bg-footer p{
+    font: normal normal normal 15px/30px Roboto;
+    color: #fff;
+}

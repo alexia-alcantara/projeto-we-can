@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+interface City {
+  name: string,
+  code: string
+}
 
 @Component({
   selector: 'app-register',
@@ -7,7 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  cities: City[];
+  selectedCity1: City;
+
+  constructor() {
+    this.cities = [
+      { name: 'New York', code: 'NY' },
+      { name: 'Roma', code: 'RM' }
+    ]
+  }
 
   ngOnInit(): void {
   }

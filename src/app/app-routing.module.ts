@@ -1,3 +1,5 @@
+import { RegisterImmobileComponent } from './pages/access/register-immobile/register-immobile.component';
+import { CompleteRegistrationComponent } from './pages/access/complete-registration/complete-registration.component';
 import { RegisterComponent } from './pages/access/register/register.component';
 import { ForgotPasswordComponent } from './pages/access/forgot-password/forgot-password.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
@@ -12,6 +14,8 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'forgot-password', component: ForgotPasswordComponent },
     { path: 'register', component: RegisterComponent },
+    { path: 'complete-registration', component: CompleteRegistrationComponent },
+    { path: 'register-immobile', component: RegisterImmobileComponent },
 
     {
         path: '', loadChildren: () => import('./shared/nav-routing/nav-routing.module').

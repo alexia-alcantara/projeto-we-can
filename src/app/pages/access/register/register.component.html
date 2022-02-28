@@ -40,13 +40,32 @@
             </div>
 
             <div class="mb-2 campo-form">
-                <button pButton pRipple type="button" label="Login"
-                    class="p-button-outlined p-button-rounded p-button-login"></button>
+                <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="País da sua segunda casa"
+                    optionLabel="name" [ngModelOptions]="{standalone: true}" [showClear]="true"></p-dropdown>
             </div>
 
             <div class="mb-2 campo-form">
-                <span>Esqueceu sua senha?</span> <span [routerLink]="['/forgot-password']"
-                    routerLinkActive="router-link-active">Clique aqui para recuperá-la.</span>
+                <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" placeholder="Cidade da sua segunda casa"
+                    optionLabel="name" [ngModelOptions]="{standalone: true}" [showClear]="true"></p-dropdown>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Ao cadastrar-se na We Can, você declara que aceita nossa <span class="privacy policy">Política de
+                        Privacidade e Termos de
+                        Uso</span>
+                </label>
+            </div>
+
+            <div class="mb-2 campo-form">
+                <button pButton pRipple type="button" label="Salvar"
+                    class="p-button-outlined p-button-rounded p-button-login"
+                    routerLink="/complete-registration"></button>
+            </div>
+
+            <div class="mb-2 campo-form">
+                <span>Já possui uma conta?</span> <span [routerLink]="['/login']">Clique aqui para entrar.</span>
             </div>
         </form>
 
