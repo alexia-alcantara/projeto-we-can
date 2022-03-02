@@ -1,16 +1,16 @@
 .logo{
-    width: 23vw;
+    width: 5vw;
 }
 .navbar{
-    background: rgb(0 0 0 / 17%);
+    background: #fff;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 .navbar .container{
-    align-items: flex-end;
+    align-items: center;
 }
 .navbar-brand{
-    margin-right: 4rem;
+    margin-right: 22rem;
     margin-left: -5.5rem;
 }
 .navbar-nav{
@@ -18,7 +18,7 @@
 }
 .navbar-nav .nav-link{
     font: normal normal bold 15px/24px Roboto;
-    color: #E3A716;
+    color: #708380;
     padding: 0 0.7rem;
     text-transform: capitalize;
     cursor: pointer;
@@ -26,13 +26,8 @@
 .navbar-nav .nav-item{
     padding: 0 0.7rem;
 }
-.navbar-right .nav-item:nth-child(2){
-    border: 1px solid #fff;
-    padding: 5px 15px;
-}
-.navbar-nav .nav-item .nav-login {
-    color: #fff;
-    text-decoration: none;
-    font: normal normal bold 15px/24px Roboto;
-
+:host ::ng-deep .p-input-icon-left > .p-inputtext{
+    width: 25rem;
+    border: 1px solid #284641;
+    border-radius: 8px;
 }

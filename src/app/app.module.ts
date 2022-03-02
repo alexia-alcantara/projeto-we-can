@@ -29,6 +29,8 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { TabViewModule } from 'primeng/tabview';
 import { PaginatorModule } from 'primeng/paginator';
+import { ResultsListComponent } from './pages/results-list/results-list.component';
+import { DetailsImmobileComponent } from './pages/results-list/details-immobile/details-immobile.component';
 
 
 @NgModule({
@@ -44,6 +46,8 @@ import { PaginatorModule } from 'primeng/paginator';
     HomeComponent,
     NavbarComponent,
     NavbarRegisterComponent,
+    ResultsListComponent,
+    DetailsImmobileComponent,
   ],
   imports: [
     BrowserModule,
