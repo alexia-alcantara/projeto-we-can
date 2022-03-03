@@ -1,0 +1,62 @@
+.gird-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dadada;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+   
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.gird-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.00);
+}
+   
+   /*-------------Gird style----------*/
+   
+.gird-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap:1px; 
+    padding: 10px;
+    grid-auto-flow: dense; 
+}
+   
+.text{
+    position: absolute;
+    color: white;
+    z-index: 3;
+    text-align: center;
+    margin-top: 20%;
+    
+    margin-left: 35px;
+}
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+
+h2{
+    font: normal normal 300 30px/60px Lemon Milk Light;
+    color: #284641;
+}
+
+.details-panel{
+    display: flex;
+}
+
+.details-panel .header{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
