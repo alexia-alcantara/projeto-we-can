@@ -27,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputMaskModule } from 'primeng/inputmask';
 import { InputTextareaModule } from 'primeng/inputtextarea';
+import { NgxStarRatingModule } from 'ngx-star-rating';
 import { TabViewModule } from 'primeng/tabview';
 import { PaginatorModule } from 'primeng/paginator';
 import { ResultsListComponent } from './pages/results-list/results-list.component';
@@ -61,6 +62,7 @@ import { DetailsImmobileComponent } from './pages/results-list/details-immobile/
     InputTextModule,
     InputMaskModule,
     InputTextareaModule,
+    NgxStarRatingModule,
     DropdownModule,
     ReactiveFormsModule,
     PaginatorModule,

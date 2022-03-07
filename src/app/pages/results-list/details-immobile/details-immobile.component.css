@@ -162,3 +162,63 @@ h6{
 .dados .iconImg{
     width: 50px;
 }
+
+.avaliacao{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.avaliacao span{
+    font: normal normal normal 25px/8px Roboto;
+    text-decoration: underline;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+   
+}
+.stars .numberRating{
+    font: normal normal normal 25px/8px Roboto;
+    margin-inline-start: 0.5rem;
+    text-decoration: none;
+}
+.cont {
+    padding: 1.1rem 0 1.2rem 0rem;
+}
+
+:host ::ng-deep label.star{
+    cursor: pointer;
+}
+:host ::ng-deep input.star:checked ~ label.star:before{
+    color: #E3A716 !important;
+}
+
+.columnImg .month p{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #708380
+
+}
+.columnImg .month p:first-child{
+    font: normal normal bold 15px/15px Roboto;
+    color: #284641;
+}
+
+.comments{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bg-footer{
+    background: #111810;
+    height: auto;
+    padding: 0;
+}
+
+.bg-footer p{
+    font: normal normal normal 15px/30px Roboto;
+    color: #fff;
+}
