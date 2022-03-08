@@ -32,6 +32,8 @@ import { TabViewModule } from 'primeng/tabview';
 import { PaginatorModule } from 'primeng/paginator';
 import { ResultsListComponent } from './pages/results-list/results-list.component';
 import { DetailsImmobileComponent } from './pages/results-list/details-immobile/details-immobile.component';
+import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -49,6 +51,8 @@ import { DetailsImmobileComponent } from './pages/results-list/details-immobile/
     NavbarRegisterComponent,
     ResultsListComponent,
     DetailsImmobileComponent,
+    NavbarLandingComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

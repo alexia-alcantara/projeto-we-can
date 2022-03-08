@@ -211,14 +211,3 @@ h6{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
-.bg-footer{
-    background: #111810;
-    height: auto;
-    padding: 0;
-}
-
-.bg-footer p{
-    font: normal normal normal 15px/30px Roboto;
-    color: #fff;
-}

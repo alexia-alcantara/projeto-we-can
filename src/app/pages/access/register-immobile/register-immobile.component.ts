@@ -48,6 +48,15 @@ export class RegisterImmobileComponent implements OnInit {
   { name: 'Condomínio fechado' }, { name: 'Fire place' },
   { name: 'Home Theater I (televisor / caixa de som / subwoofer / receiver)' },
   { name: 'Home Theater II (televisor / caixa de som)' },
+  { name: 'Internet' },
+  { name: 'Jacuzzi' },
+  { name: 'Lareira' },
+  { name: 'Metrô' },
+  { name: 'Piscina comum' },
+  { name: 'Piscina aquecida' },
+  { name: 'Sauna' },
+  { name: 'Vista espetacular' },
+
   ];
 
   constructor() {

@@ -81,16 +81,6 @@ form{
     margin-right: 5px;
 }
 
-.bg-footer{
-    background: #111810;
-    height: auto;
-    padding: 1.5rem 0 0rem;
-}
-
-.bg-footer p{
-    font: normal normal normal 15px/30px Roboto;
-    color: #fff;
-}
 :host ::ng-deep .p-dropdown{
     width: 70%;
 }

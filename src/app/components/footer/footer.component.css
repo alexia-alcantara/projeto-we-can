@@ -1,0 +1,10 @@
+.bg-footer{
+    background: #111810;
+    height: auto;
+    padding: 1.5rem 0 0.5rem;
+}
+
+.bg-footer p{
+    font: normal normal normal 15px/30px Roboto;
+    color: #fff;
+}
