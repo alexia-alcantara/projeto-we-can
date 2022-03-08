@@ -57,35 +57,64 @@
         <div class="col-12 col-offset-2 col-lg-4">
             <div class="booking">
                 <div class="form">
-                    <h1>Hotel booking</h1>
-                    <p>Location</p>
-                    <div class="wrap">
-                        <input type="text" name="location" class="location" />
+                    <div class="keys">
+                        <img src="/assets/images/ic_chave_lista.svg" alt="chaves" class="icon-key">
+                        <span>0 chaves</span>
                     </div>
+                    <div class="commentary">
+                        <span>5</span>
+                        <p>6 <span>comentários</span></p>
+                    </div>
+
                     <div class="date">
                         <p>Check-in</p>
                         <p>Check-out</p>
 
                         <div class="wrap">
-                            <input id="datepickerIn" name="checkIn" class="checkIn" />
-                            <input id="datepickerOut" name="checkOut" class="checkOut" />
+                            <input type="text" placeholder="dd/mm/aaaa" class="form-control" bsDaterangepicker
+                                [bsConfig]="{ isAnimated: true }">
                         </div>
                     </div>
+
 
                     <div class="rooms">
-                        <p>Room</p>
+                        <div class="wrap form-floating">
+                            <div class="floating-label">
+                                <select class="floating-select" value="">
+                                    <option value=""></option>
+                                    <option value="1">Alabama</option>
+                                    <option value="2">Boston</option>
+                                    <option value="3">Ohaio</option>
+                                    <option value="4">New York</option>
+                                    <option value="5">Washington</option>
+                                </select>
+                                <span class="highlight"></span>
+                                <label>Hóspedes</label>
+                            </div>
 
 
-                        <div class="wrap">
+                            <!-- <button class="button button--addOnLeft">-</button> -->
+                            <!-- <input type="text" class="form-control stepperInput__input" id="floatingInput"
+                                placeholder="Age"> -->
 
-                            <input type="number" name="room" class="room" />
-
+                            <!-- <button class="button button--addOnRight">+</button> -->
                         </div>
                     </div>
+                    <div class="resultKeys">
+                        <p>Seu saldo de chaves: </p>
+                        <img src="/assets/images/ic_chave_lista.svg" alt="chaves" class="icon-key">
+                        <span>0 chaves</span>
+                    </div>
 
-                    <!-- <div class="show-properties">
-                        <p>Show 389 properties</p>
-                    </div> -->
+                    <div class="valueKey">
+                        <p>Nessa troca serão utilizados</p>
+
+                        <span>R$ 00,00 + 0 chaves</span>
+
+                        <button pButton pRipple type="button" label="Quero efetuar a troca"
+                            class="p-button-warning p-buttonSwap"></button>
+
+                    </div>
                 </div>
             </div>
 

@@ -14,7 +14,8 @@ import { RegisterImmobileComponent } from './pages/access/register-immobile/regi
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarRegisterComponent } from './components/navbar-register/navbar-register.component';
-
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 /* PRIMENG */
 import { ButtonModule } from 'primeng/button';
@@ -67,10 +68,12 @@ import { FooterComponent } from './components/footer/footer.component';
     InputMaskModule,
     InputTextareaModule,
     NgxStarRatingModule,
+    TooltipModule,
     DropdownModule,
     ReactiveFormsModule,
     PaginatorModule,
-    TabViewModule
+    TabViewModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

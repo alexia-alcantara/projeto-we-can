@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import * as $ from 'jquery';
+import { setTheme } from 'ngx-bootstrap/utils';
 
 @Component({
   selector: 'app-details-immobile',
@@ -14,6 +15,7 @@ export class DetailsImmobileComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.rating3 = 0;
+    setTheme('bs5');
 
   }
 
