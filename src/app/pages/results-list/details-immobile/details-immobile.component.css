@@ -301,7 +301,6 @@ h6{
     color: #5264AE;
 }
   
-  
   /* active state */
   
   .floating-input:focus~.bar:before,
@@ -381,6 +380,40 @@ h6{
       background: transparent;
     }
   }
+
+:host ::ng-deep .modalAlert{
+    border-radius: 20px;
+}
+
+:host ::ng-deep .modalAlert .p-dialog-header{
+    justify-content: center;
+}
+
+:host ::ng-deep .modalAlert .p-dialog-header .p-dialog-title{
+    font: normal normal 300 14px/36px Lemon Milk Light;
+}
+:host ::ng-deep .modalAlert .p-dialog-header-icons{
+    display: none;
+}
+:host ::ng-deep .modalAlert .p-dialog-header{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+:host ::ng-deep .modalAlert .p-dialog-content p{
+    font: normal normal normal 15px/28px Roboto;
+}
+
+:host ::ng-deep .modalAlert .p-dialog-footer{
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+:host ::ng-deep .modalAlert .p-dialog-footer button{
+    width: 50%;
+    border-radius: 8px;
+}
 /* stepperInput {
     display:flex;
   }

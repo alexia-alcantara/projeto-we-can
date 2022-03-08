@@ -111,7 +111,7 @@
 
                         <span>R$ 00,00 + 0 chaves</span>
 
-                        <button pButton pRipple type="button" label="Quero efetuar a troca"
+                        <button (click)="showModalDialog()" pButton pRipple type="button" label="Quero efetuar a troca"
                             class="p-button-warning p-buttonSwap"></button>
 
                     </div>
@@ -268,6 +268,21 @@
         </div>
     </div>
 </div>
+
+
+<!-- Modal caso o usuário não tenha chaves suficientes -->
+<p-dialog styleClass="modalAlert" header="Alerta!" [(visible)]="displayModal" [modal]="true" [style]="{width: '40vw'}"
+    [draggable]="false" [resizable]="false">
+    <p class="m-0">Este modal é um exemplo: caso o usuário não tenha chaves suficientes para a estadia e ainda assim
+        selecionar o botão "quero efetuar a troca", aparecerá um modal orientando a respeito e sugerindo ou alterar a
+        quantidade de dias ou escolher outro imóvel
+    </p>
+    <ng-template pTemplate="footer">
+        <button pButton pRipple type="button" (click)="displayModal=false" label="Voltar" class="p-button-secondary"
+            routerLink="/confirmar-reserva"></button>
+
+    </ng-template>
+</p-dialog>
 
 <!-- footer -->
 <app-footer></app-footer>

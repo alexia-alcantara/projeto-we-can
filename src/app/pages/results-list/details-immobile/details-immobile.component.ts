@@ -12,6 +12,11 @@ export class DetailsImmobileComponent implements OnInit {
 
   rating3: number;
   public form: FormGroup;
+  displayModal: boolean;
+
+  showModalDialog() {
+    this.displayModal = true;
+  }
 
   constructor(private fb: FormBuilder) {
     this.rating3 = 0;

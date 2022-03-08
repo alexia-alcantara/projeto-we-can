@@ -22,6 +22,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { CheckboxModule } from 'primeng/checkbox';
 import { DataViewModule } from 'primeng/dataview';
+import { DialogModule } from 'primeng/dialog';
 
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -35,6 +36,7 @@ import { ResultsListComponent } from './pages/results-list/results-list.componen
 import { DetailsImmobileComponent } from './pages/results-list/details-immobile/details-immobile.component';
 import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ConfirmReservationComponent } from './pages/results-list/confirm-reservation/confirm-reservation.component';
 
 
 @NgModule({
@@ -54,6 +56,7 @@ import { FooterComponent } from './components/footer/footer.component';
     DetailsImmobileComponent,
     NavbarLandingComponent,
     FooterComponent,
+    ConfirmReservationComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +66,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CardModule,
     CheckboxModule,
     DataViewModule,
+    DialogModule,
     FormsModule,
     InputTextModule,
     InputMaskModule,
