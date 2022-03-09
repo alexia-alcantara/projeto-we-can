@@ -3,30 +3,72 @@
 <div class="container confirmation">
     <div class="title-header">
         <i class="pi pi-angle-left"></i>
-        <span>Confirmação</span>
+        <h2>Confirmação</h2>
     </div>
 
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-12">
             <div class="row">
                 <h3>Sua troca</h3>
+            </div>
+            <div class="column">
                 <h4>Data</h4>
+                <h5>Editar</h5>
                 <p>00 do mês de 2022 - 00 do mês de 2022</p>
             </div>
 
-            <div class="row">
-                <h3>Hóspedes</h3>
+            <div class="column">
+                <h4>Hóspedes</h4>
+                <h5>Editar</h5>
                 <p>000 hóspedes</p>
             </div>
-
-            <div class="row">
-                <h3>Valores</h3>
+            <div class="column2">
+                <h4>Valores</h4>
                 <p>R$ 00,00 + 0 chaves</p>
             </div>
         </div>
 
-        <div class="col-lg-6">
-            Aqui vem a imagem
+        <div class="col-lg-6 col-md-12">
+            <p-card styleClass="cardsPanel">
+                <div class="row cardDescription">
+                    <div class="col-lg-12">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+
+                    <div class="col-lg-12">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                        <p>Campo - Localização - 00 quartos
+                            - 00 suítes - 00 hóspedes -
+                        </p>
+                        <div class="key-number">
+                            <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </p-card>
+
+            <div class="row">
+                <div class="form-check contrato">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Ao clicar no botão abaixo, você concorda com o Contrato de Hospedagem, disponível
+                        para visualização e download:
+                    </label>
+                </div>
+
+                <div class="btns">
+                    <div class="col-lg-6">
+                        <button pButton pRipple type="button" label="Ver contrato" icon="pi pi-file-pdf" iconPos="right"
+                            class="p-button-warning showPDF"></button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button pButton pRipple type="button" label="Confirmar troca" icon="pi pi-angle-right"
+                            iconPos="right" class="p-button-warning verMais"></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
