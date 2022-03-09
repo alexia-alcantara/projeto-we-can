@@ -37,6 +37,7 @@ import { DetailsImmobileComponent } from './pages/results-list/details-immobile/
 import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ConfirmReservationComponent } from './pages/results-list/confirm-reservation/confirm-reservation.component';
+import { PaymentComponent } from './pages/results-list/confirm-reservation/payment/payment.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { ConfirmReservationComponent } from './pages/results-list/confirm-reserv
     NavbarLandingComponent,
     FooterComponent,
     ConfirmReservationComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,

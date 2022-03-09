@@ -1,0 +1,37 @@
+.payment{
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+.payment .title-header{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+:host ::ng-deep .pi-angle-left{
+    font-size: 2.2rem
+}
+
+h2{
+    font: normal normal 300 30px/64px Lemon Milk Light;
+    margin-bottom: 0;
+}
+
+:host ::ng-deep .p-inputmask, .p-inputtext{
+    width: 100%;
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+
+:host ::ng-deep .return, .continue{
+    width: 176px;
+    height: 45px;
+    background: #F5A800;
+    color: #fff;
+    font: normal normal bold 16px/15px Source Sans Pro;
+}

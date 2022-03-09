@@ -1,0 +1,51 @@
+<div class="container payment">
+    <div class="title-header">
+        <i class="pi pi-angle-left"></i>
+        <h2>Confirmação</h2>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-4">
+            <span>Número do cartão</span>
+            <p-inputMask mask="9999-9999-9999" [(ngModel)]="val1"></p-inputMask>
+        </div>
+
+        <div class="col-lg-3">
+            <span>Data de validade</span>
+            <p-inputMask mask="99/99/9999" [(ngModel)]="val1" slotChar="dd/mm/yyyy"></p-inputMask>
+        </div>
+
+        <div class="col-lg-3">
+            <span>Código de segurança (CVV)</span>
+            <p-inputMask mask="999" [(ngModel)]="val1"></p-inputMask>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <span>Nome do titular do cartão</span>
+                <input type="text" pInputText [(ngModel)]="value2">
+            </div>
+
+            <div class="col-lg-3">
+                <span>Data de validade</span>
+                <p-inputMask mask="99/99/9999" [(ngModel)]="val1" slotChar="dd/mm/yyyy"></p-inputMask>
+            </div>
+
+            <div class="col-lg-3">
+                <span>CPF</span>
+                <p-inputMask mask="999.999.999-99" [(ngModel)]="val1"></p-inputMask>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 btns">
+        <button pButton pRipple type="button" label="Voltar" icon="pi pi-angle-left"
+            class="p-button-warning return"></button>
+        <button pButton pRipple type="button" label="Continuar" icon="pi pi-angle-right" iconPos="right"
+            class="p-button-warning continue"></button>
+    </div>
+</div>
+
+<!-- footer -->
+<app-footer></app-footer>
