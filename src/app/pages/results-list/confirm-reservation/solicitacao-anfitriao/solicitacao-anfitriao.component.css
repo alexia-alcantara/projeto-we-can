@@ -1,0 +1,133 @@
+.anfitriao{
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+h2{
+    font: normal normal 300 30px/64px Lemon Milk Light;
+    margin-bottom: 0;
+}
+hr{
+    width: 50%;
+    margin: 0rem 16rem;
+    color: #F5A800;
+    opacity: 1;
+    height: 2px;
+}
+
+.logo-aguardando{
+    width: 91px;
+}
+
+.message p{
+    padding: 0 5rem 1.2rem;
+    text-align: center;
+    font: normal normal normal 23px/40px Roboto;
+    border-bottom: 1px solid #F5A800;
+    opacity: 1;
+    border-bottom-width: 2px;
+}
+
+.columnDetalheTroca h3{
+    font: normal normal bold 28px/75px Roboto;
+}
+.columnDetalheTroca h4{
+    font: normal normal bold 22px/58px Roboto;
+}
+.columnDetalheTroca h5{
+    font: normal normal bold 19px/18px Roboto;
+    text-decoration: underline;
+}
+
+.columnDetalheTroca p{
+    font: normal normal normal 15px/25px Roboto;
+    color: #708380;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 80px;
+}
+.column2{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+:host ::ng-deep .cardsPanel{
+    margin-top: 3rem;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #FFFFFF;
+    border-radius: 13px;
+    margin-bottom: 2em;
+    width: 100%;
+    height: auto;
+}
+
+:host ::ng-deep .cardsPanel h4{
+    font: normal normal 300 20px/50px Lemon Milk Light;
+}
+:host ::ng-deep .cardsPanel h5{
+    font: normal normal 300 15px/40px Lemon Milk Light;
+}
+:host ::ng-deep .cardsPanel p {
+    margin-bottom: 0;
+    font: normal normal normal 15px/25px Roboto;
+    color: #708380;
+}
+:host ::ng-deep .cardsPanel .p-card-body{
+    padding: 0rem 1rem 0 0rem;
+}
+:host ::ng-deep .p-card-content{
+    padding: 0rem 0rem 0rem;
+}
+:host ::ng-deep .cardDescription{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.foto-imovel{
+    width: 290px;
+}
+.icon-key{
+    width: 70px;
+    height: 60px;
+}
+.contrato span{
+    color: #0482FF;
+    font: normal normal bold 15px/27px Roboto;
+}
+:host ::ng-deep .p-button-secondary{
+    border-radius: 8px;
+    background: #708380;
+    border-color: #708380;
+}
+
+:host ::ng-deep .p-button-secondary:enabled:hover{
+    background: #56717d;
+    color: #ffffff;
+    border-color: #56717d;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px){
+    hr{
+        margin: 0 1rem;
+        width: 90%;
+    }
+    .message p{
+        padding: 0px 10px 10px;
+        font: normal normal normal 15px/37px Roboto;
+    }
+    .columnDetalheTroca h5{
+        font: normal normal bold 19px/60px Roboto;
+    }
+    :host ::ng-deep .cardsPanel .p-card-body{
+        padding: 0;
+    }
+    :host ::ng-deep .cardsPanel .cardDescription{
+        display: block;
+        padding: 0 0px 0 3px;
+    }
+    .form-check{
+        padding-left: 2.2rem;
+    }
+}

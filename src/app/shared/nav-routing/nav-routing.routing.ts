@@ -1,3 +1,4 @@
+import { SolicitacaoAnfitriaoComponent } from './../../pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
 import { NavbarComponent } from './../../components/navbar/navbar.component';
 import { ConfirmReservationComponent } from './../../pages/results-list/confirm-reservation/confirm-reservation.component';
 import { DetailsImmobileComponent } from './../../pages/results-list/details-immobile/details-immobile.component';
@@ -15,7 +16,8 @@ export const NavigationRouting: Routes = [
             { path: 'lista-resultados', component: ResultsListComponent },
             { path: 'detalhe-imovel', component: DetailsImmobileComponent },
             { path: 'confirmar-reserva', component: ConfirmReservationComponent },
-            { path: 'pagamento', component: PaymentComponent }
+            { path: 'pagamento', component: PaymentComponent },
+            { path: 'solicitacao-anfitriao', component: SolicitacaoAnfitriaoComponent }
         ]
     }
 ]
