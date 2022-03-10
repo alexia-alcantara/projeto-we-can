@@ -1,36 +1,33 @@
-<div class="main-content">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu shadow">
-        <div class="container">
-            <a class="navbar-brand" href="">
-                <img src="/assets/images/logo_topo.svg" alt="logo-we-can" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="navbar-collapse collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <span class="p-input-icon-left">
-                        <i class="pi pi-search"></i>
-                        <input type="text" pInputText placeholder="Para onde?" [(ngModel)]="value3" />
-                    </span>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top menu shadow">
+    <div class="container">
+        <a class="navbar-brand" href="">
+            <img src="/assets/images/logo_topo.svg" alt="logo-we-can" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input type="text" pInputText placeholder="Para onde?" [(ngModel)]="value3" />
+                </span>
 
-                </ul>
-                <ul class="navbar-nav navbar-right ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Olá, Alexia
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Usuario 1</a></li>
-                            <li><a class="dropdown-item" href="#">Usuario 2</a></li>
-                            <li><a class="dropdown-item" href="#">Usuario 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            </ul>
+            <ul class="navbar-nav navbar-right ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Olá, Alexia
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Usuario 1</a></li>
+                        <li><a class="dropdown-item" href="#">Usuario 2</a></li>
+                        <li><a class="dropdown-item" href="#">Usuario 3</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <router-outlet></router-outlet>
-
-</div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

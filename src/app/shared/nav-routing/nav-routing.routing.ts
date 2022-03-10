@@ -1,3 +1,4 @@
+import { PerfilComponent } from './../../pages/perfil/perfil.component';
 import { ReservationCompletedComponent } from './../../pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
 import { SolicitacaoAnfitriaoComponent } from './../../pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
 import { NavbarComponent } from './../../components/navbar/navbar.component';
@@ -19,7 +20,8 @@ export const NavigationRouting: Routes = [
             { path: 'confirmar-reserva', component: ConfirmReservationComponent },
             { path: 'pagamento', component: PaymentComponent },
             { path: 'solicitacao-anfitriao', component: SolicitacaoAnfitriaoComponent },
-            { path: 'reserva-concluida', component: ReservationCompletedComponent }
+            { path: 'reserva-concluida', component: ReservationCompletedComponent },
+            { path: 'perfil', component: PerfilComponent }
         ]
     }
 ]

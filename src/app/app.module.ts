@@ -40,6 +40,7 @@ import { ConfirmReservationComponent } from './pages/results-list/confirm-reserv
 import { PaymentComponent } from './pages/results-list/confirm-reservation/payment/payment.component';
 import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
 import { ReservationCompletedComponent } from './pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { ReservationCompletedComponent } from './pages/results-list/confirm-rese
     PaymentComponent,
     SolicitacaoAnfitriaoComponent,
     ReservationCompletedComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

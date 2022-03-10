@@ -15,4 +15,6 @@
 body{
     overflow-x: hidden;
 }
-
+body, html{
+    height: 100%;
+}
