@@ -39,6 +39,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ConfirmReservationComponent } from './pages/results-list/confirm-reservation/confirm-reservation.component';
 import { PaymentComponent } from './pages/results-list/confirm-reservation/payment/payment.component';
 import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
+import { ReservationCompletedComponent } from './pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-rese
     ConfirmReservationComponent,
     PaymentComponent,
     SolicitacaoAnfitriaoComponent,
+    ReservationCompletedComponent,
   ],
   imports: [
     BrowserModule,
