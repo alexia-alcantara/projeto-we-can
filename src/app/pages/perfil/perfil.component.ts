@@ -27,11 +27,25 @@ export class PerfilComponent implements OnInit {
   private listarItens() {
     this.itens = [
       {
-        action: "Ação",
-        howDays: "Qnts Dias",
-        period: "Período",
-        idImmobile: "Imóvel",
-        keys: "Chaves",
+        action: "Troca",
+        howDays: "3",
+        period: "DD/MM/AAAA A DD/MM/AAAA",
+        idImmobile: "CÓDIGO DO IMÓVEL",
+        keys: " 3",
+      },
+      {
+        action: "Troca",
+        howDays: "3",
+        period: "DD/MM/AAAA A DD/MM/AAAA",
+        idImmobile: "CÓDIGO DO IMÓVEL",
+        keys: " 3",
+      },
+      {
+        action: "Troca",
+        howDays: "3",
+        period: "DD/MM/AAAA A DD/MM/AAAA",
+        idImmobile: "CÓDIGO DO IMÓVEL",
+        keys: " 3",
       }
     ]
   }

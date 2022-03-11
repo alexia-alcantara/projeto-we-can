@@ -18,3 +18,35 @@ body{
 body, html{
     height: 100%;
 }
+
+.pi-angle-double-left::before{
+    /* color: red; */
+    content: "";
+    background-image: url("/assets/images/Icon_awesome-step-backward.svg");
+    position: absolute;
+    left: 17px;
+    top: 11px;
+    height: 17px;
+    width: 13px;
+  }
+  
+  .pi-angle-double-right:before{
+    content: "";
+    background-image: url("/assets/images/Icon_awesome-step-backward-1.svg");
+    position: absolute;
+    left: 17px;
+    top: 11px;
+    height: 17px;
+    width: 13px;
+  }
+  
+  .p-paginator-pages .p-paginator-page.p-highlight{
+    background: #708380 !important;
+    border-color: #E3F2FD !important;
+    color: white !important;
+    border-radius: 8px !important;
+    height: 30px !important;
+    width: 30px !important;
+    min-width: 30px !important;
+  }
+  
