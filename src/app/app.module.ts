@@ -14,8 +14,16 @@ import { RegisterImmobileComponent } from './pages/access/register-immobile/regi
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarRegisterComponent } from './components/navbar-register/navbar-register.component';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
+import { ResultsListComponent } from './pages/results-list/results-list.component';
+import { DetailsImmobileComponent } from './pages/results-list/details-immobile/details-immobile.component';
+import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ConfirmReservationComponent } from './pages/results-list/confirm-reservation/confirm-reservation.component';
+import { PaymentComponent } from './pages/results-list/confirm-reservation/payment/payment.component';
+import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
+import { ReservationCompletedComponent } from './pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
+import { PerfilComponent } from './pages/perfil/perfil.component';
 
 /* PRIMENG */
 import { ButtonModule } from 'primeng/button';
@@ -31,16 +39,10 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { TabViewModule } from 'primeng/tabview';
+import { TableModule } from 'primeng/table';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { PaginatorModule } from 'primeng/paginator';
-import { ResultsListComponent } from './pages/results-list/results-list.component';
-import { DetailsImmobileComponent } from './pages/results-list/details-immobile/details-immobile.component';
-import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ConfirmReservationComponent } from './pages/results-list/confirm-reservation/confirm-reservation.component';
-import { PaymentComponent } from './pages/results-list/confirm-reservation/payment/payment.component';
-import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
-import { ReservationCompletedComponent } from './pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
-import { PerfilComponent } from './pages/perfil/perfil.component';
 
 
 @NgModule({
@@ -81,6 +83,7 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
     InputTextareaModule,
     NgxStarRatingModule,
     TooltipModule,
+    TableModule,
     DropdownModule,
     ReactiveFormsModule,
     PaginatorModule,
