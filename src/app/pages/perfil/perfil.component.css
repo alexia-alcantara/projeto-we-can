@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    font: normal normal normal 16px/15px Roboto;
+    font: normal normal normal 15px/15px Roboto;
     color: #212121;
     text-align: left;
     padding: 15px 12px;
@@ -67,6 +67,7 @@ h3{
 .column-1{
     background: #F5F5F5;
     height: 100vw;
+    width: 100%;
 }
 .column-2{
     background-color: #fff;

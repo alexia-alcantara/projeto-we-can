@@ -1,0 +1,40 @@
+.container{
+    padding: 1.6rem;
+}
+h2{
+    font: normal normal 300 25px/53px Lemon Milk Light;
+    text-transform: capitalize;
+    color: #284641;
+}
+
+:host ::ng-deep .p-dropdown{
+    width: 100%;
+}
+:host ::ng-deep .p-btn-add{
+    background: #E3A716;
+    border-color: #E3A716;
+    color: #fff;
+    opacity: 1;
+    border-radius: 8px;
+}
+:host ::ng-deep .p-btn-add:enabled:hover{
+    background: #f0af0ccc;
+    color: #fff;
+    border-color: #f0af0ccc;
+}
+
+.divider{
+    display: flex;
+}
+.divider .status{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto-imovel{
+    width: 189px;
+    height: 130px;
+}
+.icon-key{
+    width: 70px;
+}

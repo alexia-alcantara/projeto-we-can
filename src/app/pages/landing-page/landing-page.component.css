@@ -12,10 +12,15 @@
 }
 
 .como-funciona h2{
-    font: normal normal 300 25px/34px LEMON MILK;
+    font: normal normal 300 25px/53px Lemon Milk Light;
     padding: 3rem;
 }
-.como-funciona h3, p{
+.como-funciona h3{
+    font: normal normal bold 28px/30px Roboto;
+    text-align: center;
+}
+.como-funciona p{
+    font: normal normal normal 16px/25px Roboto;;
     text-align: center;
 }
 
@@ -39,19 +44,19 @@
 .como-funciona .icone-cols span::after{
     content: "";
     position: absolute;
-    top: 149%;
+    top: 4.5rem;
     width: 299%;
-    height: 141px;
-    left: 142%;
+    height: 140px;
+    left: 4rem;
     background-image: url(/assets/images/linha_1.svg);
 }
 .como-funciona .icone-cols span::before{
     content: "";
     position: absolute;
-    top: 200%;
+    top: 5.2rem;
     width: 299%;
     height: 144px;
-    left: 1075%;
+    left: 37rem;
     background-image: url(/assets/images/linha_1.svg);
     transform: rotate(82deg);
 }
@@ -59,20 +64,20 @@
 .como-funciona .icone-cols .line2::after{
     content: "";
     position: absolute;
-    top: 153%;
+    top: 5.1rem;
     width: 299%;
-    height: 117px;
-    left: 100%;
+    height: 118px;
+    left: 3.5rem;
     background-image: url(/assets/images/linha_1.svg);
     transform: rotate(6deg);
 }
 .como-funciona .icone-cols .line2::before{
     content: "";
     position: absolute;
-    top: 171%;
+    top: 5.9rem;
     width: 299%;
-    height: 125px;
-    left: -259%;
+    height: 126px;
+    left: -9rem;
     background-image: url(/assets/images/linha_1.svg);
     transform: rotate(74deg);
 }
@@ -104,6 +109,11 @@
 .para-entender{
     background: #E3A716;
     padding: 3rem;
+}
+.para-entender h1{
+    font: normal normal normal 30px/50px LEMON MILK Regular;
+    color: #fff;
+    opacity: 1;
 }
 
 .para-entender .caixa-btn{
@@ -146,7 +156,7 @@
     text-align: center;
 }
 .experimente .title h2{
-    font: normal normal 300 25px/34px LEMON MILK;
+    font: normal normal 300 25px/34px LEMON MILK Light;
     color: #F6B11A;
 }
 .experimente h3{
@@ -203,7 +213,7 @@
     padding: 2rem;
 }
 .fale-conosco  h2{
-    font: normal normal 300 24px/50px LEMON MILK;
+    font: normal normal 300 24px/50px LEMON MILK Light;
     color: #fff;
 }
 .fale-conosco .text-form{
@@ -387,4 +397,86 @@
     .como-funciona .icone-cols .line2::before{
         display: none;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .como-funciona .icone-cols span::after,
+    .como-funciona .icone-cols span::before{
+        display: none;
+    }
+    .como-funciona .icone-cols .line2::after,
+    .como-funciona .icone-cols .line2::before{
+        display: none;
+    }
+    .como-funciona .caixaIcone{
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+    .como-funciona .icone-cols span::after{
+        top: 188%;
+        width: 299%;
+        height: 132px;
+        left: 113%;
+    }
+    .como-funciona .icone-cols span::before{
+        top: 279%;
+        height: 115px;
+        left: 922%;
+        transform: rotate(76deg);
+    }
+    .como-funciona .icone-cols .line2::before{
+        top: 210%;
+        height: 106px;
+        left: -216%;
+        transform: rotate(74deg);
+    }
+    .como-funciona .icone-cols .line2::after{
+        top: 153%;
+        height: 117px;
+        left: 100%;
+        transform: rotate(6deg);
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 2560px){
+.como-funciona .icone-cols span::after{
+    top: 88%;
+    height: 139px;
+    left: 164%;
+    transform: rotate(354deg);
+}
+.como-funciona .icone-cols span::before{
+    top: 190%;
+    height: 126px;
+    left: 1287%;
+    transform: rotate(89deg);
+}
+.como-funciona .icone-cols span::before{
+    top: 186%;
+    height: 127px;
+    left: 1287%;
+    transform: rotate(89deg);
+}
+.como-funciona .icone-cols .line2::before{
+    top: 181%;
+    height: 106px;
+    left: -269%;
+    transform: rotate(85deg);
+}
+.como-funciona .icone-cols .line2::after{
+    top: 100%;
+    height: 114px;
+    left: 146%;
+    transform: rotate(356deg);
+}
+
+.como-funciona .columnFunciona {
+    padding: 1rem 0 2rem;
+}
+.como-funciona .caixaIcone{
+    padding-left: 9rem;
+}
 }

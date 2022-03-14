@@ -1,6 +1,6 @@
 <div class=" perfil">
     <div class="main">
-        <div class="col-lg-3 col-md-3">
+        <div class="col-lg-2 col-md-2">
             <div class="column-1">
                 <ul class="vertical-menu">
                     <li (click)="viewMode ='tab1'" [ngClass]="{'active':viewMode =='tab1'}">
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <div class="col-lg-9 col-md-9">
+        <div class="col-lg-10 col-md-10">
             <div class="column-2" [ngSwitch]="viewMode">
                 <div *ngSwitchCase="'tab1'">
                     <div class="mainColumn row">
@@ -227,30 +227,24 @@
                             </tr>
                         </ng-template>
                     </p-table>
-                    <!-- <div *ngSwitchCase="'tab2'">
-                        <h2>Tabs 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat velit saepe
-                            repudiandae obcaecati! Hic dicta harum autem odio amet dignissimos doloribus, quae,
-                            reprehenderit ratione, ea nulla molestias repellat ut!</p>
-                    </div>
-                    <div *ngSwitchCase="'tab3'">
-                        <h2>Tabs 3</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat velit saepe
-                            repudiandae obcaecati! Hic dicta harum autem odio amet dignissimos doloribus, quae,
-                            reprehenderit ratione, ea nulla molestias repellat ut!</p>
-                    </div>
-                    <div *ngSwitchCase="'tab4'">
-                        <h2>Tabs 4</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat velit saepe
-                            repudiandae obcaecati! Hic dicta harum autem odio amet dignissimos doloribus, quae,
-                            reprehenderit ratione, ea nulla molestias repellat ut!</p>
-                    </div>
-                    <div *ngSwitchCase="'tab5'">
-                        <h2>Tabs 5</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat velit saepe
-                            repudiandae obcaecati! Hic dicta harum autem odio amet dignissimos doloribus, quae,
-                            reprehenderit ratione, ea nulla molestias repellat ut!</p>
-                    </div> -->
+                </div>
+                <div *ngSwitchCase="'tab2'">
+                    <app-request-swap></app-request-swap>
+                </div>
+                <div *ngSwitchCase="'tab3'">
+                    <app-immobile></app-immobile>
+                </div>
+                <div *ngSwitchCase="'tab4'">
+                    <h2>Tabs 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat velit saepe
+                        repudiandae obcaecati! Hic dicta harum autem odio amet dignissimos doloribus, quae,
+                        reprehenderit ratione, ea nulla molestias repellat ut!</p>
+                </div>
+                <div *ngSwitchCase="'tab5'">
+                    <h2>Tabs 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat velit saepe
+                        repudiandae obcaecati! Hic dicta harum autem odio amet dignissimos doloribus, quae,
+                        reprehenderit ratione, ea nulla molestias repellat ut!</p>
                 </div>
             </div>
         </div>

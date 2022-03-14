@@ -19,6 +19,10 @@ body, html{
     height: 100%;
 }
 
+.p-dropdown .p-dropdown-label.p-placeholder{
+  font: normal normal bold 16px/25px Roboto;
+  color: #707070;
+}
 .pi-angle-double-left::before{
     /* color: red; */
     content: "";

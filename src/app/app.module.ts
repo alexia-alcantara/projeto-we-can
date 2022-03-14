@@ -24,6 +24,7 @@ import { PaymentComponent } from './pages/results-list/confirm-reservation/payme
 import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
 import { ReservationCompletedComponent } from './pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { RequestSwapComponent } from './pages/perfil/request-swap/request-swap.component';
 
 /* PRIMENG */
 import { ButtonModule } from 'primeng/button';
@@ -43,6 +44,8 @@ import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { PaginatorModule } from 'primeng/paginator';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { ImmobileComponent } from './pages/perfil/immobile/immobile.component';
 
 
 @NgModule({
@@ -67,6 +70,8 @@ import { PaginatorModule } from 'primeng/paginator';
     SolicitacaoAnfitriaoComponent,
     ReservationCompletedComponent,
     PerfilComponent,
+    RequestSwapComponent,
+    ImmobileComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,6 +92,7 @@ import { PaginatorModule } from 'primeng/paginator';
     DropdownModule,
     ReactiveFormsModule,
     PaginatorModule,
+    SelectButtonModule,
     TabViewModule,
     BsDatepickerModule.forRoot()
   ],

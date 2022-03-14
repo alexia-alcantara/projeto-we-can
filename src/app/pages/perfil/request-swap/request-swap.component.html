@@ -1,0 +1,108 @@
+<div class="container">
+    <div class="row">
+        <h2>Solicitações de troca</h2>
+        <div class="faixa"></div>
+    </div>
+
+    <p-card>
+        <div class="row cardsPanel">
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                        <div class="key-number">
+                            <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-4">
+                <div class="checkin">
+                    <h4>Checkin</h4>
+                    <p>dd/mm/aaaa</p>
+
+                    <h4>Checkin</h4>
+                    <p>dd/mm/aaaa</p>
+
+                    <h4>Hóspedes</h4>
+                    <p>Nome do Hóspede</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="row confirmTroca">
+                    <h3>Confirma troca?</h3>
+                </div>
+
+                <div class="row mb-3">
+                    <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label"
+                        optionValue="value">
+                    </p-selectButton>
+                </div>
+
+                <div class="row">
+                    <button pButton pRipple type="button" label="Ver detalhes do imóvel" icon="pi pi-angle-right"
+                        iconPos="right" class="p-button-secondary"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row cardsPanel">
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                        <div class="key-number">
+                            <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-4">
+                <div class="checkin">
+                    <h4>Checkin</h4>
+                    <p>dd/mm/aaaa</p>
+
+                    <h4>Checkin</h4>
+                    <p>dd/mm/aaaa</p>
+
+                    <h4>Hóspedes</h4>
+                    <p>Nome do Hóspede</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="row confirmTroca">
+                    <h3>Confirma troca?</h3>
+                </div>
+
+                <div class="row mb-3">
+                    <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label"
+                        optionValue="value">
+                    </p-selectButton>
+                </div>
+
+                <div class="row">
+                    <button pButton pRipple type="button" label="Ver detalhes do imóvel" icon="pi pi-angle-right"
+                        iconPos="right" class="p-button-secondary"></button>
+                </div>
+
+            </div>
+        </div>
+    </p-card>
+</div>
