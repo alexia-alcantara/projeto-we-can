@@ -1,3 +1,4 @@
+import { PerfilRoutingModule } from './pages/perfil/perfil.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,8 +24,6 @@ import { ConfirmReservationComponent } from './pages/results-list/confirm-reserv
 import { PaymentComponent } from './pages/results-list/confirm-reservation/payment/payment.component';
 import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
 import { ReservationCompletedComponent } from './pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
-import { PerfilComponent } from './pages/perfil/perfil.component';
-import { RequestSwapComponent } from './pages/perfil/request-swap/request-swap.component';
 
 /* PRIMENG */
 import { ButtonModule } from 'primeng/button';
@@ -45,7 +44,6 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { PaginatorModule } from 'primeng/paginator';
 import { SelectButtonModule } from 'primeng/selectbutton';
-import { ImmobileComponent } from './pages/perfil/immobile/immobile.component';
 
 
 @NgModule({
@@ -69,9 +67,6 @@ import { ImmobileComponent } from './pages/perfil/immobile/immobile.component';
     PaymentComponent,
     SolicitacaoAnfitriaoComponent,
     ReservationCompletedComponent,
-    PerfilComponent,
-    RequestSwapComponent,
-    ImmobileComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,6 +82,7 @@ import { ImmobileComponent } from './pages/perfil/immobile/immobile.component';
     InputMaskModule,
     InputTextareaModule,
     NgxStarRatingModule,
+    PerfilRoutingModule,
     TooltipModule,
     TableModule,
     DropdownModule,

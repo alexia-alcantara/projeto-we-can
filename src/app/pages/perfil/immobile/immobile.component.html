@@ -5,37 +5,121 @@
         </div>
 
         <div class="col-lg-4">
-            <p-dropdown [options]="status" [(ngModel)]="selectedTypeStatus" placeholder="Filtrar por status"
-                optionLabel="name" [showClear]="true"></p-dropdown>
+            <p-dropdown [options]="status" [(ngModel)]="selectedTypeStatus" ngDefaultControl
+                placeholder="Filtrar por status" optionLabel="name" [showClear]="true"></p-dropdown>
         </div>
 
         <div class="col-lg-3 col-offset-2">
             <button pButton pRipple type="button" label="Adicionar imóvel" icon="pi pi-plus"
-                class="p-button-warning p-btn-add"></button>
+                class="p-button-warning p-btn-add" routerLink="/register-immobile"></button>
 
         </div>
     </div>
 
     <p-card>
         <div class="divider">
-            <div class="col-lg-4">
-                <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
-                <h4>Título do Imóvel</h4>
-                <h5>Código</h5>
-                <div class="key-number">
-                    <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
-                    <span>0</span>
-                </div>
+            <div class="col-lg-5">
+                <section class="imovel grid-template-areas-2">
+                    <div class="item logo">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+
+                    <div class="item content">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                    </div>
+
+                    <div class="item sidenav">
+                        <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                        <span>0</span>
+                    </div>
+                </section>
             </div>
 
             <div class="col-lg-4">
                 <p>Campo - Localização - 00 quartos - 00 suítes - 00 hóspedes -</p>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="status">
-                    <p>Aprovado</p>
-                    <p>btn</p>
+                    <div class="row">
+                        <p>Status do imóvel</p>
+                        <p>Aprovado</p>
+                    </div>
+                    <button pButton pRipple type="button" label="Ver dados" icon="pi pi-angle-right" iconPos="right"
+                        class="p-button-secondary" routerLink="/detalhe-do-imovel">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <div class="col-lg-5">
+                <section class="imovel grid-template-areas-2">
+                    <div class="item logo">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+
+                    <div class="item content">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                    </div>
+
+                    <div class="item sidenav">
+                        <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                        <span>0</span>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <p>Campo - Localização - 00 quartos - 00 suítes - 00 hóspedes -</p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="status">
+                    <div class="row">
+                        <p>Status do imóvel</p>
+                        <p>Aprovado</p>
+                    </div>
+                    <button pButton pRipple type="button" label="Ver dados" icon="pi pi-angle-right" iconPos="right"
+                        class="p-button-secondary"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <div class="col-lg-5">
+                <section class="imovel grid-template-areas-2">
+                    <div class="item logo">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+
+                    <div class="item content">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                    </div>
+
+                    <div class="item sidenav">
+                        <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                        <span>0</span>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <p>Campo - Localização - 00 quartos - 00 suítes - 00 hóspedes -</p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="status">
+                    <div class="row">
+                        <p>Status do imóvel</p>
+                        <p>Aprovado</p>
+                    </div>
+                    <button pButton pRipple type="button" label="Ver dados" icon="pi pi-angle-right" iconPos="right"
+                        class="p-button-secondary"></button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,35 @@
+import { PerfilComponent } from './perfil.component';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { PerfilRouting } from "./perfil.routing";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImmobileComponent } from './immobile/immobile.component';
+import { RequestSwapComponent } from './request-swap/request-swap.component';
+
+// *PRIMENG*//
+import { DropdownModule } from 'primeng/dropdown';
+import { CardModule } from 'primeng/card';
+import { TableModule } from 'primeng/table';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { ButtonModule } from 'primeng/button';
+
+@NgModule({
+    declarations: [
+        PerfilComponent,
+        RequestSwapComponent,
+        ImmobileComponent
+    ],
+    imports: [
+        ButtonModule,
+        CommonModule,
+        CardModule,
+        DropdownModule,
+        FormsModule,
+        TableModule,
+        ReactiveFormsModule,
+        SelectButtonModule,
+        RouterModule.forChild(PerfilRouting)
+    ]
+})
+export class PerfilRoutingModule { }

@@ -1,3 +1,4 @@
+import { DetailOfImmobileComponent } from './../../pages/perfil/immobile/detail-of-immobile/detail-of-immobile.component';
 import { PerfilComponent } from './../../pages/perfil/perfil.component';
 import { ReservationCompletedComponent } from './../../pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
 import { SolicitacaoAnfitriaoComponent } from './../../pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
@@ -21,7 +22,10 @@ export const NavigationRouting: Routes = [
             { path: 'pagamento', component: PaymentComponent },
             { path: 'solicitacao-anfitriao', component: SolicitacaoAnfitriaoComponent },
             { path: 'reserva-concluida', component: ReservationCompletedComponent },
-            { path: 'perfil', component: PerfilComponent }
+            {
+                path: 'perfil', loadChildren: () => import('../../pages/perfil/perfil.module').
+                    then(m => m.PerfilRoutingModule)
+            }
         ]
     }
 ]

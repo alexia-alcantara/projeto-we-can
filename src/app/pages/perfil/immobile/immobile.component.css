@@ -6,6 +6,12 @@ h2{
     text-transform: capitalize;
     color: #284641;
 }
+h4{
+    font: normal normal 300 14px/24px LEMON MILK Light;
+}
+h5{
+    font: normal normal 300 14px/24px LEMON MILK Light;
+}
 
 :host ::ng-deep .p-dropdown{
     width: 100%;
@@ -22,19 +28,57 @@ h2{
     color: #fff;
     border-color: #f0af0ccc;
 }
-
+:host ::ng-deep .p-card{
+    box-shadow: none;
+}
 .divider{
     display: flex;
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .divider .status{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    justify-content: center;
 }
 
+.status p{
+    text-align: center;
+    margin-bottom: 0;
+}
 .foto-imovel{
     width: 189px;
     height: 130px;
 }
 .icon-key{
     width: 70px;
+}
+
+
+.imovel{
+    display: grid;
+}
+.logo{
+    grid-area: logo;
+}
+.content{
+    grid-area: content;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.grid-template-areas-2{
+    grid-template-areas: 
+    "logo content content"
+    "logo content content"
+    "logo sidenav sidenav";
+}
+
+:host ::ng-deep .p-button-secondary{
+    margin-top: 0.5rem;
+    width: 100%;
+    border-radius: 8px; 
+}
+:host ::ng-deep .p-button-secondary .p-button-label{
+    font: normal normal bold 16px/30px Source Sans Pro;
 }
