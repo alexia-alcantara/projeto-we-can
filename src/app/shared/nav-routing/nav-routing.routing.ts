@@ -10,6 +10,7 @@ import { HomeComponent } from './../../pages/home/home.component';
 import { Routes } from '@angular/router';
 import { NavRoutingComponent } from './nav-routing.component';
 import { PaymentComponent } from 'src/app/pages/results-list/confirm-reservation/payment/payment.component';
+import { ProfileDataComponent } from 'src/app/pages/perfil/profile-data/profile-data.component';
 
 export const NavigationRouting: Routes = [
     {
@@ -25,7 +26,13 @@ export const NavigationRouting: Routes = [
             {
                 path: 'perfil', loadChildren: () => import('../../pages/perfil/perfil.module').
                     then(m => m.PerfilRoutingModule)
-            }
+            },
+
+            // {
+            //     path: 'meus-imoveis', loadChildren: () => import('../../pages/perfil/immobile/immobile.module').
+            //         then(m => m.ImmobileModule)
+            // }
+
         ]
     }
 ]

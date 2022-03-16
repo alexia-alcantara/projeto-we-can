@@ -1,14 +1,30 @@
+import { DetailOfImmobileComponent } from './detail-of-immobile/detail-of-immobile.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ImmobileRoutes } from './immobile.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImmobileComponent } from './immobile.component';
+
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { DropdownModule } from 'primeng/dropdown';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { TableModule } from 'primeng/table';
 @NgModule({
-    declarations: [],
+    declarations: [
+        ImmobileComponent,
+        DetailOfImmobileComponent
+    ],
     imports: [
+        ButtonModule,
+        CardModule,
         CommonModule,
+        DropdownModule,
         FormsModule,
+        SelectButtonModule,
         ReactiveFormsModule,
+        TableModule,
         RouterModule.forChild(ImmobileRoutes)
     ]
 })

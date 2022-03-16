@@ -3,11 +3,6 @@ import { ImmobileComponent } from "./immobile.component";
 import { Routes } from "@angular/router";
 
 export const ImmobileRoutes: Routes = [
-    // { path: 'meus-imoveis', component: ImmobileComponent },
-    {
-        path: '', component: ImmobileComponent,
-        children: [
-            { path: 'detalhe-do-imovel', component: DetailOfImmobileComponent }
-        ]
-    }
+    { path: '', component: ImmobileComponent },
+    { path: 'detalhe-do-imovel', component: DetailOfImmobileComponent }
 ]

@@ -16,7 +16,6 @@ const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'complete-registration', component: CompleteRegistrationComponent },
     { path: 'register-immobile', component: RegisterImmobileComponent },
-
     {
         path: '', loadChildren: () => import('./shared/nav-routing/nav-routing.module').
             then(m => m.NavRoutingModule)
