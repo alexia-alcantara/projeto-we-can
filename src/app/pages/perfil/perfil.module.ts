@@ -13,7 +13,6 @@ import { TableModule } from 'primeng/table';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { ButtonModule } from 'primeng/button';
 import { ProfileDataComponent } from './profile-data/profile-data.component';
-import { DetailOfImmobileComponent } from './immobile/detail-of-immobile/detail-of-immobile.component';
 
 @NgModule({
     declarations: [

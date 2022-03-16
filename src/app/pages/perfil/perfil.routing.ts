@@ -15,6 +15,10 @@ export const PerfilRouting: Routes = [
             {
                 path: 'meus-imoveis', loadChildren: () => import('../../pages/perfil/immobile/immobile.module').
                     then(m => m.ImmobileModule)
+            },
+            {
+                path: 'minhas-trocas', loadChildren: () => import('../../pages/perfil/my-swaps/my-swaps.module').
+                    then(m => m.MySwapsModule)
             }
 
         ]
