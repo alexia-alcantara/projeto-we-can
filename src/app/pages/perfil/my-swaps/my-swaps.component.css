@@ -1,77 +1,99 @@
-.title-header{
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    margin-top: 1.5rem;
-    color: #708380;
+.container{
+    padding: 1.5rem;
 }
 h2{
-    font: normal normal 300 26px/64px Lemon Milk Light;
+    font: normal normal 300 25px/53px Lemon Milk Light;
+    text-transform: capitalize;
     color: #708380;
-    margin-bottom: 0;
-    opacity: 1;
 }
-
-h3{
-    font: normal normal 300 20px/64px LEMON MILK Light;
-    color: #708380;
+.faixa{
+    border-bottom: 1px solid #B7C1BF;
     opacity: 1;
-    margin-left: 1.5rem;
-    margin-top: 0.5rem;
+    width: 68rem;
+    height: 1px;
+    margin: 1rem 1rem 0 1rem;
 }
 h4{
-    font: normal normal bold 20px/50px Roboto;
-    padding: 0 30px;
-    color: #708380;
+    font: normal normal 300 15px/20px Lemon Milk Light;
 }
-
-h6{
-    font-weight: 400;
-    font-family: Roboto;
-    color: #708380;
-    padding: 0 30px;
-
-}
-
-:host ::ng-deep .pi-angle-left{
-    font-size: 2.2rem;
-    color: #708380;
-}
-
-p{
-    font: normal normal 300 16px/64px Roboto;
+h5{
+    font: normal normal 300 15px/40px Lemon Milk Light;
     margin-bottom: 0;
-    margin-left: 1.5rem;
+}
+:host ::ng-deep .p-dropdown{
+    width: 100%;
 }
 
-.title{
+.cardsPanel .foto-imovel{
+    width: 189px;
+    height: 130px;
+}
+.cardsPanel .icon-key{
+    width: 70px;
+}
+.checkin{
+    display: grid;
+    grid-template-columns: 1fr 207px;
+}
+.checkin h4{
+    font: normal normal bold 20px/20px Roboto;
+    color: #708380;
+}
+.checkin p{
+    font: normal normal normal 17px/20px Roboto;
+    color: #708380;
+}
+
+.confirmTroca h3{
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #708380;
+    font-size: 22px;
+}
+
+.confirmTroca h4{
+    font: normal normal bold 20px/20px Roboto;
+    color: #708380;
+}
+.confirmTroca p{
+    font: normal normal normal 17px/20px Roboto;
+    color: #708380;
+}
+:host ::ng-deep .p-button-secondary{
+    width: 15rem;
+    border-radius: 8px; 
+}
+:host ::ng-deep .p-button-secondary .p-button-label{
+    font: normal normal bold 16px/30px Source Sans Pro;
+}
+
+:host ::ng-deep .p-card{
+    box-shadow: none;
+}
+.cardsPanel{
+    border-bottom: 1px solid #B7C1BF;
+    opacity: 1;
+    padding: 1rem 0 1.5rem;
+}
+
+.stars{
     display: flex;
-    justify-content: space-between;
-    background: #F5F5F5;
-    height: 50px;
-    margin-bottom: 1rem;
-}
-
-.columnForm p{
-    margin-left: 0;
-}
-.grid-templ{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-left: -10px;
+   
 }
-.grid-template-2{
-    display: grid;
-    grid-template-columns: 163px 1fr;
-    align-items: baseline;
+.stars .numberRating{
+    font: normal normal normal 25px/8px Roboto;
+    margin-inline-start: 0.5rem;
+    text-decoration: none;
 }
-.grid-template-2 p{
-    font: normal normal 300 16px/51px Roboto;
+:host ::ng-deep label.star{
+    padding: 0 1px !important;
+    font-size: 25px !important;
+    color: #444 !important;
 }
-.grid-template-3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 450px;
-    padding: 0 30px;
-    grid-template-rows: 1fr 1fr 1fr;
+:host ::ng-deep input.star:checked ~ label.star:before{
+    color: #E3A716 !important;
 }

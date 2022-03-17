@@ -1,7 +1,4 @@
 import { ProfileDataComponent } from './profile-data/profile-data.component';
-import { NavbarComponent } from './../../components/navbar/navbar.component';
-import { DetailOfImmobileComponent } from './immobile/detail-of-immobile/detail-of-immobile.component';
-import { ImmobileComponent } from './immobile/immobile.component';
 import { RequestSwapComponent } from './request-swap/request-swap.component';
 import { PerfilComponent } from "./perfil.component";
 import { Routes } from "@angular/router";

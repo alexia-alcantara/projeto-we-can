@@ -1,118 +1,122 @@
 <div class="container">
-    <div class="title-header">
-        <i class="pi pi-angle-left"></i>
-        <h2>Título do Imóvel</h2>
-
-        <h3>Código</h3>
-
-        <p>Status: Aguardando confirmação do anfitrião</p>
-    </div>
-
-
-    <div class="title">
-        <h4>Valores</h4>
-    </div>
-
     <div class="row">
-        <div class="row columnForm mb-2 mt-2">
-            <div class="col-lg-4">
-                <div class="grid-templ">
-                    <h4>Chaves</h4>
-                    <p>aqui vem o ícone</p>
+        <div class="col-lg-4">
+            <h2>Minhas trocas</h2>
+        </div>
 
-                    <h4>Valor</h4>
-                    <p>R$ 0,00</p>
+        <div class="col-lg-4">
+            <p-dropdown [options]="status" [(ngModel)]="selectedTypeStatus" ngDefaultControl
+                placeholder="Filtrar por status" optionLabel="name" [showClear]="true"></p-dropdown>
+        </div>
 
+
+    </div>
+
+    <p-card>
+        <div class="row cardsPanel">
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                        <div class="key-number">
+                            <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                            <span>0</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
-    <!-- Dados do imóvel -->
-    <div class="title">
-        <h4>Período da troca</h4>
-    </div>
-
-    <div class="row">
-        <div class="row columnForm mb-2 mt-2">
-            <div class="col-lg-4">
-                <div class="grid-templ">
-                    <h4>Check in</h4>
+            <div class="col-lg-4 col-md-4">
+                <div class="checkin">
+                    <h4>Checkin</h4>
                     <p>dd/mm/aaaa</p>
 
-                    <h4>Check out</h4>
+                    <h4>Checkin</h4>
                     <p>dd/mm/aaaa</p>
+
+                    <h4>Avaliação</h4>
+                    <div class="stars">
+                        <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
+
+                        <span class="numberRating">{{ rating3 }}</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-
-    <!-- Dados do imóvel -->
-    <div class="title">
-        <h4>Dados do imóvel</h4>
-    </div>
-
-    <div class="row">
-        <div class="row columnForm mb-2 mt-2">
-            <div class="col-lg-6">
-                <div class="grid-templ">
-                    <h6>Categoria</h6>
-                    <p>Categoria selecionada</p>
-
-                    <h6>Tipo de Imóvel</h6>
-                    <p>Tipo de imóvel selecionado</p>
+            <div class="col-lg-3">
+                <div class="row confirmTroca">
+                    <h4>Status</h4>
+                    <p>Aguardando confirmação do anfitrião</p>
                 </div>
+
+                <div class="row mb-3">
+
+                </div>
+
+                <div class="row">
+                    <button pButton pRipple type="button" label="Ver detalhes do imóvel" icon="pi pi-angle-right"
+                        iconPos="right" class="p-button-secondary" routerLink="./detalhe-da-troca"></button>
+                </div>
+
             </div>
         </div>
-    </div>
 
-    <!-- Localização -->
-    <div class="title">
-        <h4>Localização</h4>
-    </div>
-
-    <div class="row">
-        <div class="row columnForm mb-2 mt-2">
-            <div class="col-lg-12">
-
-                <div class="grid-template-2">
-                    <h6>País</h6>
-                    <p>Brasil</p>
-
-                    <h6>CEP</h6>
-                    <p>99.999-999</p>
-
-                    <h6>Endereço</h6>
-                    <p>Rua Luis Castanhede, 898 - Casa 01 - Bairro Santa Cruz - Belo Horizonte - Minas Gerais</p>
+        <div class="row cardsPanel">
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Título do Imóvel</h4>
+                        <h5>Código</h5>
+                        <div class="key-number">
+                            <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                            <span>0</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
-    <!-- Detalhes -->
-    <div class="title">
-        <h4>Detalhes</h4>
-    </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="checkin">
+                    <h4>Checkin</h4>
+                    <p>dd/mm/aaaa</p>
 
-    <div class="row">
-        <div class=" columnForm mb-2 mt-2">
-            <div class="col-lg-12">
+                    <h4>Checkin</h4>
+                    <p>dd/mm/aaaa</p>
 
-                <div class="grid-template-3">
-                    <p>Internet</p>
-                    <p>Churrasqueira</p>
-                    <p>Condomínio fechado</p>
-                    <p>Fire place</p>
-                    <p>Home Theater I (televisor / caixa de som / subwoofer / receiver)</p>
-                    <p>Jacuzzi</p>
-                    <p>Lareira</p>
-                    <p>Vista espetacular</p>
-                    <p>Sauna</p>
+                    <h4>Avaliação</h4>
+                    <div class="stars">
+                        <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
+
+                        <span class="numberRating">{{ rating3 }}</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="col-lg-3">
+                <div class="row confirmTroca">
+                    <h4>Status</h4>
+                    <p>Aguardando confirmação do anfitrião</p>
+                </div>
+
+                <div class="row mb-3">
+
+                </div>
+
+                <div class="row">
+                    <button pButton pRipple type="button" label="Ver detalhes do imóvel" icon="pi pi-angle-right"
+                        iconPos="right" class="p-button-secondary"></button>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </p-card>
 </div>

@@ -8,6 +8,11 @@ import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
 import { MySwapsRoutes } from './my.swaps.routing';
 import { SwapDetailsComponent } from './swap-details/swap-details.component';
+import { NgxStarRatingModule } from 'ngx-star-rating';
+
+
+import { ImageModule } from 'primeng/image';
+
 
 @NgModule({
     declarations: [
@@ -19,7 +24,9 @@ import { SwapDetailsComponent } from './swap-details/swap-details.component';
         CardModule,
         CommonModule,
         DropdownModule,
+        ImageModule,
         FormsModule,
+        NgxStarRatingModule,
         ReactiveFormsModule,
         RouterModule.forChild(MySwapsRoutes)
     ]
