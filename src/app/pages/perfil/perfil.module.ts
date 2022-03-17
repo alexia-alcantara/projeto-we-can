@@ -17,6 +17,7 @@ import { ProfileDataComponent } from './profile-data/profile-data.component';
 import { AvaliationsReceivedComponent } from './avaliations-received/avaliations-received.component';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { InputTextareaModule } from 'primeng/inputtextarea';
+import { HistoricComponent } from './historic/historic.component';
 
 @NgModule({
     declarations: [
@@ -24,6 +25,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
         RequestSwapComponent,
         ProfileDataComponent,
         AvaliationsReceivedComponent,
+        HistoricComponent,
     ],
     imports: [
         ButtonModule,

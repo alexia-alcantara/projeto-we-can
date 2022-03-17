@@ -1,0 +1,101 @@
+.container{
+    padding: 1.5rem;
+}
+h2{
+    font: normal normal 300 25px/53px Lemon Milk Light;
+    text-transform: capitalize;
+    color: #284641;
+}
+h4{
+    font: normal normal 300 14px/24px LEMON MILK Light;
+}
+h5{
+    font: normal normal 300 14px/24px LEMON MILK Light;
+}
+.faixa{
+    border-bottom: 1px solid #B7C1BF;
+    opacity: 1;
+    width: 68rem;
+    height: 1px;
+    margin: 0.5rem 1rem 2rem 1rem;
+}
+
+.divider{
+    display: flex;
+    border-bottom: 1px solid rgb(0 0 0 / 20%);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+.divider .status{
+    display: grid;
+    justify-content: center;
+}
+
+.status p{
+    text-align: center;
+    margin-bottom: 0;
+}
+.foto-imovel{
+    width: 189px;
+    height: 130px;
+}
+.icon-key{
+    width: 70px;
+}
+.checkin{
+    display: grid;
+    grid-template-columns: 1fr 235px;
+    grid-gap: 15px;
+}
+.checkin h4{
+    font: normal normal bold 20px/20px Roboto;
+    color: #708380;
+}
+.checkin p{
+    font: normal normal normal 17px/20px Roboto;
+    color: #708380;
+}
+.imovel{
+    display: grid;
+}
+.logo{
+    grid-area: logo;
+}
+.content{
+    grid-area: content;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.grid-template-areas-2{
+    grid-template-areas: 
+    "logo content content"
+    "logo content content"
+    "logo sidenav sidenav";
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: left;
+   
+}
+.stars .numberRating{
+    font: normal normal normal 25px/8px Roboto;
+    margin-inline-start: 0.5rem;
+    text-decoration: none;
+}
+.cont {
+    padding: 0.1rem 0 1.2rem 0rem;
+}
+
+:host ::ng-deep label.star{
+    cursor: pointer;
+    float: inherit !important;
+    padding: 0px 5px !important;
+    font-size: 20px !important;
+}
+:host ::ng-deep input.star:checked ~ label.star:before{
+    color: #E3A716 !important;
+}
