@@ -1,0 +1,180 @@
+<div class="container">
+    <div class="row">
+        <h2>Avaliações recebidas</h2>
+        <div class="faixa"></div>
+    </div>
+
+    <div class="divider">
+        <div class="col-lg-5">
+            <section class="imovel grid-template-areas-2">
+                <div class="item logo">
+                    <img src="assets/images/img-card.png" alt="foto-imovel" class="foto-imovel">
+                </div>
+
+                <div class="item content">
+                    <h4>Título do Imóvel</h4>
+                    <h5>Código</h5>
+                </div>
+
+                <div class="item sidenav">
+                    <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
+                    <span>0</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <p>Campo - Localização - 00 quartos - 00 suítes - 00 hóspedes -</p>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="status">
+                <div class="row">
+                    <h4>4 solicitações de troca</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="avaliacao">
+            <h3>3 Comentários</h3>
+
+            <div class="cont">
+                <div class="stars">
+                    <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
+                    <!-- <span class="numberRating">{{ rating3 }}</span> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row column-avaliacoes">
+            <div class="col-lg-2">
+                <div class="columnImg">
+                    <img src="/assets/images/logo_topo.svg" alt="icon-img" class="iconImg">
+                    <div class="month">
+                        <p>Nome</p>
+                        <p>mês, aaaa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <p class="comments">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nobis aliquid
+                    possimus sit
+                    voluptatibus asperiores quo aperiam, alias harum optio minima ut assumenda vitae cum sint
+                    molestiae excepturi! Placeat, omnis!
+                </p>
+            </div>
+
+            <div class="col-lg-2">
+                <button (click)="showModalDialog()" pButton pRipple type="button" label="Responder"
+                    class="p-button-secondary"></button>
+            </div>
+
+            <div class="faixa"></div>
+        </div>
+
+        <div class="row column-avaliacoes">
+            <div class="col-lg-2">
+                <div class="columnImg">
+                    <img src="/assets/images/logo_topo.svg" alt="icon-img" class="iconImg">
+                    <div class="month">
+                        <p>Nome</p>
+                        <p>mês, aaaa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <p class="comments">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nobis aliquid
+                    possimus sit
+                    voluptatibus asperiores quo aperiam, alias harum optio minima ut assumenda vitae cum sint
+                    molestiae excepturi! Placeat, omnis!
+                </p>
+            </div>
+
+            <div class="col-lg-2">
+                <button pButton pRipple type="button" label="Responder" class="p-button-secondary"></button>
+            </div>
+
+            <div class="faixa"></div>
+
+        </div>
+
+        <div class="row column-avaliacoes">
+            <div class="col-lg-2">
+                <div class="columnImg">
+                    <img src="/assets/images/logo_topo.svg" alt="icon-img" class="iconImg">
+                    <div class="month">
+                        <p>Nome</p>
+                        <p>mês, aaaa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <p class="comments">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nobis aliquid
+                    possimus sit
+                    voluptatibus asperiores quo aperiam, alias harum optio minima ut assumenda vitae cum sint
+                    molestiae excepturi! Placeat, omnis!
+                </p>
+            </div>
+
+            <div class="col-lg-2">
+                <button pButton pRipple type="button" label="Responder" class="p-button-secondary"></button>
+            </div>
+
+            <div class="faixa"></div>
+            <div class="respostas">
+                <div class="col-lg-2">
+                    <div class="columnAnswer">
+                        <div class="month">
+                            <p>Respostas:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <p class="comments">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nobis aliquid
+                        possimus sit
+                        voluptatibus asperiores quo aperiam, alias harum optio minima ut assumenda vitae cum sint
+                        molestiae excepturi! Placeat, omnis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de resposta -->
+<p-dialog styleClass="modalAlert" header="Resposta" [(visible)]="displayModal" [modal]="true" [style]="{width: '68vw'}"
+    [draggable]="false" [resizable]="false">
+
+    <div class="row column-avaliacoes">
+        <div class="col-lg-3">
+            <div class="columnImg">
+                <img src="/assets/images/logo_topo.svg" alt="icon-img" class="iconImg">
+                <div class="month">
+                    <p>Nome</p>
+                    <p>mês, aaaa</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <p class="comments">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nobis aliquid
+                possimus sit
+                voluptatibus asperiores quo aperiam, alias harum optio minima ut assumenda vitae cum sint
+                molestiae excepturi! Placeat, omnis!
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <textarea rows="5" pInputTextarea></textarea>
+
+    </div>
+
+    <ng-template pTemplate="footer">
+        <button pButton pRipple type="button" (click)="displayModal=false" label="Voltar"
+            class="p-button-secondary p-button-send"></button>
+
+    </ng-template>
+</p-dialog>
