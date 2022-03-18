@@ -9,8 +9,10 @@ import { ImmobileComponent } from './immobile.component';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { TableModule } from 'primeng/table';
+
 @NgModule({
     declarations: [
         ImmobileComponent,
@@ -18,6 +20,7 @@ import { TableModule } from 'primeng/table';
     ],
     imports: [
         ButtonModule,
+        BsDatepickerModule,
         CardModule,
         CommonModule,
         DropdownModule,
