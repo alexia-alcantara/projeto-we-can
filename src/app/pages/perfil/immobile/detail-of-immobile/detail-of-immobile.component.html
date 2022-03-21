@@ -12,37 +12,214 @@
             <h4>Calendário de disponibilidade</h4>
         </div>
 
-        <div class="pr-3 pb-3 pe-3 w-auto">
+        <div class="calendario">
             <bs-daterangepicker-inline [bsValue]="bsInlineRangeValue"></bs-daterangepicker-inline>
         </div>
 
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="row ocupacao-calendario">
+            <div class="col-lg-3">
                 <div class="campo-checkbox">
                     <label class="container-checkbox">Dias Livres
-                        <input type="checkbox">
                         <span class="checkmark" id="check-free"></span>
                     </label>
                 </div>
                 <div class=" campo-checkbox">
                     <label class="container-checkbox">Dias Alugados
-                        <input type="checkbox">
                         <span class="checkmark" id="checkmark-alugado"></span>
                     </label>
                 </div>
                 <div class="campo-checkbox">
                     <label class="container-checkbox">Dias Bloqueados
-                        <input type="checkbox">
                         <span class="checkmark" id="check-blocked"></span>
                     </label>
                 </div>
             </div>
 
-            <div class="col-lg-6">
-                <span>
+            <div class="col-lg-4">
+                <span class="text-block">
                     * para bloquear um dia/periodo. basta clicar nos dias desejados e depois clicar em bloquear dia.
                 </span>
+                <button pButton pRipple type="button" label="Bloquear / desbloquear dia"
+                    class="p-button-danger"></button>
+
             </div>
         </div>
+
+
+        <div class="title">
+            <h4>Dados do imóvel</h4>
+        </div>
+
+        <div class="row">
+            <div class="row columnForm mb-2 mt-2">
+                <div class="col-lg-12">
+
+                    <div class="grid-template-2">
+                        <h6>Categoria</h6>
+                        <p>Categoria selecionada</p>
+
+                        <h6>Tipo de Imóvel</h6>
+                        <p>Tipo de imóvel selecionado</p>
+
+                        <h6>Status</h6>
+                        <p>Aprovado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <h4>Localização</h4>
+        </div>
+
+        <div class="row">
+            <div class="row columnForm mb-2 mt-2">
+                <div class="col-lg-12">
+
+                    <div class="grid-template-2">
+                        <h6>País</h6>
+                        <p>Brasil</p>
+
+                        <h6>CEP</h6>
+                        <p>99.999-999</p>
+
+                        <h6>Endereço</h6>
+                        <p>Rua Luis Castanhede, 898 - Casa 01 - Bairro Santa Cruz - Belo Horizonte - Minas Gerais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <h4>Comodidades</h4>
+        </div>
+
+        <div class="row">
+            <div class=" columnForm mt-2">
+                <h5>Amenidades</h5>
+                <div class="colunas-detalhes">
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                </div>
+                <div class="faixa"></div>
+            </div>
+
+            <div class=" columnForm">
+                <h5>Serviços</h5>
+                <div class="colunas-detalhes">
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                </div>
+                <div class="faixa"></div>
+            </div>
+
+            <div class=" columnForm">
+                <h5>Lazer</h5>
+                <div class="colunas-detalhes">
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+                    <div class="field-checkbox">
+                        <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny">
+                        </p-checkbox>
+                        <label for="ny">New York</label>
+                    </div>
+
+                </div>
+                <div class="faixa"></div>
+            </div>
+        </div>
+
+        <div class="title">
+            <h4>Fotos</h4>
+        </div>
+
+        <!-- Aqui vem as fotos -->
+
+
+
+        <div class="title">
+            <h4>Alterar dados do imóvel</h4>
+        </div>
+
+        <div class="information">
+            <p class="informacao-atendimento">Entre em contato com nossa central de atendimento através dos canais
+                abaixo:</p>
+            <p class="contato">info@wecabimoveis.com.br | 123-456-7890</p>
+        </div>
     </div>
+
 </div>

@@ -7,6 +7,10 @@
     height: auto;
     padding-top: 0;
 }
+.column-1{
+    background: #F5F5F5;
+    height: 100%;
+}
 .vertical-menu {
     display: block !important;
     width: 100%;

@@ -24,9 +24,31 @@ h4{
     padding: 0 30px;
     color: #708380;
 }
+h5{
+    font-family: Roboto;
+    font-weight: 500;
+    color: #708380;
+    padding: 0 30px;
+}
+h6{
+    font-weight: 500;
+    font-family: Roboto;
+    color: #708380;
+    padding: 0 30px;
+}
+
 :host ::ng-deep .pi-angle-left{
     font-size: 2.2rem;
     color: #708380;
+}
+.calendario{
+    padding: 0 30px;
+}
+.ocupacao-calendario{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 0 30px;
+
 }
 .title{
     display: flex;
@@ -59,15 +81,11 @@ h4{
     user-select: none;
     font: normal normal bold 12px/25px Roboto;
     color: #707070;
-  }
+}
   
-  /* Hide the browser's default checkbox */
-  .container-checkbox input {
-    display: none;
-  }
   
   /* Create a custom checkbox */
-  .container-checkbox .checkmark {
+.container-checkbox .checkmark {
     position: absolute;
     top: 0;
     left: 9rem;
@@ -76,11 +94,66 @@ h4{
     border: 1px solid #707070;
     border-radius: 25px;
     background-color: white;
-  }
-  .container-checkbox #checkmark-alugado{
+}
+.container-checkbox #checkmark-alugado{
     background-color: #B7C1BF;
-  }
+}
   
-  .container-checkbox #check-blocked{
+.container-checkbox #check-blocked{
     background-color: #F54D63;
-  }
+}
+.text-block{
+    font: normal normal normal 13px/10px Roboto;
+}
+:host ::ng-deep .p-button-danger{
+    background: #F54D63;
+    border-color: #F54D63;
+    border-radius: 8px;
+    margin-top: 1.3rem;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    background: #F5F5F5;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+.grid-template-2{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: baseline;
+}
+.grid-template-2 p{
+    font: normal normal 300 16px/25px Roboto;
+    color: #708380;
+}
+
+.colunas-detalhes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 0 30px;
+}
+.colunas-detalhes p{
+    font: normal normal 300 16px/64px Roboto;
+    color: #708380;
+    padding: 0 28px;
+}
+.faixa{
+    border-bottom: 1px solid #B7C1BF;
+    opacity: 1;
+    margin: 0rem 2rem 2rem;
+}
+.information{
+    padding: 0 40px;
+}
+.information .informacao-atendimento{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    color: #708380;
+}
+.information .contato{
+    font: normal normal bold 17px/20px Roboto;
+    color: #708380;
+}

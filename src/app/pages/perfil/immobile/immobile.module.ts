@@ -6,6 +6,7 @@ import { ImmobileRoutes } from './immobile.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ImmobileComponent } from './immobile.component';
 
+import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
@@ -23,6 +24,7 @@ import { TableModule } from 'primeng/table';
         BsDatepickerModule,
         CardModule,
         CommonModule,
+        CheckboxModule,
         DropdownModule,
         FormsModule,
         SelectButtonModule,
