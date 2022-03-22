@@ -13,10 +13,14 @@ h4{
     padding: 0 0 15px;
 }
 h5{
-    font: normal normal 300 27px/28px LEMON MILK;
+    font: normal normal 300 22px/28px LEMON MILK Light;
     color: #284641;
     border-bottom: 1px solid #F5A800;
     padding: 25px 0px 15px;
+}
+label, ::placeholder{
+    font: normal normal normal 15px/20px Roboto;
+    color: #284641;
 }
 
 :host ::ng-deep .p-tabview .p-tabview-nav{
@@ -24,11 +28,14 @@ h5{
 }
 :host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
     text-transform: uppercase;
-    font: normal normal normal 15px/20px LEMON MILK;
+    font: normal normal normal 14px/20px LEMON MILK Regular;
+    color: #708380;
+    opacity: 1;
 }
 
 :host ::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
     color: #284641;
+    opacity: 1;
 }
 
 :host ::ng-deep .p-inputtext, :host ::ng-deep .p-dropdown{
@@ -49,6 +56,8 @@ h5{
 .amenidades{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 2.2rem;
+    grid-gap: 0.6rem;
 }
 
 .btns-save{

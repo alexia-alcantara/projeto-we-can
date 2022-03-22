@@ -34,6 +34,8 @@ import { DialogModule } from 'primeng/dialog';
 
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FileUploadModule } from 'primeng/fileupload';
+import { HttpClientModule } from '@angular/common/http';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputMaskModule } from 'primeng/inputmask';
 import { InputTextareaModule } from 'primeng/inputtextarea';
@@ -44,6 +46,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { PaginatorModule } from 'primeng/paginator';
 import { SelectButtonModule } from 'primeng/selectbutton';
+import { ToastModule } from 'primeng/toast';
+import { MessageModule } from 'primeng/message';
 
 
 @NgModule({
@@ -78,12 +82,16 @@ import { SelectButtonModule } from 'primeng/selectbutton';
     DataViewModule,
     DialogModule,
     FormsModule,
+    FileUploadModule,
+    HttpClientModule,
     InputTextModule,
+    MessageModule,
     InputMaskModule,
     InputTextareaModule,
     NgxStarRatingModule,
     PerfilRoutingModule,
     TooltipModule,
+    ToastModule,
     TableModule,
     DropdownModule,
     ReactiveFormsModule,

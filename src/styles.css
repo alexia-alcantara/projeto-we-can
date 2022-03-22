@@ -45,7 +45,7 @@ body, html{
     width: 13px;
   }
   
-  .p-paginator-pages .p-paginator-page.p-highlight{
+.p-paginator-pages .p-paginator-page.p-highlight{
     background: #708380 !important;
     border-color: #E3F2FD !important;
     color: white !important;
@@ -53,5 +53,18 @@ body, html{
     height: 30px !important;
     width: 30px !important;
     min-width: 30px !important;
-  }
-  
+}
+.p-checkbox .p-checkbox-box{
+  border: 1px solid #F5A800 !important;
+}
+.p-checkbox .p-checkbox-box.p-highlight{
+  border-color: #F5A800 !important;
+  background: #fff !important;
+}
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover{
+  border-color: #F5A800;
+  background: #fff;
+}
+.p-checkbox .p-checkbox-box .p-checkbox-icon{
+  color: #F5A800 !important;
+}
