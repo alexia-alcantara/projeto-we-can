@@ -9,6 +9,7 @@ export const PerfilRouting: Routes = [
     {
         path: '', component: PerfilComponent,
         children: [
+            { path: '', redirectTo: 'dados-perfil', pathMatch: 'full' },
             { path: 'dados-perfil', component: ProfileDataComponent },
             { path: 'solicitacoes-troca', component: RequestSwapComponent },
             {

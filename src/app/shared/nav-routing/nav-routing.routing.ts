@@ -28,10 +28,6 @@ export const NavigationRouting: Routes = [
                     then(m => m.PerfilRoutingModule)
             },
 
-            // {
-            //     path: 'meus-imoveis', loadChildren: () => import('../../pages/perfil/immobile/immobile.module').
-            //         then(m => m.ImmobileModule)
-            // }
 
         ]
     }

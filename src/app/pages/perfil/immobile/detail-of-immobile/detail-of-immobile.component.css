@@ -29,6 +29,7 @@ h5{
     font-weight: 500;
     color: #708380;
     padding: 0 30px;
+    margin-bottom: 1.5rem;
 }
 h6{
     font-weight: 500;
@@ -132,7 +133,7 @@ h6{
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    padding: 0 30px;
+    padding: 0 30px 20px;
 }
 .colunas-detalhes p{
     font: normal normal 300 16px/64px Roboto;
@@ -156,4 +157,13 @@ h6{
 .information .contato{
     font: normal normal bold 17px/20px Roboto;
     color: #708380;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.image img{
+    width: 240px;
+    height: 175px;
 }

@@ -9,7 +9,7 @@ export class DetailOfImmobileComponent implements OnInit {
   bsInlineValue = new Date();
   bsInlineRangeValue: Date[];
   maxDate = new Date();
-  selectedCities: string[] = [];
+  selectedServices: string[] = [];
 
   constructor() {
     this.maxDate.setDate(this.maxDate.getDate() + 7);
