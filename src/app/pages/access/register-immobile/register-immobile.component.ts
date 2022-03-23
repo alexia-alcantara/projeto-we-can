@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { MessageService } from 'primeng/api/messageservice';
 
 interface CategoryImmobile {
@@ -28,6 +28,17 @@ interface Quartos {
 export class RegisterImmobileComponent implements OnInit {
   val3: string;
   val4: string;
+  isShow: boolean = false;
+  selectedValue: string;
+  nameLabel: string;
+  toggleShow() {
+    this.isShow = !this.isShow;
+  }
+
+  public file: any;
+  urls: any[] = [];
+  multiples: any[] = [];
+
 
   category: CategoryImmobile[];
   selectedCategory: CategoryImmobile;
@@ -86,7 +97,7 @@ export class RegisterImmobileComponent implements OnInit {
 
   ]
 
-  constructor() {
+  constructor(private cf: ChangeDetectorRef) {
     this.category = [
       { name: 'Categoria 1' },
       { name: 'Categoria' }
@@ -110,6 +121,30 @@ export class RegisterImmobileComponent implements OnInit {
 
 
   ngOnInit(): void {
+  }
+
+  onSelectFile(event) {
+    this.file = event.target.files && event.target.files.length;
+    if (this.file > 0 && this.file < 5) {
+      let i: number = 0;
+      for (const singlefile of event.target.files) {
+        var reader = new FileReader();
+        reader.readAsDataURL(singlefile);
+        this.urls.push(singlefile);
+        this.cf.detectChanges();
+        i++;
+        console.log(this.urls);
+        reader.onload = (event) => {
+          const url = (<FileReader>event.target).result as string;
+          this.multiples.push(url);
+          this.cf.detectChanges();
+        };
+        console.log(singlefile);
+      }
+    }
+    // else {
+    //   this.toast.error('No More than 4 images', 'Upload Images')
+    // }
   }
 
 }

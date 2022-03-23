@@ -48,6 +48,7 @@ import { PaginatorModule } from 'primeng/paginator';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { ToastModule } from 'primeng/toast';
 import { MessageModule } from 'primeng/message';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 
 @NgModule({
@@ -97,6 +98,7 @@ import { MessageModule } from 'primeng/message';
     ReactiveFormsModule,
     PaginatorModule,
     SelectButtonModule,
+    RadioButtonModule,
     TabViewModule,
     BsDatepickerModule.forRoot()
   ],

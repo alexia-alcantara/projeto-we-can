@@ -68,3 +68,9 @@ body, html{
 .p-checkbox .p-checkbox-box .p-checkbox-icon{
   color: #F5A800 !important;
 }
+.p-radiobutton .p-radiobutton-box.p-highlight{
+  background: #fff !important;
+}
+.p-radiobutton-box.p-highlight .p-radiobutton-icon{
+  background-color: #E3A716 !important;
+}
