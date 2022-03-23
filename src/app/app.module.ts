@@ -49,6 +49,7 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { ToastModule } from 'primeng/toast';
 import { MessageModule } from 'primeng/message';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { ReviewApprovalComponent } from './pages/access/register-immobile/review-approval/review-approval.component';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     PaymentComponent,
     SolicitacaoAnfitriaoComponent,
     ReservationCompletedComponent,
+    ReviewApprovalComponent,
   ],
   imports: [
     BrowserModule,

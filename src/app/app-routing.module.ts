@@ -1,3 +1,4 @@
+import { ReviewApprovalComponent } from './pages/access/register-immobile/review-approval/review-approval.component';
 import { RegisterImmobileComponent } from './pages/access/register-immobile/register-immobile.component';
 import { CompleteRegistrationComponent } from './pages/access/complete-registration/complete-registration.component';
 import { RegisterComponent } from './pages/access/register/register.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'complete-registration', component: CompleteRegistrationComponent },
     { path: 'register-immobile', component: RegisterImmobileComponent },
+    { path: 'aguardar-aprovacao', component: ReviewApprovalComponent },
     {
         path: '', loadChildren: () => import('./shared/nav-routing/nav-routing.module').
             then(m => m.NavRoutingModule)

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { setTheme } from 'ngx-bootstrap/utils';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,9 @@ export class HomeComponent implements OnInit {
 
   cards = [];
 
-  constructor() { }
+  constructor(private fb: FormBuilder) {
+    setTheme('bs5');
+  }
 
   ngOnInit(): void {
   }

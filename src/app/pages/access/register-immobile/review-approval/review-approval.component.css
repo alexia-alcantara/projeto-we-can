@@ -1,0 +1,50 @@
+.aguardar-aprovacao{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logo{
+    width: 22vw;
+}
+.navbar{
+    background: #fff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.navbar .container{
+    align-items: center;
+}
+.navbar-brand{
+    margin-right: 22rem;
+    margin-left: -5.5rem;
+}
+h2{
+    font: normal normal 300 30px/64px Lemon Milk Light;
+    margin-bottom: 0;
+}
+hr{
+    width: 50%;
+    margin: 0rem 16rem;
+    color: #F5A800;
+    opacity: 1;
+    height: 2px;
+}
+
+.logo-aguardando{
+    width: 91px;
+}
+
+.message p{
+    padding: 0 5rem 1.2rem;
+    text-align: center;
+    font: normal normal normal 20px/40px Roboto;
+    opacity: 1;
+    border-bottom-width: 2px;
+}
+:host ::ng-deep .continue{
+    width: 176px;
+    height: 40px;
+    background: #F5A800;
+    color: #fff;
+    font: normal normal bold 16px/15px Source Sans Pro;
+    text-transform: uppercase;
+}
