@@ -10,7 +10,7 @@ import { setTheme } from 'ngx-bootstrap/utils';
 export class HomeComponent implements OnInit {
 
   cards = [];
-
+  isCollapsed = true;
   constructor(private fb: FormBuilder) {
     setTheme('bs5');
   }

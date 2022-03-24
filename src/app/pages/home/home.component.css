@@ -4,8 +4,8 @@
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
-    padding-top: calc(31rem + 55px);
-    padding-bottom: 10rem;
+    padding-top: calc(29rem + 46px);
+    padding-bottom: 23rem;
     position: relative;
     overflow: hidden;
 }
@@ -14,11 +14,52 @@
     display: flex;
     border: 20px solid rgba(0,0,0,0.2);
     border-radius: 5px;
+    margin-top: -8.5rem;
   }
   
 input[type=search] {
     flex-basis: 260px;
 }
+::placeholder, select{
+    font: normal normal normal 15px/40px Roboto;
+    color: #708380;
+}
+
+#collapseBasic{
+    position: absolute;
+    z-index: 1;
+    margin-left: 49rem;
+    top: 53.2%;
+    left: 0;
+    max-height: calc(100vh - 150px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 16px 32px;
+    border-radius: 8px;
+    width: 27rem;
+}
+.stteped{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E3A716;
+    opacity: 1;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 4px;
+    min-width: 325px;
+}
+.stteped .stteped-label .title{
+    font: normal normal normal 16px/30px Roboto;
+    color: #284641;
+    opacity: 1;
+    line-height: 0;
+}
+
+.stteped .stteped-label .subtitle{
+    font: normal normal normal 12px/40px Roboto;
+}
+
 :host ::ng-deep .btn-search{
     background: #E3A716 !important;
     width: 115px !important;
@@ -27,6 +68,52 @@ input[type=search] {
     color: #fff !important;
 }
   
+.input-stepper {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+}
+  
+.input-stepper button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #708380;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.bi-dash, .bi-plus{
+    margin-top: -25px;
+}
+  
+.input-stepper button[disabled] {
+    cursor: not-allowed;
+    opacity: .4;
+}
+  
+.input-stepper button i {
+     color: #07c;
+}
+  
+.input-stepper input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    width: 36px;
+}
+
+
 .flex-form > * {
     width: 23rem;
     border: 0;
@@ -37,6 +124,7 @@ input[type=search] {
     outline: 0;
     background: #fff;
     margin-left: 1px;
+    cursor: pointer;
 }
   
 .flex-form input[type=submit] {

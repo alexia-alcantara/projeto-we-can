@@ -50,6 +50,7 @@ import { ToastModule } from 'primeng/toast';
 import { MessageModule } from 'primeng/message';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { ReviewApprovalComponent } from './pages/access/register-immobile/review-approval/review-approval.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 
 @NgModule({
@@ -82,6 +83,7 @@ import { ReviewApprovalComponent } from './pages/access/register-immobile/review
     ButtonModule,
     CardModule,
     CheckboxModule,
+    CollapseModule,
     DataViewModule,
     DialogModule,
     FormsModule,

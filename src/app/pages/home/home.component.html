@@ -4,23 +4,138 @@
         <form class="flex-form">
 
             <input type="search" placeholder="Para onde?" />
-            <input type="text" placeholder="Tipo" />
+            <input type="text" placeholder="Qual imóvel você prefere?" />
 
-            <input type="text" placeholder="dd/mm/aaaa" class="form-control" bsDaterangepicker
+            <input type="text" placeholder="Quando quer viajar?" class="form-control" bsDaterangepicker
                 [bsConfig]="{ isAnimated: true }">
 
-            <select name="guests" id="guests">
+            <button type="button" class="btn search-input" (click)="isCollapsed = !isCollapsed"
+                [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Quantos hóspedes serão?
+            </button>
 
-                <option value="1">1 guest</option>
-                <option value="2">2 guests</option>
-                <option value="3">3 guests</option>
-                <option value="4">4 guests</option>
-                <option value="5">5 guests</option>
-            </select>
+            <div id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+                <div class="stteped">
+                    <div class="stteped-label">
+                        <div class="title">
+                            Adultos
+                        </div>
+                        <div class="subtitle">
+                            13 anos ou mais
+                        </div>
+                    </div>
 
+                    <div>
+                        <div class="input-stepper">
+                            <button class="minus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </button>
+                            <input type="text" value="0" />
+                            <button class="plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stteped">
+                    <div class="stteped-label">
+                        <div class="title">
+                            Crianças
+                        </div>
+                        <div class="subtitle">
+                            Idade 2 - 12
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="input-stepper">
+                            <button class="minus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </button>
+                            <input type="text" value="0" />
+                            <button class="plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stteped">
+                    <div class="stteped-label">
+                        <div class="title">
+                            Bebês
+                        </div>
+                        <div class="subtitle">
+                            Menor de 2
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="input-stepper">
+                            <button class="minus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </button>
+                            <input type="text" value="0" />
+                            <button class="plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stteped">
+                    <div class="stteped-label">
+                        <div class="title">
+                            Animais de estimação
+                        </div>
+                        <div class="subtitle">
+                            Vai levar algum animal de assistência?
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="input-stepper">
+                            <button class="minus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </button>
+                            <input type="text" value="0" />
+                            <button class="plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <button pButton pRipple type="submit" icon="pi pi-search" class="p-button-warning btn-search"></button>
 
-            <!-- <input type="submit" value="Search" /> -->
 
         </form>
 
