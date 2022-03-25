@@ -35,3 +35,17 @@ h2{
     color: #fff;
     font: normal normal bold 16px/15px Source Sans Pro;
 }
+:host ::ng-deep .p-button-warning:enabled:hover{
+    color: #fff;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px){
+    .btns{
+        display: block;
+    }
+    :host ::ng-deep .return, .continue{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}

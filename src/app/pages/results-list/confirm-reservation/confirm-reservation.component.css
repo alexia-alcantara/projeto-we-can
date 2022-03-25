@@ -92,6 +92,9 @@ p{
     font: normal normal bold 16px/15px Source Sans Pro;
 }
 
+:host ::ng-deep .verMais , .showPDF:enabled:hover{
+    color: #fff !important;
+}
 .btns{
     display: flex;
 }

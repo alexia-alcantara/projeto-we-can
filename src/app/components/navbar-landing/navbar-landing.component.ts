@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarLandingComponent implements OnInit {
 
-  logoPath = '/assets/images/logo_langing.svg'
+  logoPath = '/assets/images/logo_langing.svg';
   constructor(private viewportScroller: ViewportScroller) { }
 
   ngOnInit(): void {
@@ -25,7 +25,7 @@ export class NavbarLandingComponent implements OnInit {
     const scrollPos = document.documentElement.scrollTop;
 
     // change '50' according to when you want to change the image
-    if (scrollPos > 350) {
+    if (scrollPos > 650) {
       this.logoPath = '/assets/images/logo_topo_escura.svg';
     }
     else {

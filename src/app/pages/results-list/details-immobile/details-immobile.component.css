@@ -414,6 +414,27 @@ h6{
     width: 50%;
     border-radius: 8px;
 }
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px){
+    .details-panel .header{
+        display: block;
+    }
+    .avaliacao{
+        display: block;
+        margin-bottom: 2.5rem;
+    }
+    .details-coments{
+        margin-bottom: 3.5rem;
+    }
+    :host ::ng-deep .modalAlert{
+        width: 100% !important;
+        padding: 0.5rem;
+    }
+    :host ::ng-deep .modalAlert .p-dialog-footer{
+        padding: 1rem;
+    }
+}
 /* stepperInput {
     display:flex;
   }

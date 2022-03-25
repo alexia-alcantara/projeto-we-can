@@ -15,6 +15,7 @@
     border: 20px solid rgba(0,0,0,0.2);
     border-radius: 5px;
     margin-top: -8.5rem;
+    cursor: pointer;
   }
   
 input[type=search] {
@@ -29,7 +30,7 @@ input[type=search] {
     position: absolute;
     z-index: 1;
     margin-left: 49rem;
-    top: 53.2%;
+    top: 54.2%;
     left: 0;
     max-height: calc(100vh - 150px);
     overflow-x: hidden;
@@ -221,3 +222,31 @@ input[type=search] {
     border-radius: 8px;
 }
 
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px){
+    .flex-form{
+        display: block;
+    }
+    .flex-form >*{
+        width: 100%;
+    }
+    :host ::ng-deep .cardsPanel .p-card-body{
+        padding: 1rem;
+    }
+    .cardDescription{
+        display: block;
+    }
+    .cardDescription .foto-imovel{
+        width: 100%;
+    }
+    .cards-imoveis .key-number{
+        display: block;
+        padding: 10px;
+    }
+    .cards-imoveis .columnButton{
+        padding: 10px;
+    }
+    .cards-imoveis .verMais{
+        width: 100%;
+    }
+}

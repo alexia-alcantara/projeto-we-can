@@ -84,3 +84,26 @@
     height: 31px;
     border-radius: 8px;
 }
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px){
+    :host ::ng-deep .cardsPanel .p-card-body{
+        padding: 1rem;
+    }
+    .cardDescription{
+        display: block;
+    }
+    .cardDescription .foto-imovel{
+        width: 100%;
+    }
+    .cards-imoveis .key-number{
+        display: block;
+        padding: 10px;
+    }
+    .cards-imoveis .columnButton{
+        padding: 10px;
+    }
+    .cards-imoveis .verMais{
+        width: 100%;
+    }
+}

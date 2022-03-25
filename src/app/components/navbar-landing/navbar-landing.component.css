@@ -28,6 +28,8 @@
 } */
 .navbar .container{
     align-items: flex-end;
+    /* margin-right: -3rem; */
+
 }
 .navbar-brand{
     margin-right: 4rem;
@@ -46,7 +48,7 @@
 .navbar-nav .nav-item{
     padding: 0 0.7rem;
 }
-.navbar-right .nav-item:nth-child(2){
+.navbar-right .nav-item:nth-child(3){
     border: 1px solid #fff;
     padding: 5px 15px;
 }
@@ -55,9 +57,7 @@
     text-decoration: none;
     font: normal normal bold 15px/24px Roboto;
 }
-/* .navbar-nav .navbar-right .nav-item .nav-login{
-    color: #fff;
-} */
+
 
 /* Responsive breakpoints */
 @media (min-width: 320px) and (max-width: 576px){ 
