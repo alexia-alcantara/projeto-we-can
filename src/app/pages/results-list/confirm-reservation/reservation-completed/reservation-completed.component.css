@@ -6,18 +6,22 @@ h2{
     font: normal normal 300 30px/64px Lemon Milk Light;
     margin-bottom: 0;
 }
+h3{
+    font: normal normal bold 28px/75px Roboto;
+}
+h4{
+    font: normal normal bold 22px/75px Roboto;
+}
+h5{
+    font: normal normal bold 19px/75px Roboto;
+    text-decoration: underline;
+}
 
 
 .columnDetalheTroca h3{
     font: normal normal bold 28px/75px Roboto;
 }
-.columnDetalheTroca h4{
-    font: normal normal bold 22px/58px Roboto;
-}
-.columnDetalheTroca h5{
-    font: normal normal bold 19px/18px Roboto;
-    text-decoration: underline;
-}
+
 
 .columnDetalheTroca p{
     font: normal normal normal 15px/25px Roboto;
@@ -29,7 +33,7 @@ h2{
     border-bottom: 1px solid #E3A716;
     opacity: 1;
     width: 30vw;
-    top: 80%;
+    top: 32rem;
 }
 
 .column{
@@ -56,7 +60,7 @@ h2{
     font: normal normal 300 20px/50px Lemon Milk Light;
 }
 :host ::ng-deep .cardsPanel h5{
-    font: normal normal 300 15px/40px Lemon Milk Light;
+    font: normal normal 300 15px/0px Lemon Milk Light;
 }
 :host ::ng-deep .cardsPanel p {
     margin-bottom: 0;
@@ -82,6 +86,10 @@ h2{
 }
 .regras p{
     font: normal normal normal 14px/27px Roboto;;
+}
+.termo{
+    color: #0482FF;
+    font: normal normal bold 15px/27px Roboto;
 }
 :host ::ng-deep .p-button-secondary{
     width: 100%;

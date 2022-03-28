@@ -40,11 +40,14 @@ hr{
     opacity: 1;
     border-bottom-width: 2px;
 }
-:host ::ng-deep .continue{
+:host ::ng-deep .p-button-continue{
     width: 176px;
     height: 40px;
     background: #F5A800;
     color: #fff;
     font: normal normal bold 16px/15px Source Sans Pro;
     text-transform: uppercase;
+}
+:host ::ng-deep .p-button-continue:enabled:hover{
+    color: #fff;
 }

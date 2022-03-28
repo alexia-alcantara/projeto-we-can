@@ -18,11 +18,11 @@
         <p-tabView>
             <p-tabPanel header="Dados do Imóvel">
                 <form>
-                    <div class="row">
-                        <h5>Dados Pessoais</h5>
-                    </div>
 
                     <div class="formgrid grid dados-pessoais">
+                        <div class="field lg:col-12 md:col-12">
+                            <h5>Dados Pessoais</h5>
+                        </div>
                         <div class="field lg:col-12 md:col-12">
                             <label for="name">Título do Imóvel</label>
                             <input id="name" type="text" placeholder="Título" pInputText>
@@ -50,11 +50,10 @@
 
             <p-tabPanel header="Localização">
                 <form>
-                    <div class="row">
-                        <h5>Localização</h5>
-                    </div>
-
                     <div class="formgrid grid dados-pessoais">
+                        <div class="field lg:col-12 md:col-12">
+                            <h5>Localização</h5>
+                        </div>
                         <div class="field lg:col-3 md:col-3">
                             <label for="country">País</label>
                             <p-dropdown [options]="country" [(ngModel)]="selectedCountry" placeholder="Selecione"
@@ -103,12 +102,10 @@
 
             <p-tabPanel header="Comodidades">
                 <form>
-                    <div class="title-header">
-                        <h5>Comodidades</h5>
-                    </div>
-
                     <div class="formgrid grid dados-comodidades">
-
+                        <div class="field lg:col-12 md:col-12">
+                            <h5>Comodidades</h5>
+                        </div>
                         <div class="field lg:col-4 md:col-4">
                             <label for="localization" type="text">Localização</label>
                             <input id="localization" type="text" placeholder="Nome do país" pInputText>
@@ -192,8 +189,8 @@
                     <h5>Fotos</h5>
                 </div>
                 <div class="preview-media" data-max-image="4" *ngIf="isShow">
-                    <ng-container *ngFor="let multiple of multiples">
-                        <div class="photo-radio">
+                    <ng-container>
+                        <div class="photo-radio" *ngFor="let multiple of multiples">
                             <img [src]="multiple" class="foto-imovel" />
                             <p-radioButton name="nameLabel" value="Foto Principal" [(ngModel)]="nameLabel"
                                 inputId="nameLabel1"></p-radioButton>

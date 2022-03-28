@@ -97,8 +97,11 @@ h6{
     margin: 5px 0;
 }
 
-:host ::ng-deep .p-buttonSwap{
+:host ::ng-deep .p-button-Swap{
     background: #F5A800;
+    color: #fff;
+}
+:host ::ng-deep .p-button-Swap:enabled:hover{
     color: #fff;
 }
 :host ::ng-deep .p-buttonSwap .p-button-label{
@@ -243,6 +246,11 @@ h6{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+ .showComments{
+    color: #284641;
+    font: normal normal bold 17px/28px Roboto;
+    text-decoration: underline;
+}
 
 .form .form-floating{
     display: block ;
@@ -266,6 +274,7 @@ h6{
     height: 30px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .floating-input:focus,

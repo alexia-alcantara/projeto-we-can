@@ -51,7 +51,8 @@ form{
     background: #F5A800;
 }
 :host ::ng-deep .p-button-login:enabled:hover{
-    background: #ecb100;
+    background: #fab710;
+    color: #fff;
 }
 :host ::ng-deep .p-button-login .p-button-label{
     font: normal normal bold 17px/30px Source Sans Pro;

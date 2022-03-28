@@ -44,12 +44,16 @@
     font: normal normal normal 30px/25px Roboto;
 }
 
-.cards-imoveis .verMais{
+:host ::ng-deep .p-button-verMais{
     width: 150px;
     height: 45px;
     background: #F5A800;
     color: #fff;
     font: normal normal bold 16px/65px Source Sans Pro;
+    border-radius: 8px;
+}
+:host ::ng-deep .p-button-verMais:enabled:hover{
+    color: #fff;
 }
 
 .cards-imoveis .columnButton{
