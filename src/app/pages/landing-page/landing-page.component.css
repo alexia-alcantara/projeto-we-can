@@ -1,33 +1,62 @@
-
-.intro-section{
+.intro-section {
     background-image: url(/assets/images/imagem_site.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
-    padding-top: calc(31rem + 55px);
-    padding-bottom: 10rem;
+    padding-top: calc(2rem + 124px);
+    /* padding-bottom: 10rem; */
     position: relative;
     overflow: hidden;
 }
 
-.como-funciona h2{
+.video-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+        height: 56.25vw;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+        width: 177.78vh;
+    }
+}
+
+.como-funciona h2 {
     font: normal normal 300 25px/53px Lemon Milk Light;
     padding: 3rem;
 }
-.como-funciona h3{
+
+.como-funciona h3 {
     font: normal normal bold 28px/30px Roboto;
     text-align: center;
 }
-.como-funciona p{
-    font: normal normal normal 16px/25px Roboto;;
+
+.como-funciona p {
+    font: normal normal normal 16px/25px Roboto;
+    ;
     text-align: center;
 }
 
-.como-funciona .columnFunciona{
+.como-funciona .columnFunciona {
     padding: 4rem 0 2rem;
 }
-.como-funciona .icone-cols{
+
+.como-funciona .icone-cols {
     border: 1px solid #10312B;
     width: 8rem;
     height: 8rem;
@@ -36,12 +65,12 @@
     margin: 2rem auto;
 }
 
-.como-funciona .icone-cols span{
+.como-funciona .icone-cols span {
     position: relative;
     display: inline-block;
 }
 
-.como-funciona .icone-cols span::after{
+.como-funciona .icone-cols span::after {
     content: "";
     position: absolute;
     top: 4.5rem;
@@ -50,7 +79,8 @@
     left: 4rem;
     background-image: url(/assets/images/linha_1.svg);
 }
-.como-funciona .icone-cols span::before{
+
+.como-funciona .icone-cols span::before {
     content: "";
     position: absolute;
     top: 5.2rem;
@@ -61,7 +91,7 @@
     transform: rotate(82deg);
 }
 
-.como-funciona .icone-cols .line2::after{
+.como-funciona .icone-cols .line2::after {
     content: "";
     position: absolute;
     top: 5.1rem;
@@ -71,7 +101,8 @@
     background-image: url(/assets/images/linha_1.svg);
     transform: rotate(6deg);
 }
-.como-funciona .icone-cols .line2::before{
+
+.como-funciona .icone-cols .line2::before {
     content: "";
     position: absolute;
     top: 5.9rem;
@@ -81,24 +112,26 @@
     background-image: url(/assets/images/linha_1.svg);
     transform: rotate(74deg);
 }
-.como-funciona .icone-cols span::before{
+
+.como-funciona .icone-cols span::before {
     right: 100%;
     margin-right: 15px;
 }
-.columnFunciona .icone-cols span::after{
+
+.columnFunciona .icone-cols span::after {
     left: 100%;
     margin-left: 15px;
 }
 
-.como-funciona .icon-geral{
+.como-funciona .icon-geral {
     width: 55px;
 }
 
-.como-funciona .caixaIcone{
+.como-funciona .caixaIcone {
     padding-left: 6rem;
 }
 
-.como-funciona .bloco-icones{
+.como-funciona .bloco-icones {
     border: 1px solid #10312B;
     width: 8rem;
     height: 8rem;
@@ -106,26 +139,28 @@
     padding: 40px 37px 35px 37px;
 }
 
-.para-entender{
+.para-entender {
     background: #E3A716;
     padding: 3rem;
 }
-.para-entender h1{
+
+.para-entender h1 {
     font: normal normal normal 30px/50px LEMON MILK Regular;
     color: #fff;
     opacity: 1;
 }
 
-.para-entender .caixa-btn{
+.para-entender .caixa-btn {
     padding: 2rem;
 }
 
-.para-entender .caixa-btn h2{
+.para-entender .caixa-btn h2 {
     font: normal normal normal 25px/40px LEMON MILK;
     color: #fff;
     text-align: left;
 }
-.para-entender .btn-saiba-mais{
+
+.para-entender .btn-saiba-mais {
     display: flex;
     justify-content: center;
     padding: 2rem 0 0rem;
@@ -138,37 +173,50 @@
     padding: 2rem;
 }
 
-:host ::ng-deep .p-button-saiba .p-button-label{
+:host ::ng-deep .p-button-saiba:enabled:hover {
+    background: #c291003d;
+    border: 1px solid #284641;
+
+}
+
+:host ::ng-deep .p-button-saiba .p-button-label {
     color: #284641;
     font: normal normal normal 16px/20px LEMON MILK Light;
 }
 
-.para-entender .caixa-video .img-video{
-    width: 520px;
+.para-entender .caixa-video .img-video {
+    width: 100%;
+    position: relative;
+    height: 307px;
+    top: 0;
+    transform: translate(-45%, 0%);
 }
 
-.experimente{
+.experimente {
     background: #284641;
     padding: 2rem 0 5rem;
 }
 
-.experimente .title{
+.experimente .title {
     text-align: center;
 }
-.experimente .title h2{
+
+.experimente .title h2 {
     font: normal normal 300 25px/34px LEMON MILK Light;
     color: #F6B11A;
 }
-.experimente h3{
+
+.experimente h3 {
     font: italic normal 300 22px/12px Roboto;
     color: #fff;
 }
-.experimente h4{
+
+.experimente h4 {
     font: italic normal 300 16px/28px Roboto;
     color: #fff;
 }
 
-.experimente .gallery{
+.experimente .gallery {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 2rem;
@@ -176,6 +224,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 210px;
 }
+
 .experimente>img {
     width: 100%;
     height: 100%;
@@ -187,36 +236,38 @@
     grid-row: span 1;
 }
 
-.experimente .gallery .img-big{
- transition: transform 0.3s ease-in-out;
+.experimente .gallery .img-big {
+    transition: transform 0.3s ease-in-out;
 }
 
 .experimente .gallery .img-big:hover {
-	filter: opacity(0.9);
-	transform: scale(1.04);
+    filter: opacity(0.9);
+    transform: scale(1.04);
 }
 
-.experimente .gallery .gallery-button{
+.experimente .gallery .gallery-button {
     position: absolute;
     left: 71%;
     top: 150rem;
     width: 20%;
 }
 
-:host ::ng-deep .p-button-gallery-saiba{
+:host ::ng-deep .p-button-gallery-saiba {
     width: 100%;
     height: 5.2rem;
 }
 
-.fale-conosco{
+.fale-conosco {
     background: #E3A716;
     padding: 2rem;
 }
-.fale-conosco  h2{
+
+.fale-conosco h2 {
     font: normal normal 300 24px/50px LEMON MILK Light;
     color: #fff;
 }
-.fale-conosco .text-form{
+
+.fale-conosco .text-form {
     font: normal normal bold 15px/30px Roboto;
     display: grid;
     color: #fff;
@@ -228,6 +279,7 @@
     margin: 20px 10px 10px;
     width: 100%;
 }
+
 .fale-conosco .campo-form input {
     font: normal normal bold 15px/20px Roboto;
     padding: 12px;
@@ -237,6 +289,7 @@
     transition: 1s ease-in-out;
     background: #E3A716;
 }
+
 .fale-conosco .campo-form label {
     position: absolute;
     left: 12rem;
@@ -244,11 +297,13 @@
     color: #fff;
     transition: 0.5s ease;
 }
+
 .fale-conosco .campo-form input:focus {
     border-color: #fff;
     outline: none;
 }
-.fale-conosco .campo-form input:focus + label {
+
+.fale-conosco .campo-form input:focus+label {
     font: normal normal bold 15px/20px Roboto;
     top: -20px;
     color: #888;
@@ -257,7 +312,7 @@
     border-top-left-radius: 3px;
 }
 
-.fale-conosco .campo-form textarea{
+.fale-conosco .campo-form textarea {
     font: normal normal bold 15px/20px Roboto;
     padding: 12px;
     border: 1px solid #fff;
@@ -268,11 +323,13 @@
     background: #E3A716;
     z-index: 1030;
 }
+
 .fale-conosco .campo-form textarea:focus {
     border-color: #fff;
     outline: none;
 }
-.fale-conosco .campo-form textarea:focus + label{
+
+.fale-conosco .campo-form textarea:focus+label {
     font: normal normal bold 15px/20px Roboto;
     top: -20px;
     color: #888;
@@ -281,158 +338,170 @@
     border-top-left-radius: 3px;
 }
 
-.fale-conosco .btn-send{
+.fale-conosco .btn-send {
     margin-top: -35px;
 }
 
-:host ::ng-deep .p-button-send{
+:host ::ng-deep .p-button-send {
     width: 140px;
     height: 60px;
     border-color: #fff;
     background: #E3A716;
 }
-:host ::ng-deep .p-button-send .p-button-label{
+
+:host ::ng-deep .p-button-send .p-button-label {
     color: #fff;
 }
 
-.line-through:after, .line-through:before{
-    content: '';
-    display: table-cell;
-    width: 50%;
-    background: linear-gradient(transparent 50%, currentColor 50%, currentColor calc(50% + 1px), transparent calc(50% + 1px));
-    background-clip: padding;
-}
-.line-through:after {
-    border-left: 1em solid transparent;
-}
-.line-through:before {
-    border-right: 1em solid transparent;
-}
 
-.line-through{
-    font-size: 1.5rem;
-	 color: #57330f;
-
-}
 
 /* Responsive breakpoints */
-@media (min-width: 320px) and (max-width: 576px){ 
+@media (min-width: 320px) and (max-width: 576px) {
     #navbarResponsive {
         margin: 1.5rem;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         padding-bottom: 0.5rem;
     }
-    .navbar .nav-item{
+
+    .navbar .nav-item {
         padding: 0 0 0.5rem;
     }
-    .navbar .navbar-brand{
+
+    .navbar .navbar-brand {
         margin-left: 0;
     }
-    .navbar .navbar-brand .logo{
+
+    .navbar .navbar-brand .logo {
         width: 50vw;
     }
-    .como-funciona .caixaIcone{
+
+    .como-funciona .caixaIcone {
         padding: 0;
     }
-    .como-funciona .caixaIcone_acesso{
+
+    .como-funciona .caixaIcone_acesso {
         flex-direction: column-reverse;
         padding: 0;
     }
-    .como-funciona .bloco-icones{
+
+    .como-funciona .bloco-icones {
         margin: auto;
     }
-    .experimente .gallery{
+
+    .experimente .gallery {
         display: flex;
         gap: 1.5rem;
     }
-    .entender-melhor .campo-form input{
+
+    .entender-melhor .campo-form input {
         width: 100%;
     }
-    .entender-melhor .campo-form label{
+
+    .entender-melhor .campo-form label {
         left: 20px;
     }
-    .entender-melhor .campo-form textarea{
+
+    .entender-melhor .campo-form textarea {
         width: 100%;
         height: auto;
     }
-    .entender-melhor .campo-form .btn-send{
+
+    .entender-melhor .campo-form .btn-send {
         margin: 15px;
     }
-    :host ::ng-deep .p-button-send{
+
+    :host ::ng-deep .p-button-send {
         width: 100%;
     }
-    .para-entender .caixa-btn{
+
+    .para-entender .caixa-btn {
         padding: 0;
     }
-    :host ::ng-deep .p-button-saiba{
+
+    :host ::ng-deep .p-button-saiba {
         width: 100%;
     }
-    .experimente h3{
+
+    .experimente h3 {
         font: italic normal 300 22px/35px Roboto;
     }
-    .experimente .gallery .gallery-button{
+
+    .experimente .gallery .gallery-button {
         width: 100%;
         position: relative;
         left: 0;
     }
-    .fale-conosco .campo-form input{
+
+    .fale-conosco .campo-form input {
         width: 100%;
     }
-    .fale-conosco .campo-form label{
+
+    .fale-conosco .campo-form label {
         left: 20px;
     }
-    .fale-conosco .campo-form textarea{
+
+    .fale-conosco .campo-form textarea {
         width: 100%;
         height: 100%;
     }
-    .fale-conosco .btn-send{
+
+    .fale-conosco .btn-send {
         margin-top: 2rem;
     }
+
     .como-funciona .icone-cols span::after,
-    .como-funciona .icone-cols span::before{
+    .como-funciona .icone-cols span::before {
         display: none;
     }
+
     .como-funciona .icone-cols .line2::after,
-    .como-funciona .icone-cols .line2::before{
+    .como-funciona .icone-cols .line2::before {
         display: none;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
+
     .como-funciona .icone-cols span::after,
-    .como-funciona .icone-cols span::before{
+    .como-funciona .icone-cols span::before {
         display: none;
     }
+
     .como-funciona .icone-cols .line2::after,
-    .como-funciona .icone-cols .line2::before{
+    .como-funciona .icone-cols .line2::before {
         display: none;
     }
-    .como-funciona .caixaIcone{
+
+    .como-funciona .caixaIcone {
         padding-left: 0;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1199px){
-    .como-funciona .icone-cols span::after{
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .como-funciona .icone-cols span::after {
         top: 188%;
         width: 299%;
         height: 132px;
         left: 113%;
     }
-    .como-funciona .icone-cols span::before{
+
+    .como-funciona .icone-cols span::before {
         top: 279%;
         height: 115px;
         left: 922%;
         transform: rotate(76deg);
     }
-    .como-funciona .icone-cols .line2::before{
+
+    .como-funciona .icone-cols .line2::before {
         top: 210%;
         height: 106px;
         left: -216%;
         transform: rotate(74deg);
     }
-    .como-funciona .icone-cols .line2::after{
+
+    .como-funciona .icone-cols .line2::after {
         top: 153%;
         height: 117px;
         left: 100%;
@@ -441,42 +510,47 @@
 
 }
 
-@media (min-width: 1400px) and (max-width: 2560px){
-.como-funciona .icone-cols span::after{
-    top: 88%;
-    height: 139px;
-    left: 164%;
-    transform: rotate(354deg);
-}
-.como-funciona .icone-cols span::before{
-    top: 190%;
-    height: 126px;
-    left: 1287%;
-    transform: rotate(89deg);
-}
-.como-funciona .icone-cols span::before{
-    top: 186%;
-    height: 127px;
-    left: 1287%;
-    transform: rotate(89deg);
-}
-.como-funciona .icone-cols .line2::before{
-    top: 181%;
-    height: 106px;
-    left: -269%;
-    transform: rotate(85deg);
-}
-.como-funciona .icone-cols .line2::after{
-    top: 100%;
-    height: 114px;
-    left: 146%;
-    transform: rotate(356deg);
-}
+@media (min-width: 1400px) and (max-width: 2560px) {
+    .como-funciona .icone-cols span::after {
+        top: 88%;
+        height: 139px;
+        left: 164%;
+        transform: rotate(354deg);
+    }
 
-.como-funciona .columnFunciona {
-    padding: 1rem 0 2rem;
-}
-.como-funciona .caixaIcone{
-    padding-left: 9rem;
-}
+    .como-funciona .icone-cols span::before {
+        top: 190%;
+        height: 126px;
+        left: 1287%;
+        transform: rotate(89deg);
+    }
+
+    .como-funciona .icone-cols span::before {
+        top: 186%;
+        height: 127px;
+        left: 1287%;
+        transform: rotate(89deg);
+    }
+
+    .como-funciona .icone-cols .line2::before {
+        top: 181%;
+        height: 106px;
+        left: -269%;
+        transform: rotate(85deg);
+    }
+
+    .como-funciona .icone-cols .line2::after {
+        top: 100%;
+        height: 114px;
+        left: 146%;
+        transform: rotate(356deg);
+    }
+
+    .como-funciona .columnFunciona {
+        padding: 1rem 0 2rem;
+    }
+
+    .como-funciona .caixaIcone {
+        padding-left: 9rem;
+    }
 }
