@@ -1,4 +1,4 @@
-.gird-item{
+.gird-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,37 +6,45 @@
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
     color: white;
-   
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .gird-item:hover {
     filter: opacity(0.9);
     transform: scale(1.00);
 }
-   
-   /*-------------Gird style----------*/
-   
-.gird-container{
+
+/*-------------Gird style----------*/
+.col-4 .bg-light {
+    flex-grow: 1;
+}
+
+.gird-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     grid-auto-rows: minmax(250px, auto);
-    gap:1px; 
+    gap: 1px;
     padding: 10px;
-    grid-auto-flow: dense; 
+    grid-auto-flow: dense;
 }
-   
-.text{
+
+.dados {
+    padding: 1rem 2.5rem;
+}
+
+.text {
     position: absolute;
     color: white;
     z-index: 3;
     text-align: center;
     margin-top: 20%;
-    
+
     margin-left: 35px;
 }
+
 .wide {
     grid-column: span 2;
 }
@@ -46,96 +54,123 @@
 }
 
 
-h2{
+h2 {
     font: normal normal 300 30px/60px Lemon Milk Light;
     color: #284641;
 }
-h3{
+
+h3 {
     font: normal normal bold 28px/75px Roboto;
 }
-h4{
+
+h4 {
     font: normal normal 300 22px/60px Lemon Milk Light;
 }
-p{
+
+p {
     font: normal normal normal 16px/28px Roboto;
     color: #708380;
 }
-h6{
+
+h6 {
     font: normal normal bold 17px/20px Roboto;
 }
 
-.details-panel{
+.details-panel {
     display: flex;
 }
-.dados .borderColumn{
+
+.dados .borderColumn {
     border-bottom: 1px solid #E3A716;
 }
 
-.details-panel .header{
+.details-panel .header {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
 
-.details-panel .icon-key{
+.details-panel .icon-key {
     width: 4vw;
 }
 
-.details-panel .booking{
+.keys {
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
+    align-items: center;
 }
-.booking .resultKeys{
+
+.keys .icon-key {
+    width: 60px;
+}
+
+.booking .resultKeys {
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #A1A0A0;
 }
 
-.booking .form p{
+.booking .form p {
     margin: 5px 0;
 }
 
-:host ::ng-deep .p-button-Swap{
+.resultKeys .icon-key {
+    width: 60px;
+}
+
+:host ::ng-deep .p-button-Swap {
     background: #F5A800;
     color: #fff;
 }
-:host ::ng-deep .p-button-Swap:enabled:hover{
+
+:host ::ng-deep .p-button-Swap:enabled:hover {
     color: #fff;
 }
-:host ::ng-deep .p-buttonSwap .p-button-label{
+
+:host ::ng-deep .p-buttonSwap .p-button-label {
     font-family: Source Sans Pro;
     font-weight: 600;
 }
-.booking .form .valueKey{
+
+.booking {
+    width: 370px;
+}
+
+.booking .form .valueKey {
     display: grid;
     grid-gap: 15px;
 }
-.booking .form span{
+
+.booking .form span {
     color: #284641;
     font: normal normal normal 18px/18px Roboto;
 }
+
+
 .form {
     width: 100%;
-    padding: 29px;
+    padding: 0 25px 25px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 3px 6px #00000029;
 }
-.form .commentary{
+
+.form .commentary {
     display: flex;
     align-items: center;
     gap: 3rem;
 }
+
 .form .date {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 1fr;
 }
+
 .form .date .wrap {
     grid-area: 2/1/3/3;
 }
+
 .form .rooms {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30px 1fr;
@@ -144,14 +179,16 @@ h6{
 .form h1 {
     margin-bottom: 31px;
 }
+
 .form p {
     margin: 0 10px 12px;
     color: #284641;
     font-size: 15px;
 }
+
 .form .wrap {
     width: 100%;
-    height: 70px;
+    height: 50px;
     padding: 0 10px;
     background-color: #fff;
     margin-bottom: 27px;
@@ -160,6 +197,7 @@ h6{
     border-radius: 5px;
     box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.08);
 }
+
 .form .wrap input {
     width: 100%;
     height: 50px;
@@ -167,13 +205,18 @@ h6{
     outline: none;
     font-size: 1.1em;
 }
+
 .form .wrap input[type="number"] {
     -moz-appearance: textfield;
 }
-.form .wrap .checkOut, .form .wrap .adults, .form .wrap .kids {
+
+.form .wrap .checkOut,
+.form .wrap .adults,
+.form .wrap .kids {
     padding-left: 10px;
     border-left: 2px solid #f4f4f5;
 }
+
 .form .show-properties {
     position: absolute;
     text-align: center;
@@ -183,88 +226,96 @@ h6{
     border-radius: 10px;
     z-index: -1;
 }
+
 .form .show-properties p {
     margin-top: 40px;
     font-size: 1.3rem;
     font-weight: bold;
     color: #fff;
 }
-.dados .columnImg{
+
+.dados .columnImg {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.dados .iconImg{
+
+.dados .iconImg {
     width: 50px;
 }
 
-.avaliacao{
+.avaliacao {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.avaliacao span{
+
+.avaliacao span {
     font: normal normal normal 25px/8px Roboto;
     text-decoration: underline;
 }
 
-.stars{
+.stars {
     display: flex;
     align-items: center;
-   
+
 }
-.stars .numberRating{
+
+.stars .numberRating {
     font: normal normal normal 25px/8px Roboto;
     margin-inline-start: 0.5rem;
     text-decoration: none;
 }
+
 .cont {
     padding: 1.1rem 0 1.2rem 0rem;
 }
 
-:host ::ng-deep label.star{
+:host ::ng-deep label.star {
     cursor: pointer;
 }
-:host ::ng-deep input.star:checked ~ label.star:before{
+
+:host ::ng-deep input.star:checked~label.star:before {
     color: #E3A716 !important;
 }
 
-.columnImg .month p{
+.columnImg .month p {
     margin-bottom: 0;
     font-size: 14px;
     color: #708380
-
 }
-.columnImg .month p:first-child{
+
+.columnImg .month p:first-child {
     font: normal normal bold 15px/15px Roboto;
     color: #284641;
 }
 
-.comments{
+.comments {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
- .showComments{
+
+.showComments {
     color: #284641;
     font: normal normal bold 17px/28px Roboto;
     text-decoration: underline;
 }
 
-.form .form-floating{
-    display: block ;
+.form .form-floating {
+    display: block;
     padding: 15px 10px;
 }
 
 .floating-form {
     width: 320px;
 }
-  
+
 .floating-label {
     position: relative;
 }
-  
+
 .floating-input,
 .floating-select {
     font-size: 14px;
@@ -282,7 +333,7 @@ h6{
     outline: none;
     border-bottom: 2px solid #5264AE;
 }
-  
+
 .floating-label label {
     color: #999;
     font-size: 14px;
@@ -295,49 +346,49 @@ h6{
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
 }
-  
+
 .floating-input:focus~label,
 .floating-input:not(:placeholder-shown)~label {
     top: -18px;
     font-size: 14px;
     color: #5264AE;
 }
-  
+
 .floating-select:focus~label,
 .floating-select:not([value=""]):valid~label {
     top: -18px;
     font-size: 14px;
     color: #5264AE;
 }
-  
-  /* active state */
-  
-  .floating-input:focus~.bar:before,
-  .floating-input:focus~.bar:after,
-  .floating-select:focus~.bar:before,
-  .floating-select:focus~.bar:after {
+
+/* active state */
+
+.floating-input:focus~.bar:before,
+.floating-input:focus~.bar:after,
+.floating-select:focus~.bar:before,
+.floating-select:focus~.bar:after {
     width: 50%;
-  }
-  
-  *,
-  *:before,
-  *:after {
+}
+
+*,
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  
-  .floating-textarea {
+}
+
+.floating-textarea {
     min-height: 30px;
     max-height: 260px;
     overflow: hidden;
     overflow-x: hidden;
-  }
-  
-  
-  /* highlighter */
-  
-  .highlight {
+}
+
+
+/* highlighter */
+
+.highlight {
     position: absolute;
     height: 50%;
     width: 100%;
@@ -345,105 +396,115 @@ h6{
     left: 0;
     pointer-events: none;
     opacity: 0.5;
-  }
-  
-  
-  /* active state */
-  
-  .floating-input:focus~.highlight,
-  .floating-select:focus~.highlight {
+}
+
+
+/* active state */
+
+.floating-input:focus~.highlight,
+.floating-select:focus~.highlight {
     -webkit-animation: inputHighlighter 0.3s ease;
     -moz-animation: inputHighlighter 0.3s ease;
     animation: inputHighlighter 0.3s ease;
-  }
-  
-  
-  /* animation */
-  
-  @-webkit-keyframes inputHighlighter {
-    from {
-      background: #5264AE;
-    }
-    to {
-      width: 0;
-      background: transparent;
-    }
-  }
-  
-  @-moz-keyframes inputHighlighter {
-    from {
-      background: #5264AE;
-    }
-    to {
-      width: 0;
-      background: transparent;
-    }
-  }
-  
-  @keyframes inputHighlighter {
-    from {
-      background: #5264AE;
-    }
-    to {
-      width: 0;
-      background: transparent;
-    }
-  }
+}
 
-:host ::ng-deep .modalAlert{
+
+/* animation */
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+:host ::ng-deep .modalAlert {
     border-radius: 20px;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-header{
+:host ::ng-deep .modalAlert .p-dialog-header {
     justify-content: center;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-header .p-dialog-title{
+:host ::ng-deep .modalAlert .p-dialog-header .p-dialog-title {
     font: normal normal 300 14px/36px Lemon Milk Light;
 }
-:host ::ng-deep .modalAlert .p-dialog-header-icons{
+
+:host ::ng-deep .modalAlert .p-dialog-header-icons {
     display: none;
 }
-:host ::ng-deep .modalAlert .p-dialog-header{
+
+:host ::ng-deep .modalAlert .p-dialog-header {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-content p{
+:host ::ng-deep .modalAlert .p-dialog-content p {
     font: normal normal normal 15px/28px Roboto;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-footer{
+:host ::ng-deep .modalAlert .p-dialog-footer {
     text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-footer button{
+:host ::ng-deep .modalAlert .p-dialog-footer button {
     width: 50%;
     border-radius: 8px;
 }
 
 /* Responsive breakpoints */
-@media (min-width: 320px) and (max-width: 576px){
-    .details-panel .header{
+@media (min-width: 320px) and (max-width: 576px) {
+    .details-panel .header {
         display: block;
     }
-    .avaliacao{
+
+    .avaliacao {
         display: block;
         margin-bottom: 2.5rem;
     }
-    .details-coments{
+
+    .details-coments {
         margin-bottom: 3.5rem;
     }
-    :host ::ng-deep .modalAlert{
+
+    :host ::ng-deep .modalAlert {
         width: 100% !important;
         padding: 0.5rem;
     }
-    :host ::ng-deep .modalAlert .p-dialog-footer{
+
+    :host ::ng-deep .modalAlert .p-dialog-footer {
         padding: 1rem;
     }
 }
+
 /* stepperInput {
     display:flex;
   }
