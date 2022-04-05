@@ -1,107 +1,100 @@
-.navbar{
+.navbar {
     box-shadow: none !important;
 }
-.navbar .navbar-brand .logo{
+
+.navbar .navbar-brand .logo {
     width: 24vw;
 }
-form{
+
+form {
     padding-bottom: 4rem;
 }
-.form-login h2{
+
+h2 {
     font: normal normal 300 30px/60px Lemon Milk Light;
     color: #284641;
 }
-.form-login .campo-form {
-    position: relative;
-    display: inline-block;
-    margin: 20px 10px 10px;
-    width: 70%;
+
+.form-floating>.form-control {
+    height: 45px;
+    padding: 10px 10px;
 }
-.form-login .twoColumns{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 20px 17rem ;
+
+.form-floating>label {
+    padding: 9px 15px;
+    font: normal normal normal 15px/20px Roboto;
+
 }
-.form-login .twoColumns input{
+
+
+:host ::ng-deep .p-button-login {
     width: 100%;
-}
-.form-login input {
-    font: normal normal bold 15px/20px Roboto;
-    padding: 12px;
-    border: 1px solid #707070;
-    width: 70%;
-    border-radius: 3px;
-    transition: 1s ease-in-out;
-}
-
-.form-login .twoColumns label{
-    left: 5%;
-    top: 18px;
-}
-
-.form-login label {
-    font: normal normal normal 15px/20px Roboto;
-    position: absolute;
-    left: 18%;
-    top: 10px;
-    color: #284641;
-    transition: 0.5s ease;
-}
-.form-login input:focus {
-    border-color: #707070;
-    outline: none;
-}
-.form-login input:focus + label {
-    font: normal normal normal 15px/20px Roboto;
-    top: -20px;
-    color: #284641;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
-
-:host ::ng-deep .p-button-login{
-    width: 70%;
     border-radius: 0;
     background: #F5A800;
 }
-:host ::ng-deep .p-button-login:enabled:hover{
+
+:host ::ng-deep .p-button-login:enabled:hover {
     background: #fab710;
     color: #fff;
 }
-:host ::ng-deep .p-button-login .p-button-label{
+
+:host ::ng-deep .p-button-login .p-button-label {
     font: normal normal bold 17px/30px Source Sans Pro;
     color: #fff;
 }
 
-.campo-form span{
+.campo-form span {
     font: normal normal bold 15px/20px Roboto;
     color: #0370FF;
     cursor: pointer;
 }
-.campo-form span:first-child{
+
+.campo-form span:first-child {
     font: normal normal normal 15px/27px Roboto;
     color: #000;
     margin-right: 5px;
 }
 
-:host ::ng-deep .p-dropdown{
-    width: 70%;
+:host ::ng-deep .p-dropdown {
+    width: 100%;
 }
-:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder{
+
+:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder {
     text-align: left;
+    font: normal normal normal 15px/25px Roboto;
 }
-.form-check{
+
+.form-check {
+    padding-left: 2.5em;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+}
+
+.form-check .form-check-input {
+    margin-left: -1.6em;
+    cursor: pointer;
+}
+
+.privacy-policy {
+    font: normal normal bold 15px/20px Roboto;
+    color: #0370FF;
+}
+
+/* .form-check {
     display: flex;
     justify-content: center;
 }
 
-.form-check-input{
+.form-check-input {
     width: 1em !important;
     transition: none !important;
     margin-left: 16.2rem;
 }
-.form-check label{
+
+.form-check label {
     font: normal normal normal 15px/15px Roboto;
     position: inherit;
     margin-right: 19.2rem;
@@ -109,21 +102,23 @@ form{
     transition: none;
 }
 
-.form-check label span{
+.form-check label span {
     color: #0370FF;
     font: normal normal bold 15px/18px Roboto;
-}
+} */
 
 
 /* Responsive breakpoints */
-@media (min-width: 320px) and (max-width: 576px){
-    .navbar .navbar-brand .logo{
+@media (min-width: 320px) and (max-width: 576px) {
+    .navbar .navbar-brand .logo {
         width: 100%;
     }
-    .form-login .campo-form{
+
+    .form-login .campo-form {
         width: 100%;
     }
-    .form-login .campo-form label{
+
+    .form-login .campo-form label {
         left: 5rem;
         top: 15px;
     }
