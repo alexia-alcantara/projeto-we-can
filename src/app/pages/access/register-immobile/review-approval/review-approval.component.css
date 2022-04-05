@@ -1,27 +1,33 @@
-.aguardar-aprovacao{
+.aguardar-aprovacao {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.logo{
+
+.logo {
     width: 22vw;
 }
-.navbar{
+
+.navbar {
     background: #fff;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.navbar .container{
+
+.navbar .container {
     align-items: center;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-right: 22rem;
     margin-left: -5.5rem;
 }
-h2{
+
+h2 {
     font: normal normal 300 30px/64px Lemon Milk Light;
     margin-bottom: 0;
 }
-hr{
+
+hr {
     width: 50%;
     margin: 0rem 16rem;
     color: #F5A800;
@@ -29,18 +35,19 @@ hr{
     height: 2px;
 }
 
-.logo-aguardando{
+.logo-aguardando {
     width: 91px;
 }
 
-.message p{
+.message p {
     padding: 0 5rem 1.2rem;
     text-align: center;
     font: normal normal normal 20px/40px Roboto;
     opacity: 1;
     border-bottom-width: 2px;
 }
-:host ::ng-deep .p-button-continue{
+
+:host ::ng-deep .p-button-continue {
     width: 176px;
     height: 40px;
     background: #F5A800;
@@ -48,6 +55,29 @@ hr{
     font: normal normal bold 16px/15px Source Sans Pro;
     text-transform: uppercase;
 }
-:host ::ng-deep .p-button-continue:enabled:hover{
+
+:host ::ng-deep .p-button-continue:enabled:hover {
     color: #fff;
+}
+
+
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .logo {
+        width: 70%;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    hr {
+        margin: 1rem;
+        width: 90%;
+    }
+
+    :host ::ng-deep .p-button-continue {
+        width: 90%;
+    }
 }

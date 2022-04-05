@@ -1,33 +1,51 @@
-.logo{
+.logo {
     width: 5vw;
 }
-.navbar{
+
+.navbar {
     background: #fff;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.navbar .container{
+
+.navbar .container {
     align-items: center;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-right: 22rem;
     margin-left: -5.5rem;
 }
-.navbar-nav{
+
+.navbar-nav {
     align-items: center;
 }
-.navbar-nav .nav-link{
+
+.navbar-nav .nav-link {
     font: normal normal bold 15px/24px Roboto;
     color: #708380;
     padding: 0 0.7rem;
     text-transform: capitalize;
     cursor: pointer;
 }
-.navbar-nav .nav-item{
+
+.navbar-nav .nav-item {
     padding: 0 0.7rem;
 }
-:host ::ng-deep .p-input-icon-left > .p-inputtext{
+
+:host ::ng-deep .p-input-icon-left>.p-inputtext {
     width: 25rem;
     border: 1px solid #284641;
     border-radius: 8px;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .logo {
+        width: 70%;
+    }
 }

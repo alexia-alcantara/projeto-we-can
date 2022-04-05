@@ -1,48 +1,53 @@
-.confirmation{
+.confirmation {
     margin-top: 8rem;
     margin-bottom: 1rem;
 }
-.confirmation .title-header{
+
+.confirmation .title-header {
     display: flex;
     gap: 0.5rem;
     align-items: center;
 }
 
-:host ::ng-deep .pi-angle-left{
+:host ::ng-deep .pi-angle-left {
     font-size: 2.2rem
 }
 
-h2{
+h2 {
     font: normal normal 300 30px/64px Lemon Milk Light;
     margin-bottom: 0;
 }
-h3{
+
+h3 {
     font: normal normal bold 28px/75px Roboto;
 }
-h4{
+
+h4 {
     font: normal normal bold 22px/75px Roboto;
 }
-h5{
+
+h5 {
     font: normal normal bold 19px/75px Roboto;
     text-decoration: underline;
 }
 
-p{
+p {
     font: normal normal normal 15px/28px Roboto;
     color: #708380;
 }
 
-.column{
+.column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 80px;
 }
-.column2{
+
+.column2 {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-:host ::ng-deep .cardsPanel{
+:host ::ng-deep .cardsPanel {
     margin-top: 3rem;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #FFFFFF;
@@ -52,39 +57,48 @@ p{
     height: auto;
 }
 
-:host ::ng-deep .cardsPanel h4{
+:host ::ng-deep .cardsPanel h4 {
     font: normal normal 300 20px/50px Lemon Milk Light;
 }
-:host ::ng-deep .cardsPanel h5{
+
+:host ::ng-deep .cardsPanel h5 {
     font: normal normal 300 15px/1px Lemon Milk Light;
 }
+
 :host ::ng-deep .cardsPanel p {
     margin-bottom: 0;
     font: normal normal normal 15px/25px Roboto;
     color: #708380;
 }
-:host ::ng-deep .cardsPanel .p-card-body{
+
+:host ::ng-deep .cardsPanel .p-card-body {
     padding: 0rem 1rem 0 0rem;
 }
-:host ::ng-deep .p-card-content{
+
+:host ::ng-deep .p-card-content {
     padding: 0rem 0rem 0rem;
 }
-:host ::ng-deep .cardDescription{
+
+:host ::ng-deep .cardDescription {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.foto-imovel{
+
+.foto-imovel {
     width: 290px;
 }
-.icon-key{
+
+.icon-key {
     width: 70px;
     height: 60px;
 }
 
-.contrato{
+.contrato {
     margin-bottom: 1.5rem;
 }
-:host ::ng-deep .p-button-verMais , .p-button-showPDF{
+
+:host ::ng-deep .p-button-verMais,
+.p-button-showPDF {
     width: 176px;
     height: 45px;
     background: #F5A800;
@@ -92,42 +106,57 @@ p{
     font: normal normal bold 16px/15px Source Sans Pro;
 }
 
-:host ::ng-deep .p-button-verMais , .p-button-showPDF:enabled:hover{
+:host ::ng-deep .p-button-verMais,
+.p-button-showPDF:enabled:hover {
     color: #fff !important;
 }
-.btns{
+
+.btns {
     display: flex;
 }
 
 /* Responsive breakpoints */
-@media (min-width: 320px) and (max-width: 576px){
-    .confirmation{
+@media (min-width: 320px) and (max-width: 576px) {
+    .confirmation {
         margin-bottom: 4rem;
     }
-    :host ::ng-deep .cardsPanel{
+
+    :host ::ng-deep .cardsPanel {
         width: 100%;
         height: 65%;
     }
-    :host ::ng-deep .cardsPanel .p-card-body{
+
+    :host ::ng-deep .cardsPanel .p-card-body {
         padding: 0;
     }
-    :host ::ng-deep .p-card-content{
+
+    :host ::ng-deep .p-card-content {
         padding: 5px;
     }
-    .cardDescription{
+
+    .cardDescription {
         display: block;
     }
-    .foto-imovel{
+
+    .foto-imovel {
         width: 100%;
     }
-    .contrato{
+
+    .contrato {
         padding: 1rem 2.5rem;
     }
-    .btns{
+
+    .btns {
         display: grid;
         grid-gap: 15px;
     }
-    :host ::ng-deep .verMais, .showPDF{
+
+    :host ::ng-deep .verMais,
+    .showPDF {
+        width: 100%;
+    }
+
+    :host ::ng-deep .p-button-warning {
         width: 100%;
     }
 }

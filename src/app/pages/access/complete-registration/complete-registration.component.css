@@ -1,46 +1,69 @@
-.navbar{
+.navbar {
     box-shadow: none !important;
 }
-.navbar .navbar-brand .logo{
+
+.navbar .navbar-brand .logo {
     width: 24vw;
 }
 
-h2{
+h2 {
     font: normal normal 300 30px/60px Lemon Milk Light;
     color: #284641;
 }
-h5{
+
+h5 {
     font: normal normal 300 22px/28px LEMON MILK Light;
     color: #284641;
     border-bottom: 1px solid #F5A800;
     padding: 0px 0px 15px;
 }
 
-:host ::ng-deep .p-inputtext{
+:host ::ng-deep .p-inputtext {
     width: 100%;
 }
-:host ::ng-deep .field > label{
+
+:host ::ng-deep .field>label {
     font: normal normal normal 15px/20px Roboto;
     color: #284641;
 }
 
-.dados-pessoais{
+.dados-pessoais {
     margin-bottom: 2.5rem;
 }
 
-.btns-save{
+.btns-save {
     padding-bottom: 3rem;
     gap: 1rem;
 }
+
 :host ::ng-deep .p-button-save-back {
-    font: normal normal bold 15px/15px Source Sans Pro ;
+    font: normal normal bold 15px/15px Source Sans Pro;
     color: #E3A716 !important;
 }
-:host ::ng-deep .save-continue{
+
+:host ::ng-deep .save-continue {
     font: normal normal bold 15px/25px Source Sans Pro;
     color: #fff;
     background: #F5A800;
 }
-:host ::ng-deep .save-continue:enabled:hover{
+
+:host ::ng-deep .save-continue:enabled:hover {
     color: #fff;
+}
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .field {
+        width: 100%;
+    }
+
+    .btns-save {
+        display: inline-block !important;
+    }
+
+    :host ::ng-deep .p-button.p-button-warning {
+        height: 3.5rem;
+        width: 100%;
+        margin: 0rem 0rem 1rem;
+    }
 }

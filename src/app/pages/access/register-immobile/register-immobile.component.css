@@ -1,33 +1,39 @@
-.navbar{
+.navbar {
     box-shadow: none !important;
 }
-.navbar .navbar-brand .logo{
+
+.navbar .navbar-brand .logo {
     width: 24vw;
 }
 
-h2{
+h2 {
     font: normal normal 300 30px/60px Lemon Milk Light;
     color: #284641;
 }
-h4{
+
+h4 {
     border-bottom: 1px solid #F5A800;
     padding: 0 0 15px;
 }
-h5{
+
+h5 {
     font: normal normal 300 22px/28px LEMON MILK Light;
     color: #284641;
     border-bottom: 1px solid #F5A800;
     padding: 25px 0px 15px;
 }
-label, ::placeholder{
+
+label,
+::placeholder {
     font: normal normal normal 15px/20px Roboto;
     color: #284641;
 }
 
-:host ::ng-deep .p-tabview .p-tabview-nav{
+:host ::ng-deep .p-tabview .p-tabview-nav {
     justify-content: center;
 }
-:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+
+:host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link {
     text-transform: uppercase;
     font: normal normal normal 14px/20px LEMON MILK Regular;
     color: #708380;
@@ -39,48 +45,54 @@ label, ::placeholder{
     opacity: 1;
 }
 
-:host ::ng-deep .p-inputtext, :host ::ng-deep .p-dropdown{
+:host ::ng-deep .p-inputtext,
+:host ::ng-deep .p-dropdown {
     width: 100%;
 }
-:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder{
+
+:host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder {
     font: normal normal normal 15px/25px Roboto;
 }
-::placeholder{
+
+::placeholder {
     font: normal normal normal 15px/15px Roboto;
 }
 
-.dados-comodidades{
-    font:  normal normal bold 17px/20px Roboto;
+.dados-comodidades {
+    font: normal normal bold 17px/20px Roboto;
     color: #495057;
 }
 
-.amenidades{
+.amenidades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 2.2rem;
     grid-gap: 0.6rem;
 }
 
-.btns-save{
+.btns-save {
     padding: 3rem 0 3rem;
     gap: 1rem;
 }
+
 :host ::ng-deep .p-button-save-back {
-    font: normal normal bold 15px/15px Source Sans Pro ;
+    font: normal normal bold 15px/15px Source Sans Pro;
     color: #E3A716 !important;
     width: 18%;
 }
-:host ::ng-deep .save-continue{
+
+:host ::ng-deep .save-continue {
     font: normal normal bold 15px/25px Source Sans Pro;
     color: #fff;
     background: #F5A800;
     width: 18%;
 }
-:host ::ng-deep .save-continue:enabled:hover{
+
+:host ::ng-deep .save-continue:enabled:hover {
     color: #fff;
 }
 
-.preview-media{
+.preview-media {
     width: 100%;
     height: 8rem;
     display: flex;
@@ -88,13 +100,14 @@ label, ::placeholder{
     object-fit: cover;
     gap: 3rem;
 }
-.photo-radio{
+
+.photo-radio {
     display: grid;
 }
 
-.preview-media .foto-imovel{
-    width: 13rem; 
-    height: 8rem; 
+.preview-media .foto-imovel {
+    width: 13rem;
+    height: 8rem;
     object-fit: cover;
 }
 
@@ -106,7 +119,7 @@ label, ::placeholder{
     position: absolute;
     z-index: -1;
 }
-  
+
 .file-input__label {
     cursor: pointer;
     display: inline-flex;
@@ -120,18 +133,42 @@ label, ::placeholder{
     background-color: #2196F3;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 }
-  
+
 .file-input__label svg {
     height: 16px;
     margin-right: 4px;
 }
 
-:host ::ng-deep .p-radiobutton{
+:host ::ng-deep .p-radiobutton {
     margin-top: 1rem;
 }
 
-.labelRadio{
+.labelRadio {
     font: normal normal normal 15px/0px Roboto;
     margin-top: -10px;
     margin-left: 30px;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .formgrid.grid {
+        display: block;
+    }
+
+    .btns-save {
+        display: block !important;
+    }
+
+    :host ::ng-deep .p-button-warning {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .amenidades {
+        display: block;
+    }
+
+    .field-checkbox {
+        margin-bottom: 1.5rem;
+    }
 }

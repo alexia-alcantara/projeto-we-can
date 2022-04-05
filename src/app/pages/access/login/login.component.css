@@ -1,22 +1,27 @@
-.navbar{
+.navbar {
     box-shadow: none !important;
 }
-.navbar .navbar-brand .logo{
+
+.navbar .navbar-brand .logo {
     width: 24vw;
 }
-form{
+
+form {
     padding-bottom: 4rem;
 }
-.form-login h2{
+
+.form-login h2 {
     font: normal normal 300 30px/60px Lemon Milk Light;
     color: #284641;
 }
+
 .form-login .campo-form {
     position: relative;
     display: inline-block;
     margin: 20px 10px 10px;
     width: 70%;
 }
+
 .form-login .campo-form input {
     font: normal normal bold 15px/20px Roboto;
     padding: 12px;
@@ -25,6 +30,7 @@ form{
     border-radius: 3px;
     transition: 1s ease-in-out;
 }
+
 .form-login .campo-form label {
     font: normal normal normal 15px/20px Roboto;
     position: absolute;
@@ -33,11 +39,13 @@ form{
     color: #284641;
     transition: 0.5s ease;
 }
+
 .form-login .campo-form input:focus {
     border-color: #707070;
     outline: none;
 }
-.form-login .campo-form input:focus + label {
+
+.form-login .campo-form input:focus+label {
     font: normal normal normal 15px/20px Roboto;
     top: -20px;
     color: #284641;
@@ -45,26 +53,29 @@ form{
     border-top-left-radius: 3px;
 }
 
-:host ::ng-deep .p-button-login{
+:host ::ng-deep .p-button-login {
     width: 70%;
     border-radius: 0;
     background: #F5A800;
 }
-:host ::ng-deep .p-button-login:enabled:hover{
+
+:host ::ng-deep .p-button-login:enabled:hover {
     background: #fab710;
     color: #fff;
 }
-:host ::ng-deep .p-button-login .p-button-label{
+
+:host ::ng-deep .p-button-login .p-button-label {
     font: normal normal bold 17px/30px Source Sans Pro;
     color: #fff;
 }
 
-.campo-form span{
+.campo-form span {
     font: normal normal bold 15px/20px Roboto;
     color: #0370FF;
     cursor: pointer;
 }
-.campo-form span:first-child{
+
+.campo-form span:first-child {
     font: normal normal normal 15px/27px Roboto;
     color: #000;
     margin-right: 5px;
@@ -72,15 +83,26 @@ form{
 
 
 /* Responsive breakpoints */
-@media (min-width: 320px) and (max-width: 576px){
-    .navbar .navbar-brand .logo{
+@media (min-width: 320px) and (max-width: 576px) {
+    .navbar .navbar-brand .logo {
         width: 100%;
     }
-    .form-login .campo-form{
+
+    .form-login .campo-form {
         width: 100%;
+        margin: 20px 0px 10px;
     }
-    .form-login .campo-form label{
-        left: 5rem;
+
+    .form-login .campo-form label {
+        left: 2rem;
         top: 15px;
+    }
+
+    .form-login .campo-form input {
+        width: 100%;
+    }
+
+    :host ::ng-deep .p-button-login {
+        width: 100%;
     }
 }

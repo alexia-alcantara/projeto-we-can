@@ -83,31 +83,6 @@ h2 {
     color: #0370FF;
 }
 
-/* .form-check {
-    display: flex;
-    justify-content: center;
-}
-
-.form-check-input {
-    width: 1em !important;
-    transition: none !important;
-    margin-left: 16.2rem;
-}
-
-.form-check label {
-    font: normal normal normal 15px/15px Roboto;
-    position: inherit;
-    margin-right: 19.2rem;
-    margin-top: 0.5rem;
-    transition: none;
-}
-
-.form-check label span {
-    color: #0370FF;
-    font: normal normal bold 15px/18px Roboto;
-} */
-
-
 /* Responsive breakpoints */
 @media (min-width: 320px) and (max-width: 576px) {
     .navbar .navbar-brand .logo {
