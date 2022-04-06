@@ -8,11 +8,11 @@ import { setTheme } from 'ngx-bootstrap/utils';
   styleUrls: ['./historic.component.css']
 })
 export class HistoricComponent implements OnInit {
-  rating3: number;
+  val2: number = 5;
+
   public form: FormGroup;
 
   constructor(private fb: FormBuilder) {
-    this.rating3 = 0;
     setTheme('bs5');
 
   }

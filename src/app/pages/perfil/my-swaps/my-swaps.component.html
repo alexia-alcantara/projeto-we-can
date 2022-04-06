@@ -41,9 +41,9 @@
 
                     <h4>Avaliação</h4>
                     <div class="stars">
-                        <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
+                        <p-rating [ngModel]="val2" [readonly]="true" [stars]="1" [cancel]="false"></p-rating>
 
-                        <span class="numberRating">{{ rating3 }}</span>
+                        <span class="numberRating">{{ val2 }}</span>
                     </div>
                 </div>
             </div>
@@ -93,11 +93,7 @@
                     <p>dd/mm/aaaa</p>
 
                     <h4>Avaliação</h4>
-                    <div class="stars">
-                        <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
-
-                        <span class="numberRating">{{ rating3 }}</span>
-                    </div>
+                    <span class="avaliar" routerLink="./troca-realizada">Avaliar</span>
                 </div>
             </div>
 

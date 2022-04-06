@@ -29,7 +29,7 @@
 <!-- Section detalhes do imóvel -->
 <div class=" dados">
     <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-lg-8 col-md-12">
             <div class="mb-3" style="height:500px;">
                 <div class="details-panel">
                     <div class="col-12 col-lg-12 borderColumn">
@@ -114,9 +114,8 @@
                     <div class="avaliacao">
                         <div class="cont">
                             <div class="stars">
-                                <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
-
-                                <span class="numberRating">{{ rating3 }}</span>
+                                <p-rating [ngModel]="val3" [readonly]="true" [stars]="1" [cancel]="false"></p-rating>
+                                <span class="numberRating">{{ val3 }}</span>
                             </div>
                         </div>
                         <span>6 comentários</span>
@@ -216,7 +215,7 @@
 
         </div>
 
-        <div class="col-4 d-flex flex-column justify-content-around text-center">
+        <div class="col-12 col-lg-4 col-md-12 d-flex flex-column justify-content-around text-center">
 
             <div class="bg-form mb-3">
                 <div class="sticky-top">
@@ -227,7 +226,10 @@
                                 <span>0 chaves</span>
                             </div>
                             <div class="commentary">
-                                <span>5</span>
+                                <p-rating [ngModel]="val2" [readonly]="true" [stars]="1" [cancel]="false"></p-rating>
+
+                                <span class="numberRatingForm">{{ val2 }}</span>
+
                                 <p>6 <span>comentários</span></p>
                             </div>
 

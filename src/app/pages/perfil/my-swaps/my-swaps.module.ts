@@ -9,15 +9,17 @@ import { DropdownModule } from 'primeng/dropdown';
 import { MySwapsRoutes } from './my.swaps.routing';
 import { SwapDetailsComponent } from './swap-details/swap-details.component';
 import { NgxStarRatingModule } from 'ngx-star-rating';
-
-
 import { ImageModule } from 'primeng/image';
+import { RatingModule } from 'primeng/rating';
+import { SwapRealizedComponent } from './swap-realized/swap-realized.component';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 
 @NgModule({
     declarations: [
         MySwapsComponent,
         SwapDetailsComponent,
+        SwapRealizedComponent,
     ],
     imports: [
         ButtonModule,
@@ -25,9 +27,11 @@ import { ImageModule } from 'primeng/image';
         CommonModule,
         DropdownModule,
         ImageModule,
+        InputTextareaModule,
         FormsModule,
         NgxStarRatingModule,
         ReactiveFormsModule,
+        RatingModule,
         RouterModule.forChild(MySwapsRoutes)
     ]
 })

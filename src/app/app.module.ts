@@ -24,6 +24,7 @@ import { ConfirmReservationComponent } from './pages/results-list/confirm-reserv
 import { PaymentComponent } from './pages/results-list/confirm-reservation/payment/payment.component';
 import { SolicitacaoAnfitriaoComponent } from './pages/results-list/confirm-reservation/solicitacao-anfitriao/solicitacao-anfitriao.component';
 import { ReservationCompletedComponent } from './pages/results-list/confirm-reservation/reservation-completed/reservation-completed.component';
+import { ReviewApprovalComponent } from './pages/access/register-immobile/review-approval/review-approval.component';
 
 /* PRIMENG */
 import { ButtonModule } from 'primeng/button';
@@ -49,9 +50,8 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { ToastModule } from 'primeng/toast';
 import { MessageModule } from 'primeng/message';
 import { RadioButtonModule } from 'primeng/radiobutton';
-import { ReviewApprovalComponent } from './pages/access/register-immobile/review-approval/review-approval.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-
+import { RatingModule } from 'primeng/rating';
 
 @NgModule({
   declarations: [
@@ -103,6 +103,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     PaginatorModule,
     SelectButtonModule,
     RadioButtonModule,
+    RatingModule,
     TabViewModule,
     BsDatepickerModule.forRoot()
   ],

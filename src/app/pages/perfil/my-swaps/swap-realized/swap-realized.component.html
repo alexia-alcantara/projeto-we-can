@@ -5,7 +5,7 @@
 
         <h3>Código</h3>
 
-        <p>Status: Aguardando confirmação do anfitrião</p>
+        <p>Status: Realizada: Aguardando avaliação</p>
     </div>
 
 
@@ -22,6 +22,7 @@
                         <img src="assets/images/ic_chave_lista.svg" alt="chave_lista" class="icon-key">
                         <span>0</span>
                     </div>
+
                     <h4>Valor</h4>
                     <p>R$ 0,00</p>
 
@@ -181,17 +182,20 @@
     </div>
 
 
-    <!-- Cancelamento -->
+    <!-- Avaliação -->
     <div class="title">
-        <h4>Cancelamento</h4>
+        <h4>Avaliação</h4>
     </div>
-    <div class="row cancelamento">
-        <p>O cancelamento da troca implica em certas regras, descritas no documento de <span>Termos de uso</span>.</p>
+    <div class="row col-12 avaliacao">
+        <p>Avalie sua experiência:</p>
+        <p-rating [ngModel]="val3" [readonly]="true" [stars]="5" [cancel]="false"></p-rating>
         <p>Deseja efetuar o cancelamento?</p>
 
-        <div class="row justify-content-lg-center">
-            <button pButton pRipple type="button" label="Sim, quero cancelar"
-                class="p-button-outlined p-button-secondary"></button>
+        <textarea rows="5" pInputTextarea></textarea>
+
+        <div class="row justify-content-lg-center mt-3">
+            <button pButton pRipple type="button" label="Salvar comentário"
+                class="p-button-secondary p-button-save"></button>
         </div>
     </div>
 </div>

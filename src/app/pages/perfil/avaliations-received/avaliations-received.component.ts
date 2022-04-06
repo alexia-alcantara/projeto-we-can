@@ -8,7 +8,8 @@ import { setTheme } from 'ngx-bootstrap/utils';
   styleUrls: ['./avaliations-received.component.css']
 })
 export class AvaliationsReceivedComponent implements OnInit {
-  rating3: number;
+  val3: number = 5;
+
   public form: FormGroup;
   displayModal: boolean;
 
@@ -17,7 +18,6 @@ export class AvaliationsReceivedComponent implements OnInit {
   }
 
   constructor(private fb: FormBuilder) {
-    this.rating3 = 0;
     setTheme('bs5');
 
   }

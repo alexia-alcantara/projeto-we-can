@@ -5,6 +5,9 @@ import { RouterModule } from "@angular/router";
 import { PerfilRouting } from "./perfil.routing";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RequestSwapComponent } from './request-swap/request-swap.component';
+import { HistoricComponent } from './historic/historic.component';
+import { AvaliationsReceivedComponent } from './avaliations-received/avaliations-received.component';
+import { ProfileDataComponent } from './profile-data/profile-data.component';
 
 // *PRIMENG*//
 import { CardModule } from 'primeng/card';
@@ -13,11 +16,9 @@ import { DialogModule } from 'primeng/dialog';
 import { TableModule } from 'primeng/table';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { ButtonModule } from 'primeng/button';
-import { ProfileDataComponent } from './profile-data/profile-data.component';
-import { AvaliationsReceivedComponent } from './avaliations-received/avaliations-received.component';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { InputTextareaModule } from 'primeng/inputtextarea';
-import { HistoricComponent } from './historic/historic.component';
+import { RatingModule } from 'primeng/rating';
 
 @NgModule({
     declarations: [
@@ -37,6 +38,7 @@ import { HistoricComponent } from './historic/historic.component';
         NgxStarRatingModule,
         TableModule,
         InputTextareaModule,
+        RatingModule,
         ReactiveFormsModule,
         SelectButtonModule,
         RouterModule.forChild(PerfilRouting)

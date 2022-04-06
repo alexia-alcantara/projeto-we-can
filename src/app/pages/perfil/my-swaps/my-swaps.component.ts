@@ -11,14 +11,14 @@ interface TypeStatus {
   styleUrls: ['./my-swaps.component.css']
 })
 export class MySwapsComponent implements OnInit {
-  rating3: number;
+  val2: number = 5;
+
   public form: FormGroup;
 
   status: TypeStatus[];
   selectedTypeStatus: TypeStatus;
 
   constructor(private fb: FormBuilder) {
-    this.rating3 = 0;
     setTheme('bs5');
 
     this.status = [

@@ -10,7 +10,8 @@ import { setTheme } from 'ngx-bootstrap/utils';
 })
 export class DetailsImmobileComponent implements OnInit {
 
-  rating3: number;
+  val3: number = 5;
+  val2: number = 5
   public form: FormGroup;
   displayModal: boolean;
 
@@ -19,7 +20,6 @@ export class DetailsImmobileComponent implements OnInit {
   }
 
   constructor(private fb: FormBuilder) {
-    this.rating3 = 0;
     setTheme('bs5');
 
   }

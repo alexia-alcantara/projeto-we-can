@@ -88,3 +88,7 @@ html {
 ::placeholder {
   font: normal normal normal 14px/20px Roboto;
 }
+
+.p-rating .p-rating-icon.pi-star-fill {
+  color: #E3A716 !important;
+}

@@ -53,6 +53,7 @@ p {
     margin-bottom: 0;
     margin-left: 1.5rem;
     color: #708380;
+    opacity: 1;
 }
 
 .title {
@@ -131,13 +132,17 @@ p {
     height: 175px;
 }
 
-.cancelamento {
+.avaliacao {
     margin-bottom: 2rem;
 }
 
-.cancelamento span {
+.avaliacao span {
     color: #0482FF;
     font: normal normal bold 15px/27px Roboto;
+}
+
+.avaliacao p {
+    margin-left: 0;
 }
 
 :host ::ng-deep .p-button-secondary.p-button-outlined {
@@ -152,4 +157,23 @@ p {
 
 :host ::ng-deep .p-button-label {
     font: normal normal bold 16px/30px Source Sans Pro;
+}
+
+:host ::ng-deep .p-inputtextarea {
+    width: 80%;
+    margin-left: 1rem;
+}
+
+:host ::ng-deep .p-inputtextarea:enabled:hover {
+    border-color: #707070;
+}
+
+:host ::ng-deep .p-inputtextarea:enabled:focus {
+    box-shadow: 0 0 0 0.2rem #cdd0d0a3;
+    border-color: #ffffff;
+}
+
+:host ::ng-deep .p-button-save {
+    width: 11rem;
+    border-radius: 8px;
 }

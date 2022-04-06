@@ -1,99 +1,120 @@
-.container{
+.container {
     padding: 1.5rem;
 }
-h2{
+
+h2 {
     font: normal normal 300 25px/53px Lemon Milk Light;
     text-transform: capitalize;
     color: #708380;
 }
-.faixa{
+
+.faixa {
     border-bottom: 1px solid #B7C1BF;
     opacity: 1;
     width: 68rem;
     height: 1px;
     margin: 1rem 1rem 0 1rem;
 }
-h4{
+
+h4 {
     font: normal normal 300 15px/20px Lemon Milk Light;
 }
-h5{
+
+h5 {
     font: normal normal 300 15px/40px Lemon Milk Light;
     margin-bottom: 0;
 }
-:host ::ng-deep .p-dropdown{
+
+:host ::ng-deep .p-dropdown {
     width: 100%;
 }
 
-.cardsPanel .foto-imovel{
+.cardsPanel .foto-imovel {
     width: 189px;
     height: 130px;
 }
-.cardsPanel .icon-key{
+
+.cardsPanel .icon-key {
     width: 70px;
 }
-.checkin{
+
+.checkin {
     display: grid;
     grid-template-columns: 1fr 207px;
 }
-.checkin h4{
+
+.checkin h4 {
     font: normal normal bold 20px/20px Roboto;
     color: #708380;
 }
-.checkin p{
+
+.checkin p {
     font: normal normal normal 17px/20px Roboto;
     color: #708380;
 }
 
-.confirmTroca h3{
+.avaliar {
+    font: normal normal normal 17px/20px Roboto;
+    color: #0482FF;
+    cursor: pointer;
+}
+
+.confirmTroca h3 {
     font-family: 'Roboto';
     font-weight: 400;
     color: #708380;
     font-size: 22px;
 }
 
-.confirmTroca h4{
+.confirmTroca h4 {
     font: normal normal bold 20px/20px Roboto;
     color: #708380;
 }
-.confirmTroca p{
+
+.confirmTroca p {
     font: normal normal normal 17px/20px Roboto;
     color: #708380;
 }
-:host ::ng-deep .p-button-secondary{
+
+:host ::ng-deep .p-button-secondary {
     width: 15rem;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
-:host ::ng-deep .p-button-secondary .p-button-label{
+
+:host ::ng-deep .p-button-secondary .p-button-label {
     font: normal normal bold 16px/30px Source Sans Pro;
 }
 
-:host ::ng-deep .p-card{
+:host ::ng-deep .p-card {
     box-shadow: none;
 }
-.cardsPanel{
+
+.cardsPanel {
     border-bottom: 1px solid #B7C1BF;
     opacity: 1;
     padding: 1rem 0 1.5rem;
 }
 
-.stars{
+
+.stars {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row-reverse;
     justify-content: left;
     margin-left: -10px;
-   
+
 }
-.stars .numberRating{
+
+.stars .numberRating {
     font: normal normal normal 25px/8px Roboto;
     margin-inline-start: 0.5rem;
     text-decoration: none;
 }
-:host ::ng-deep label.star{
-    padding: 0 1px !important;
-    font-size: 25px !important;
-    color: #444 !important;
+
+:host ::ng-deep .p-rating .p-rating-icon {
+    font-size: 1.5rem;
 }
-:host ::ng-deep input.star:checked ~ label.star:before{
-    color: #E3A716 !important;
+
+:host ::ng-deep .p-rating-icon:first-child {
+    margin-left: 0.3rem;
 }

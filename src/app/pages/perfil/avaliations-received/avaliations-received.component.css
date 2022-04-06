@@ -1,132 +1,149 @@
-.container{
+.container {
     padding: 1.5rem;
 }
-h2{
+
+h2 {
     font: normal normal 300 25px/53px Lemon Milk Light;
     text-transform: capitalize;
     color: #708380;
     margin-bottom: 0;
 }
-h4{
+
+h4 {
     font: normal normal 300 14px/24px LEMON MILK Light;
 }
-h5{
+
+h5 {
     font: normal normal 300 14px/24px LEMON MILK Light;
 }
-p{
+
+p {
     font: normal normal normal 15px/20px Roboto;
     color: #708380;
 }
-.faixa{
+
+.faixa {
     border-bottom: 1px solid #B7C1BF;
     opacity: 1;
     width: 68rem;
     height: 1px;
     margin: 0.5rem 1rem 2rem 1rem;
 }
-.divider{
+
+.divider {
     display: flex;
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
 }
-.divider .status{
+
+.divider .status {
     display: grid;
     justify-content: center;
 }
 
-.status p{
+.status p {
     text-align: center;
     margin-bottom: 0;
 }
-.foto-imovel{
+
+.foto-imovel {
     width: 189px;
     height: 130px;
 }
-.icon-key{
+
+.icon-key {
     width: 70px;
 }
 
 
-.imovel{
+.imovel {
     display: grid;
 }
-.logo{
+
+.logo {
     grid-area: logo;
 }
-.content{
+
+.content {
     grid-area: content;
 }
-.sidenav{
+
+.sidenav {
     grid-area: sidenav;
 }
-.grid-template-areas-2{
-    grid-template-areas: 
-    "logo content content"
-    "logo content content"
-    "logo sidenav sidenav";
+
+.grid-template-areas-2 {
+    grid-template-areas:
+        "logo content content"
+        "logo content content"
+        "logo sidenav sidenav";
 }
 
-.avaliacao{
+.avaliacao {
     display: flex;
     align-items: center;
     gap: 2rem;
+    padding-left: 1.5rem;
 }
-.stars{
+
+.stars {
     display: flex;
     align-items: center;
-   
+
 }
-.stars .numberRating{
+
+.stars .numberRating {
     font: normal normal normal 25px/8px Roboto;
     margin-inline-start: 0.5rem;
     text-decoration: none;
 }
-.cont {
-    padding: 1.1rem 0 1.2rem 0rem;
+
+:host ::ng-deep .p-rating .p-rating-icon {
+    font-size: 1.5rem;
 }
 
-:host ::ng-deep label.star{
-    cursor: pointer;
-}
-:host ::ng-deep input.star:checked ~ label.star:before{
-    color: #E3A716 !important;
-}
-.columnImg{
+
+.columnImg {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.columnAnswer{
+
+.columnAnswer {
     display: flex;
     justify-content: center;
 }
-.columnAnswer p{
+
+.columnAnswer p {
     font: normal normal bold 15px/15px Roboto;
     color: #284641;
 }
-.iconImg{
+
+.iconImg {
     width: 50px;
 }
-.columnImg .month p{
+
+.columnImg .month p {
     margin-bottom: 0;
     font-size: 14px;
     color: #708380
-
 }
-.columnImg .month p:first-child{
+
+.columnImg .month p:first-child {
     font: normal normal bold 15px/15px Roboto;
     color: #284641;
 }
 
 
-:host ::ng-deep .p-button-secondary{
-    border-radius: 8px; 
+:host ::ng-deep .p-button-secondary {
+    border-radius: 8px;
 }
-:host ::ng-deep .p-button-secondary .p-button-label{
+
+:host ::ng-deep .p-button-secondary .p-button-label {
     font: normal normal bold 16px/30px Source Sans Pro;
 }
 
-.respostas{
+.respostas {
     display: flex;
     background: #F5F5F5;
     opacity: 1;
@@ -135,40 +152,51 @@ p{
 }
 
 /* Modal */
-:host ::ng-deep .modalAlert{
+:host ::ng-deep .modalAlert {
     border-radius: 20px;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-header{
+:host ::ng-deep .modalAlert .p-dialog-header {
     justify-content: center;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-header .p-dialog-title{
+:host ::ng-deep .modalAlert .p-dialog-header .p-dialog-title {
     font: normal normal 300 14px/36px Lemon Milk Light;
 }
-:host ::ng-deep .modalAlert .p-dialog-header-icons{
+
+:host ::ng-deep .modalAlert .p-dialog-header-icons {
     display: none;
 }
-:host ::ng-deep .modalAlert .p-dialog-header{
+
+:host ::ng-deep .modalAlert .p-dialog-header {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-content p{
+:host ::ng-deep .modalAlert .p-dialog-content p {
     font: normal normal normal 15px/28px Roboto;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-footer{
+:host ::ng-deep .modalAlert .p-dialog-footer {
     text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-:host ::ng-deep .modalAlert .p-dialog-footer button{
+:host ::ng-deep .modalAlert .p-dialog-footer button {
     width: 12rem;
     border-radius: 8px;
 }
 
-:host ::ng-deep .p-inputtextarea{
+:host ::ng-deep .p-inputtextarea {
     width: 100%;
+}
+
+:host ::ng-deep .p-inputtextarea:enabled:hover {
+    border-color: #707070;
+}
+
+:host ::ng-deep .p-inputtextarea:enabled:focus {
+    box-shadow: 0 0 0 0.2rem #cdd0d0a3;
+    border-color: #ffffff;
 }

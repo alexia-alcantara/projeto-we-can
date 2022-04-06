@@ -42,8 +42,9 @@
                 <h4>Avaliação</h4>
                 <div class="cont">
                     <div class="stars">
-                        <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
-                        <span class="numberRating">{{ rating3 }}</span>
+                        <p-rating [ngModel]="val2" [readonly]="true" [stars]="1" [cancel]="false"></p-rating>
+
+                        <span class="numberRating">{{ val2 }}</span>
                     </div>
                 </div>
             </div>
@@ -88,8 +89,9 @@
                 <h4>Avaliação</h4>
                 <div class="cont">
                     <div class="stars">
-                        <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
-                        <span class="numberRating">{{ rating3 }}</span>
+                        <p-rating [ngModel]="val2" [readonly]="true" [stars]="1" [cancel]="false"></p-rating>
+
+                        <span class="numberRating">{{ val2 }}</span>
                     </div>
                 </div>
             </div>
@@ -132,11 +134,10 @@
                 <p>Nome do Hóspede</p>
 
                 <h4>Avaliação</h4>
-                <div class="cont">
-                    <div class="stars">
-                        <ngx-star-rating [(ngModel)]="rating3" [id]="'rating3'"></ngx-star-rating>
-                        <span class="numberRating">{{ rating3 }}</span>
-                    </div>
+                <div class="stars">
+                    <p-rating [ngModel]="val2" [readonly]="true" [stars]="1" [cancel]="false"></p-rating>
+
+                    <span class="numberRating">{{ val2 }}</span>
                 </div>
             </div>
         </div>
