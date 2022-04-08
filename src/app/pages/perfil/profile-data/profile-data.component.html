@@ -47,7 +47,8 @@
             <label for="">Nome completo</label>
         </div>
         <div class="col-lg-9">
-            <input type="text" class="p-inputtext-sm" placeholder="Nome do Usuário" pInputText />
+            <label class="value">Nome do Usuário</label>
+            <!-- <input type="text" class="p-inputtext-sm" placeholder="Nome do Usuário" pInputText /> -->
         </div>
     </div>
 
@@ -57,8 +58,11 @@
             <label for="">CPF</label>
         </div>
         <div class="col-lg-9">
-            <p-inputMask mask="999.999.999-99" [(ngModel)]="val1" ngDefaultControl placeholder="999.999.999-99">
-            </p-inputMask>
+            <label class="value">999.999.999-99</label>
+
+
+            <!-- <p-inputMask mask="999.999.999-99" [(ngModel)]="val1" ngDefaultControl placeholder="999.999.999-99">
+            </p-inputMask> -->
         </div>
     </div>
 
@@ -68,8 +72,10 @@
             <label for="">Data de nasc.</label>
         </div>
         <div class="col-lg-9">
-            <p-inputMask mask="99/99/9999" [(ngModel)]="val3" ngDefaultControl placeholder="99/99/9999"
-                slotChar="mm/dd/yyyy"></p-inputMask>
+            <label class="value">dd/mm/aaaa</label>
+
+            <!-- <p-inputMask mask="99/99/9999" [(ngModel)]="val3" ngDefaultControl placeholder="99/99/9999"
+                slotChar="mm/dd/yyyy"></p-inputMask> -->
         </div>
     </div>
 
@@ -79,7 +85,9 @@
             <label for="">E-mail</label>
         </div>
         <div class="col-lg-9">
-            <input type="text" class="p-inputtext-sm" placeholder="email@email.com.br" pInputText />
+            <label class="value">email@email.com.br</label>
+
+            <!-- <input type="text" class="p-inputtext-sm" placeholder="email@email.com.br" pInputText /> -->
         </div>
     </div>
 
@@ -89,8 +97,10 @@
             <label for="">Telefone</label>
         </div>
         <div class="col-lg-9">
-            <p-inputMask mask="(99) 9999-9999" [(ngModel)]="val4" ngDefaultControl placeholder="(99) 9999-9999">
-            </p-inputMask>
+            <label class="value">(31) 99999-8877</label>
+
+            <!-- <p-inputMask mask="(99) 9999-9999" [(ngModel)]="val4" ngDefaultControl placeholder="(99) 9999-9999">
+            </p-inputMask> -->
         </div>
     </div>
 </div>
@@ -115,7 +125,9 @@
             <label for="">País</label>
         </div>
         <div class="col-lg-9">
-            <input type="text" class="p-inputtext-sm" placeholder="Brasil" pInputText />
+            <label class="value">Brasil</label>
+
+            <!-- <input type="text" class="p-inputtext-sm" placeholder="Brasil" pInputText /> -->
         </div>
     </div>
 
@@ -125,8 +137,10 @@
             <label for="">CEP</label>
         </div>
         <div class="col-lg-9">
-            <p-inputMask mask="99-999-999" [(ngModel)]="val1" ngDefaultControl placeholder="99.9999-999">
-            </p-inputMask>
+            <label class="value">99.999-999</label>
+
+            <!-- <p-inputMask mask="99-999-999" [(ngModel)]="val1" ngDefaultControl placeholder="99.9999-999">
+            </p-inputMask> -->
         </div>
     </div>
 
@@ -136,9 +150,12 @@
             <label for="">Endereço</label>
         </div>
         <div class="col-lg-9">
-            <input type="text" class="p-inputtext-sm"
+            <label class="value">Rua Luis Castanhede, 898 - Casa 01 - Bairro Santa Cruz - Belo Horizonte - Minas
+                Gerais</label>
+
+            <!-- <input type="text" class="p-inputtext-sm"
                 placeholder="Rua Luis Castanhede, 898 - Casa 01 - Bairro Santa Cruz - Belo Horizonte - Minas Gerais"
-                pInputText />
+                pInputText /> -->
         </div>
     </div>
 
@@ -151,7 +168,7 @@
 <div class="title">
     <h3>Endereço</h3>
 </div>
-<p-table [value]="itens" [paginator]="true" [rows]="10" styleClass="p-datatable-striped" responsiveLayout="scroll">
+<p-table [value]="itens" [paginator]="true" [rows]="10" responsiveLayout="scroll">
     <ng-template pTemplate="header">
         <tr>
             <th *ngFor="let col of colunas">

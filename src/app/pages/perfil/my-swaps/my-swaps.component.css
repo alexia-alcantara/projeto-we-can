@@ -118,3 +118,14 @@ h5 {
 :host ::ng-deep .p-rating-icon:first-child {
     margin-left: 0.3rem;
 }
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .stars .numberRating {
+        margin-left: 2rem;
+    }
+
+    .avaliar {
+        margin-left: 2rem;
+    }
+}

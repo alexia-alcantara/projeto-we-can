@@ -1,16 +1,19 @@
-.perfil{
+.perfil {
     margin-top: 6rem;
 }
-.main{
+
+.main {
     width: 100%;
     display: flex;
     height: auto;
     padding-top: 0;
 }
-.column-1{
+
+.column-1 {
     background: #F5F5F5;
     height: 100%;
 }
+
 .vertical-menu {
     display: block !important;
     width: 100%;
@@ -33,12 +36,22 @@
 .vertical-menu li:after {
     display: none;
 }
+
 .svg {
     width: 18px;
     height: 20px;
 }
-  
+
 .active {
     cursor: pointer;
-    filter: invert(64%) sepia(62%) saturate(615%) hue-rotate(2deg) brightness(96%) contrast(88%);;
+    filter: invert(64%) sepia(62%) saturate(615%) hue-rotate(2deg) brightness(96%) contrast(88%);
+    ;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .main {
+        display: grid;
+    }
+
 }

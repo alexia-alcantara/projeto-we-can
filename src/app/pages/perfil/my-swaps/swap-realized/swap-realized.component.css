@@ -177,3 +177,20 @@ p {
     width: 11rem;
     border-radius: 8px;
 }
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .title-header {
+        display: block;
+    }
+
+    h3,
+    p {
+        margin-left: 0;
+    }
+
+    :host ::ng-deep .p-button-save {
+        width: 100%;
+        margin-left: 1rem;
+    }
+}

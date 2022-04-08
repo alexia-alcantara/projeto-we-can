@@ -1,84 +1,123 @@
-.container{
+.container {
     padding: 1.6rem;
 }
-h2{
+
+h2 {
     font: normal normal 300 25px/53px Lemon Milk Light;
     text-transform: capitalize;
     color: #284641;
 }
-h4{
-    font: normal normal 300 14px/24px LEMON MILK Light;
-}
-h5{
+
+h4 {
     font: normal normal 300 14px/24px LEMON MILK Light;
 }
 
-:host ::ng-deep .p-dropdown{
+h5 {
+    font: normal normal 300 14px/24px LEMON MILK Light;
+}
+
+:host ::ng-deep .p-dropdown {
     width: 100%;
 }
-:host ::ng-deep .p-btn-add{
+
+:host ::ng-deep .p-btn-add {
     background: #E3A716;
     border-color: #E3A716;
     color: #fff;
     opacity: 1;
     border-radius: 8px;
 }
-:host ::ng-deep .p-btn-add:enabled:hover{
+
+:host ::ng-deep .p-btn-add:enabled:hover {
     background: #f0af0ccc;
     color: #fff;
     border-color: #f0af0ccc;
 }
-:host ::ng-deep .p-card{
+
+:host ::ng-deep .p-card {
     box-shadow: none;
 }
-.divider{
+
+.divider {
     display: flex;
     border-bottom: 1px solid rgb(0 0 0 / 20%);
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
 }
-.divider .status{
+
+.divider .status {
     display: grid;
     justify-content: center;
 }
 
-.status p{
+.status p {
     text-align: center;
     margin-bottom: 0;
 }
-.foto-imovel{
+
+.foto-imovel {
     width: 189px;
     height: 130px;
 }
-.icon-key{
+
+.icon-key {
     width: 70px;
 }
 
 
-.imovel{
+.imovel {
     display: grid;
 }
-.logo{
+
+.logo {
     grid-area: logo;
 }
-.content{
+
+.content {
     grid-area: content;
 }
-.sidenav{
+
+.sidenav {
     grid-area: sidenav;
 }
-.grid-template-areas-2{
-    grid-template-areas: 
-    "logo content content"
-    "logo content content"
-    "logo sidenav sidenav";
+
+.grid-template-areas-2 {
+    grid-template-areas:
+        "logo content content"
+        "logo content content"
+        "logo sidenav sidenav";
 }
 
-:host ::ng-deep .p-button-secondary{
+:host ::ng-deep .p-button-secondary {
     margin-top: 0.5rem;
     width: 100%;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
-:host ::ng-deep .p-button-secondary .p-button-label{
+
+:host ::ng-deep .p-button-secondary .p-button-label {
     font: normal normal bold 16px/30px Source Sans Pro;
+}
+
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    :host ::ng-deep .p-dropdown {
+        width: 73%;
+    }
+
+    :host ::ng-deep .p-btn-add {
+        margin-top: 2rem;
+    }
+
+    .divider {
+        display: block;
+    }
+
+    .divider p {
+        width: 77%;
+    }
+
+    .grid-template-areas-2 {
+        display: block;
+    }
 }

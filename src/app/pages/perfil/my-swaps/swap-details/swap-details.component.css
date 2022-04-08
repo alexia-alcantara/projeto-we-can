@@ -153,3 +153,28 @@ p {
 :host ::ng-deep .p-button-label {
     font: normal normal bold 16px/30px Source Sans Pro;
 }
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .title-header {
+        display: block;
+    }
+
+    h3,
+    p {
+        margin-left: 0;
+    }
+
+    .cancelamento {
+        margin: 0.2rem;
+    }
+
+    .cancelamento p {
+        font: normal normal 300 16px/30px Roboto;
+        margin-bottom: 1rem;
+    }
+
+    :host ::ng-deep .p-button-secondary.p-button-outlined {
+        width: 100%;
+    }
+}
