@@ -122,3 +122,14 @@ h5 {
 :host ::ng-deep input.star:checked~label.star:before {
     color: #E3A716 !important;
 }
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .divider {
+        display: block;
+    }
+
+    .checkin {
+        grid-template-columns: 1fr;
+    }
+}

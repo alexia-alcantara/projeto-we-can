@@ -200,3 +200,37 @@ p {
     box-shadow: 0 0 0 0.2rem #cdd0d0a3;
     border-color: #ffffff;
 }
+
+/* Responsive breakpoints */
+@media (min-width: 320px) and (max-width: 576px) {
+    .divider {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .grid-template-areas-2 {
+        display: block;
+    }
+
+    .divider p {
+        width: 315px;
+    }
+
+    .avaliacao {
+        display: block;
+    }
+
+    .faixa {
+        width: 20rem;
+    }
+
+    .column-avaliacoes p {
+        width: 100%;
+        text-align: justify;
+        margin-top: 0.2rem;
+    }
+
+    :host ::ng-deep .p-button-secondary {
+        width: 100%;
+    }
+}
