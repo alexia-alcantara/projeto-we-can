@@ -238,6 +238,7 @@ iframe {
 
 .experimente .gallery .img-big {
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .experimente .gallery .img-big:hover {
@@ -347,6 +348,10 @@ iframe {
     height: 60px;
     border-color: #fff;
     background: #E3A716;
+}
+
+:host ::ng-deep .p-button-send:enabled:hover {
+    background: #111810;
 }
 
 :host ::ng-deep .p-button-send .p-button-label {
