@@ -14,6 +14,7 @@ h2 {
 h4 {
     border-bottom: 1px solid #F5A800;
     padding: 0 0 15px;
+    font: normal normal bold 21px/28px Roboto;
 }
 
 h5 {
@@ -68,6 +69,7 @@ label,
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 2.2rem;
     grid-gap: 0.6rem;
+    margin-top: 1.5rem;
 }
 
 .btns-save {

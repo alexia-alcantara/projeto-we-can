@@ -23,11 +23,11 @@
             </div>
             <div class="field lg:col-12 md:col-12">
                 <label for="name">Nome Completo</label>
-                <input id="name" type="text" pInputText>
+                <input id="name" type="text" placeholder="Nome completo" pInputText>
             </div>
             <div class="field lg:col-6 md:col-6">
                 <label for="cpf">CPF</label>
-                <input id="cpf" type="text" pInputText>
+                <input id="cpf" type="text" placeholder="999.999.999-99" pInputText>
             </div>
             <div class="field lg:col-6 md:col-6">
                 <label for="dTNascimento">Data de Nascimento</label>
@@ -37,12 +37,12 @@
             </div>
             <div class="field lg:col-6 md:col-6">
                 <label for="email" type="text">E-mail</label>
-                <input id="email" type="text" pInputText>
+                <input id="email" type="email" placeholder="email@email.com.br" pInputText>
             </div>
             <div class="field lg:col-6 md:col-6">
                 <label for="telephone" type="text">Telefone</label>
                 <p-inputMask mask="(99) 99999-9999" [(ngModel)]="val4" [ngModelOptions]="{standalone: true}"
-                    placeholder="(99) 99999-9999"></p-inputMask>
+                    placeholder="(99) 9 9999-9999"></p-inputMask>
 
             </div>
         </div>
@@ -54,35 +54,35 @@
             </div>
             <div class="field lg:col-3 md:col-3">
                 <label for="cep">Cep</label>
-                <input id="cep" type="text" pInputText>
+                <input id="cep" placeholder="31.155-140" type="text" pInputText>
             </div>
             <div class="field lg:col-4 md:col-4">
                 <label for="address">Endereço</label>
-                <input id="address" type="text" pInputText>
+                <input id="address" type="text" placeholder="Rua Luis Castanhede" pInputText>
             </div>
             <div class="field lg:col-2 md:col-2">
                 <label for="numeroAdress">Número</label>
-                <input id="numeroAdress" type="number" pInputText>
+                <input id="numeroAdress" type="number" placeholder="898" pInputText>
 
             </div>
             <div class="field lg:col-3 md:col-3">
                 <label for="complement" type="text">Complemento</label>
-                <input id="complement" type="text" pInputText>
+                <input id="complement" type="text" placeholder="Casa" pInputText>
             </div>
 
             <div class="field lg:col-4 md:col-4">
                 <label for="neighbourhood" type="text">Bairro</label>
-                <input id="neighbourhood" type="text" pInputText>
+                <input id="neighbourhood" type="text" placeholder="Santa Cruz" pInputText>
             </div>
 
             <div class="field lg:col-4 md:col-4">
                 <label for="city" type="text">Cidade</label>
-                <input id="city" type="text" pInputText>
+                <input id="city" type="text" placeholder="Belo Horizonte" pInputText>
             </div>
 
             <div class="field lg:col-4 md:col-4">
                 <label for="state" type="text">Estado</label>
-                <input id="state" type="text" pInputText>
+                <input id="state" type="text" placeholder="Minas Gerais" pInputText>
             </div>
         </div>
 

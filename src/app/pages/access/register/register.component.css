@@ -6,8 +6,16 @@
     width: 24vw;
 }
 
+hr {
+    margin: 0 94px;
+    color: #F5A800;
+    border: 1px solid;
+    opacity: 1;
+}
+
 form {
     padding-bottom: 4rem;
+    margin-top: 1.5rem;
 }
 
 h2 {
